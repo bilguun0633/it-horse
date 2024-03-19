@@ -1,13 +1,21 @@
 import React from "react";
 import HomeHero from "@/components/Home/HomeHero";
-import AboutUsSection from "@/components/common/about-us-section";
+import HomeAbout from "@/components/Home/HomeAbout";
+import HomeStatistics from "@/components/Home/HomeStatistics";
+import HomeSolutions from "@/components/Home/HomeSolutions";
+import HomeTechnologies from "@/components/Home/HomeTechnologies";
+import HomeSkills from "@/components/Home/HomeSkills";
 
 export default function index() {
   return (
     <div>
       {/* index */}
       <HomeHero />
-      <AboutUsSection />
+      <HomeAbout />
+      <HomeStatistics />
+      <HomeSolutions />
+      <HomeTechnologies />
+      <HomeSkills />
     </div>
   );
 }

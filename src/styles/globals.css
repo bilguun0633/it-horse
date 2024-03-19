@@ -4,26 +4,26 @@
 @tailwind utilities;
 
 @layer component {
-    .transitioned {
-      @apply transition-all ease-out duration-300;
-    }
+  .transitioned {
+    @apply transition-all ease-out duration-300;
   }
-  
-  /* @import "remixicon/fonts/remixicon.css";
-  @import "swiper/css"; */
-  
-  * {
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  body {
-    @apply text-sm lg:text-base overflow-x-hidden overflow-y-scroll relative;
-  }
-  
-  i {
-    line-height: 1 !important;
-  }
-  
-  /* .container {
-    @apply px-4 lg:px-8 xl:px-20;
-  } */
+}
+
+@import "remixicon/fonts/remixicon.css";
+/* @import "swiper/css"; */
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  @apply text-sm lg:text-base overflow-x-hidden overflow-y-scroll relative;
+}
+
+i {
+  line-height: 1 !important;
+}
+
+.container {
+  @apply px-4 lg:px-8;
+}

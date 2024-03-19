@@ -22,7 +22,7 @@
     "react-bootstrap": "^2.10.1",
     "react-dom": "^18",
     "react-flagkit": "^2.0.4",
-    "remixicon": "^3.5.0",
+    "remixicon": "^4.2.0",
     "sass": "^1.69.0",
     "swiper": "^10.3.1"
   },
