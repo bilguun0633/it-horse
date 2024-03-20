@@ -11,9 +11,10 @@
 
 @import "remixicon/fonts/remixicon.css";
 /* @import "swiper/css"; */
+@import "font.css";
 
 * {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Gilroy", sans-serif;
 }
 
 body {
