@@ -36,7 +36,7 @@ export default function Header() {
         },
         {
           name: "3D Products-JINE",
-          url: "/threeD-jine",
+          url: "/threeDjine",
         },
         {
           name: "Hardware-It Horse",

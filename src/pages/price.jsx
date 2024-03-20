@@ -19,6 +19,9 @@ export default function PricePage() {
             </div>
           </div>
         </div>
+        <div className="bg-gray">
+          <div></div>
+        </div>
       </div>
     </>
   );

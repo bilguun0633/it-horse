@@ -61,7 +61,7 @@ export default function PartnersBenefits() {
           <ImageContainer src="/background/bg.png" />
           <div className="absolute inset-0 flex justify-center items-center">
             <div className="container text-white text-center">
-              <h1 className="text-3xl lg:text-5xl uppercase">
+              <h1 className="text-3xl lg:text-5xl uppercase font-semibold">
                 partners & benefits
               </h1>
               <br />
@@ -95,12 +95,12 @@ export default function PartnersBenefits() {
         </h4>
 
         <div className="grid grid-cols-2 gap-2 lg:grid-cols-2  ">
-          <div className="border border-brown rounded">
+          <div className="border border-brown overflow-hidden rounded-lg">
             <div className="grid grid-cols-2  w-full lg:grid-cols-2">
               <div className="p-10 ">
                 <Image src="/software/partner.png" width={52} height={52} />
                 <br />
-                <h1 className="text-black">COST REDUCTION</h1>
+                <h1 className="text-xl font-medium">COST REDUCTION</h1>
                 <br />
                 <p className="">
                   Our table editor makes Postgres easy to use, even for
@@ -113,20 +113,20 @@ export default function PartnersBenefits() {
                   <li>Easy to extend</li>
                 </ul>
               </div>
-              <div className="relative bg-repeact">
+              <div className="relative bg-repeact ">
                 <ImageContainer src="/software/back.svg" />
               </div>
             </div>
           </div>
           <div className="grid grid-cols-2  lg:grid-cols-2 gap-2">
-            <div className="border border-brown rounded ">
+            <div className="border border-brown rounded-lg ">
               <div className="p-10">
                 <div className="flex justify-center">
                   <Image src="/software/partner2.png" width={52} height={52} />
                 </div>
                 <br />
                 <div className="text-center">
-                  <h1>EXPERTISE ACQUISITION</h1>
+                  <h1 className="text-xl font-medium">EXPERTISE ACQUISITION</h1>
                   <br />
                   <p>
                     Our table editor makes Postgres easy to use, even for
@@ -135,14 +135,14 @@ export default function PartnersBenefits() {
                 </div>
               </div>
             </div>
-            <div className="border border-brown rounded ">
+            <div className="border border-brown rounded-lg ">
               <div className="p-10">
                 <div className="flex justify-center">
                   <Image src="/software/partner3.png" width={52} height={52} />
                 </div>
                 <br />
                 <div className="text-center">
-                  <h1>RESOURCE EFFICIENCY</h1>
+                  <h1 className="text-xl font-medium">RESOURCE EFFICIENCY</h1>
                   <br />
                   <p>
                     Our table editor makes Postgres easy to use, even for
@@ -155,14 +155,16 @@ export default function PartnersBenefits() {
         </div>
         <div className="grid grid-cols-2 gap-2 lg:grid-cols-2 py-2 ">
           <div className="grid grid-cols-2  lg:grid-cols-2 gap-2">
-            <div className="border border-brown rounded ">
+            <div className="border border-brown rounded-lg ">
               <div className="p-10">
                 <div className="flex justify-center">
                   <Image src="/software/partner4.png" width={52} height={52} />
                 </div>
                 <br />
                 <div className="text-center">
-                  <h1>EXPERTISE ACQUISITION</h1>
+                  <h1 className="text-xl font-medium uppercase">
+                    business process
+                  </h1>
                   <br />
                   <p>
                     Our table editor makes Postgres easy to use, even for
@@ -171,14 +173,16 @@ export default function PartnersBenefits() {
                 </div>
               </div>
             </div>
-            <div className="border border-brown rounded ">
+            <div className="border border-brown rounded-lg ">
               <div className="p-10">
                 <div className="flex justify-center">
                   <Image src="/software/partner5.png" width={52} height={52} />
                 </div>
                 <br />
                 <div className="text-center">
-                  <h1>EXPERTISE ACQUISITION</h1>
+                  <h1 className="text-xl font-medium uppercase">
+                    EXPERTISE ACQUISITION
+                  </h1>
                   <br />
                   <p>
                     Our table editor makes Postgres easy to use, even for
@@ -188,12 +192,14 @@ export default function PartnersBenefits() {
               </div>
             </div>
           </div>
-          <div className="border border-brown rounded">
+          <div className="border overflow-hidden border-brown rounded-lg">
             <div className="grid grid-cols-2  w-full lg:grid-cols-2">
               <div className="p-10 ">
                 <Image src="/software/partner6.png" width={52} height={52} />
                 <br />
-                <h1 className="text-black">COST REDUCTION</h1>
+                <h1 className="uppercase font-medium text-xl">
+                  time reduction
+                </h1>
                 <br />
                 <p className="">
                   Our table editor makes Postgres easy to use, even for

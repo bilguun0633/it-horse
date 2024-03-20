@@ -33,31 +33,31 @@ export default function Software() {
           <ImageContainer src="/background/bg.png" />
           <div className="absolute inset-0 flex justify-center items-center">
             <div className="container text-white text-center">
-              <h1 className="text-3xl lg:text-5xl">SOFTWARE</h1>
+              <h1 className="text-3xl lg:text-5xl font-semibold">SOFTWARE</h1>
               <br />
               <p>Building a better business with superior software</p>
             </div>
           </div>
         </div>
       </div>
-      <div className="py-4 lg:py-4 bg-gray">
+      <div className=" lg:py-10 bg-gray ">
         <div className="container flex justify-center">
           <div className="grid grid-cols-2 gap-2 lg:grid-cols-2 lg:gap-4   ">
             {news.map(({ image, name, title, description }, index) => (
               <div
                 key={index}
-                className="w-full bg-white border rounded overflow-hidden "
+                className="w-full bg-white border-2 border-brown rounded-lg overflow-hidden "
               >
-                <div className="relative flex   aspect-square   ">
+                <div className="relative flex   aspect-video   ">
                   <ImageContainer src={image} />
                 </div>
                 <br />
-                <div className="border-gray  p-2">
-                  <h2 className="text-blue ">{name}</h2>
+                <div className="  p-4">
+                  <h2 className="text-blue font-medium ">{name}</h2>
                   <br />
-                  <h2 className="uppercase">{title}</h2>
+                  <h2 className="uppercase text-xl font-semibold">{title}</h2>
                   <br />
-                  <p>{description}</p>
+                  <p className="">{description}</p>
                 </div>
               </div>
             ))}

@@ -3,6 +3,7 @@ import Banner from "@/components/layout/Banner";
 import ImageContainer from "@/components/common/ImageContainer";
 import AboutUsSection from "@/components/common/about-us-section";
 import AboutUsList from "@/components/common/about-us-list";
+import HomeStatistics from "@/components/Home/HomeStatistics";
 
 export default function AboutUs() {
   const list = [
@@ -30,7 +31,9 @@ export default function AboutUs() {
           <ImageContainer src="/background/bg.png" />
           <div className="absolute inset-0 flex justify-center items-center">
             <div className="container text-white text-center">
-              <h1 className="text-3xl lg:text-5xl uppercase">about us</h1>
+              <h1 className="text-3xl lg:text-5xl font-semibold uppercase">
+                about us
+              </h1>
               <br />
               <p>
                 Is mission has always been to organize the world's information
@@ -43,23 +46,10 @@ export default function AboutUs() {
       <div className="">
         <AboutUsSection />
 
-        <div className="bg-warming w-full h-[12rem] flex">
-          <div className="container flex justify-center ">
-            <div className="grid w-full grid-cols-2 gap-12 lg:grid-cols-4">
-              {list.map(({ number, subtitle }, index) => (
-                <div key={index} className=" flex items-center">
-                  <div className="">
-                    <h2 className="flex justify-center text-blue ">{number}</h2>
-                    <p className="flex justify-center">{subtitle}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+        <HomeStatistics />
       </div>
-      <div className="bg-gray ">
-        <div className="container p-10">
+      <div className="bg-gray flex justify-center ">
+        <div className="w-[632px] p-10">
           <p>
             Jinie Coding Edu started out with information from the Inc. in 1998
             with unique content and educational know-how. It's an armed
@@ -88,7 +78,7 @@ export default function AboutUs() {
       <div className="py-16">
         <AboutUsList />
       </div>
-      <div className="relative w-full h-[800px]">
+      <div className="relative w-full aspect-[16/8] ">
         <ImageContainer src="/image/main-map.png" />
       </div>
     </>

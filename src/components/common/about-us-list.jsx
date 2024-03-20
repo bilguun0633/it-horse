@@ -27,7 +27,7 @@ export default function AboutUsList() {
       ],
     },
     {
-      Office: "Head office",
+      office: "Head office",
       description: [
         {
           title:
@@ -52,15 +52,15 @@ export default function AboutUsList() {
           {list.map(
             ({ name, ceo, type, office, branch, description }, index) => (
               <div className="">
-                <ul key={index} className="text-bold">
-                  <li className="border-b-2">{name}</li>
+                <ul key={index} className="text-bold border-b-2 border-brown ">
+                  <li className="font-semibold">{name}</li>
 
-                  <li>{ceo}</li>
+                  <li className="font-semibold">{ceo}</li>
 
-                  <li>{type}</li>
+                  <li className="font-semibold">{type}</li>
 
-                  <li>{office}</li>
-                  <li>{branch}</li>
+                  <li className="font-semibold">{office}</li>
+                  <li className="font-semibold">{branch}</li>
                   <div className="  ">
                     {description?.map(({ title }, index) => (
                       <ul key={index}>
@@ -76,16 +76,16 @@ export default function AboutUsList() {
         <div className=" ">
           {list.map(
             ({ name, ceo, type, office, branch, description }, index) => (
-              <div className=" ">
+              <div className="border-b-2 border-brown ">
                 <ul key={index} className="">
-                  <li className="border-b-2 ">{name}</li>
+                  <li className="font-semibold">{name}</li>
 
-                  <li>{ceo}</li>
+                  <li className="font-semibold">{ceo}</li>
 
-                  <li>{type}</li>
+                  <li className="font-semibold">{type}</li>
 
-                  <li>{office}</li>
-                  <li>{branch}</li>
+                  <li className="font-semibold">{office}</li>
+                  <li className="font-semibold">{branch}</li>
                   <div className="  ">
                     {description?.map(({ title }, index) => (
                       <ul key={index}>
@@ -102,15 +102,15 @@ export default function AboutUsList() {
           {list.map(
             ({ name, ceo, type, office, branch, description }, index) => (
               <div className="">
-                <ul key={index} className="   text-bold">
-                  <li className="border-b-2">{name}</li>
+                <ul key={index} className="   border-b-2 border-brown">
+                  <li className="font-semibold">{name}</li>
 
-                  <li>{ceo}</li>
+                  <li className="font-semibold">{ceo}</li>
 
-                  <li>{type}</li>
+                  <li className="font-semibold">{type}</li>
 
-                  <li>{office}</li>
-                  <li>{branch}</li>
+                  <li className="font-semibold">{office}</li>
+                  <li className="font-semibold">{branch}</li>
                   <div className="  ">
                     {description?.map(({ title }, index) => (
                       <ul key={index}>

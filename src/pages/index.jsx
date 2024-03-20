@@ -5,6 +5,7 @@ import HomeStatistics from "@/components/Home/HomeStatistics";
 import HomeSolutions from "@/components/Home/HomeSolutions";
 import HomeTechnologies from "@/components/Home/HomeTechnologies";
 import HomeSkills from "@/components/Home/HomeSkills";
+import Partner from "@/components/common/partner";
 
 export default function index() {
   return (
@@ -16,6 +17,7 @@ export default function index() {
       <HomeSolutions />
       <HomeTechnologies />
       <HomeSkills />
+      <Partner />
     </div>
   );
 }

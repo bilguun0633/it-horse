@@ -24,6 +24,15 @@ export default function HomeAbout() {
           highly functional digital products to deliver maximum value and ensure
           business sustainability.
         </p>
+        <br />
+        <div className="flex gap-4 ">
+          <button className="text-blue border rounded border-blue h-12 px-4 ">
+            A business prospectus
+          </button>
+          <button className="bg-blue rounded text-white  px-4">
+            Company introduction
+          </button>
+        </div>
       </div>
       <div className="relative lg:flex-1 aspect-square">
         <ImageContainer src="/background/Shape.png" />
