@@ -2,60 +2,26 @@ import React from "react";
 import ImageContainer from "@/components/common/ImageContainer";
 import Image from "next/image";
 import Banner from "@/components/common/banner";
+import InputRadio from "@/components/common/InputRadio";
+import InputCheckbox from "@/components/common/InputCheckbox";
 export default function PricePage() {
   return (
     <>
-      <div className="relative  lg:justify-center">
+      <div className="relative lg:justify-center">
         <Banner
           title="Price"
           description="Is mission has always been to organize the world's information and make it universally accessible and useful."
         />
-        <div className="bg-gray h-screen py-10 flex justify-center">
+        <div className="flex justify-center h-screen py-10 bg-gray">
           <div className="w-[848px] bg-white rounded-xl border border-brown  ">
-            <div className=" ">
+            <div className="">
               <div className="px-20 py-5">
-                <h2 className="uppercase font-semibold">Type</h2>
-                <div className="flex justify-between">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      id="exampleRadios1"
-                      value="option1"
-                    />
-                    <label class="form-check-label" for="exampleRadios1">
-                      Front-end
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      value=""
-                      id="defaultCheck1"
-                    />
-                    <label class="form-check-label" for="defaultCheck1">
-                      Back-end
-                    </label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="Mobile deveopment"
-                    />
-                    <label for="html">Mobile deveopment</label>
-                  </div>
-                  <div>
-                    <input
-                      type="radio"
-                      id="html"
-                      name="fav_language"
-                      value="Project outsourcing"
-                    />
-                    <label for="html">Project outsourcing</label>
-                  </div>
+                <h2 className="font-semibold uppercase">Type</h2>
+                <div className="flex gap-4">
+                  <InputRadio name="type" label="Front-End" />
+                  <InputRadio name="type" label="Back-End" />
+                  <InputRadio name="type" label="Mobile development" />
+                  <InputRadio name="type" label="Project outsourcing" />
                 </div>
               </div>
               <div className="px-20 py-5">
@@ -113,13 +79,9 @@ export default function PricePage() {
                     />
                   </div>
                 </div>
-              </div>
-              <div className="px-20 ">
-                <input type="checkbox" id="vehicle1" value="Bike" />
-                <label for="">
-                  {" "}
-                  Agree to collect and use personal information.
-                </label>
+                <div className="px-20">
+                  <InputCheckbox label="Agree to collect and use personal information." />
+                </div>
               </div>
               <div className="flex justify-center py-5">
                 <button className="py-2 text-white rounded bg-blue px-14">

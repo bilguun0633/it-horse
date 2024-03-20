@@ -4,29 +4,30 @@ import AboutUsSection from "@/components/common/about-us-section";
 import AboutUsList from "@/components/common/about-us-list";
 import HomeStatistics from "@/components/Home/HomeStatistics";
 import Banner from "@/components/common/banner";
+import Flag from "react-flagkit";
 
 export default function AboutUs() {
-  const list = [
+  const internationalList = [
     {
-      number: "15+",
-      subtitle: "years of experience in software engineering and IT consulting",
+      name: "mongolia",
+      flag: "MN",
+      children: [
+        "Room 1507, Building 110, Eden Apartment, 46 Heungan-ro, Gumi-si, Gyeongsangbuk-do",
+      ],
     },
     {
-      number: "500+",
-      subtitle: "software developers and other IT professionals on board",
-    },
-    {
-      number: "35+",
-      subtitle: "active clients building and augmenting software with us",
-    },
-    {
-      number: "35+",
-      subtitle: "active clients building and augmenting software with us",
+      name: "korea",
+      flag: "KR",
+      children: [
+        "Room 1507, Building 110, Eden Apartment, 46 Heungan-ro, Gumi-si, Gyeongsangbuk-do",
+        "Room 1507, Building 110, Eden Apartment, 46 Heungan-ro, Gumi-si, Gyeongsangbuk-do",
+      ],
     },
   ];
+
   return (
     <>
-      <div className="relative  lg:justify-center">
+      <div className="relative lg:justify-center">
         <Banner
           title="about us"
           description="Is mission has always been to organize the world's information and make it universally accessible and useful."
@@ -67,8 +68,39 @@ export default function AboutUs() {
       <div className="py-16">
         <AboutUsList />
       </div>
-      <div className="relative w-full aspect-[16/8] ">
-        <ImageContainer src="/image/main-map.png" />
+      <div className="relative w-full aspect-[16/8]  z-0">
+        <ImageContainer src="/image/main-map.png" className="-z-10" />
+        <div className="container flex justify-end">
+          <div className="w-[364px] py-4 lg:py-24">
+            <div className="mb-8 lg:mb-16">
+              <h2 className="mb-4 text-3xl font-semibold uppercase">
+                international presence
+              </h2>
+              <p className="text-[#586772]">
+                Is mission has always been to organize the world&apos;s
+                information and make it universally accessible and useful.
+              </p>
+            </div>
+            <div className="flex flex-col gap-4 lg:gap-8">
+              {internationalList.map(({ name, flag, children }, index) => (
+                <div key={index} className="flex flex-col gap-4">
+                  <div className="flex items-center gap-4">
+                    <Flag country={flag} size={40} />
+                    <h2 className="text-xl font-semibold uppercase">{name}</h2>
+                  </div>
+                  <div className="flex flex-col gap-3">
+                    {children.map((child, index) => (
+                      <div key={index} className="flex gap-2">
+                        <i className="text-xl ri-map-pin-line"></i>
+                        <p className="text-[#586772] text-sm">{child}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

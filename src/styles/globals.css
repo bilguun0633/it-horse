@@ -27,3 +27,15 @@ i {
 .container {
   /* @apply px-4; */
 }
+
+.custom-radio input:checked ~ .checkmark {
+  @apply border-green-300 border-4;
+}
+
+.custom-checkbox input:checked ~ .checkmark {
+  @apply border-green-300 bg-green-300;
+}
+
+.custom-checkbox input:checked ~ .checkmark > i {
+  @apply block;
+}
