@@ -26,7 +26,7 @@ export default function PricePage() {
               </div>
               <div className="px-20 py-5">
                 <label className="mb-4 text-lg font-semibold ">Title</label>
-                <div className="flex items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
+                <div className="flex items-center mt-4 w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                   <input
                     type="text"
                     className="flex-1 px-4 outline-none placeholder:text-base-200"
@@ -36,7 +36,7 @@ export default function PricePage() {
               </div>
               <div className="px-20 py-5">
                 <label className="mb-4 text-lg font-semibold">Name</label>
-                <div className="flex items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
+                <div className="flex items-center mt-4  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                   <input
                     type="text"
                     className="flex-1 px-4 outline-none placeholder:text-base-200"
@@ -46,7 +46,7 @@ export default function PricePage() {
               </div>
               <div className="px-20 py-5">
                 <label className="mb-4 text-lg font-semibold ">Email</label>
-                <div className="flex items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
+                <div className="flex items-center mt-4 w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                   <input
                     type="text"
                     className="flex-1 px-4 outline-none placeholder:text-base-200"
@@ -58,7 +58,7 @@ export default function PricePage() {
                 <label className="mb-4 text-lg font-semibold ">
                   Phone number
                 </label>
-                <div className="flex items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
+                <div className="flex mt-4 items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                   <input
                     type="text"
                     className="flex-1 px-4 outline-none placeholder:text-base-200"
@@ -68,13 +68,13 @@ export default function PricePage() {
               </div>
               <div className="justify-content-center">
                 <div className="px-20 py-5">
-                  <label className="mb-4 text-lg font-semibold ">
+                  <label className=" text-lg font-semibold  ">
                     Inquiry details
                   </label>
-                  <div className=" w-[100%]  h-fit  overflow-hidden border rounded-lg border-brown">
+                  <div className=" mt-4 w-[100%]  h-fit  overflow-hidden border rounded-lg border-brown">
                     <textarea
                       type="text"
-                      className="flex justify-center w-full min-h-[24px] h-32 px-4 outline-none placeholder:text-base-200"
+                      className="flex justify-center w-full min-h-[24px] h-32 px-4 py-2 outline-none placeholder:text-base-200"
                       placeholder="How can we help you?"
                     />
                   </div>

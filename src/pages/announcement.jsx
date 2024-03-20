@@ -92,7 +92,7 @@ export default function Announcement() {
         </div>
 
         <div className="col-span-2">
-          <div className=" container p-20">
+          <div className=" container p-32">
             <h1 className="text-3xl font-semibold">
               {test[tabIndex].subtitle}
             </h1>

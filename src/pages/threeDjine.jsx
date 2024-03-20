@@ -119,12 +119,16 @@ export default function ThreeDjine() {
         <div className="container bg-white py-20">
           <div>
             <div className="flex justify-center">
-              <h1 className="uppercase text-3xl font-medium">how it work</h1>
+              <h1 className="uppercase text-3xl font-medium pb-4">
+                how it work
+              </h1>
             </div>
             <p className="text-[#586772] flex justify-center">
               Jinie&apos;s step-by-step learning and teaching from the basics
               step by step
             </p>
+
+            <br />
             <div className="flex justify-center py-8 ">
               <div className="grid w-full grid-cols-1  lg:grid-cols-4">
                 <div className="flex justify-center font-medium text-xl uppercase">
@@ -164,6 +168,7 @@ export default function ThreeDjine() {
                 <h2 className="flex justify-center font-bold ">
                   3D Printer 3D Pen
                 </h2>
+                <br />
                 <ul className="list-disc flex flex-col items-center text-[#586772]">
                   <li className="text-center">My own design product</li>
                   <li className=""> 3D modeling training / output</li>
@@ -172,35 +177,38 @@ export default function ThreeDjine() {
               </div>
               <div>
                 {" "}
-                <h2 className="flex justify-center font-bold ">
-                  3D Printer 3D Pen
+                <h2 className="flex justify-center  font-bold ">
+                  Scratch Found
                 </h2>
+                <br />
                 <ul className="list-disc flex flex-col items-center text-[#586772]">
-                  <li className="text-center">My own design product</li>
-                  <li className=""> 3D modeling training / output</li>
-                  <li className="">Making drones and robots yorself</li>
+                  <li className="text-center">
+                    Education in a software-driven society
+                  </li>
+                  <li className=" ">Advanced use of Aduino and C</li>
+                  <li className="">Advanced use of Aduino and C</li>
+                </ul>
+              </div>
+              <div>
+                {" "}
+                <h2 className="flex justify-center font-bold ">Coding</h2>
+                <br />
+                <ul className="list-disc flex flex-col items-center text-[#586772]">
+                  <li className="text-center">Software - IoT production</li>
+                  <li className=""> Various contents training curricula</li>
+                  <li className="">Capstone Project</li>
                 </ul>
               </div>
               <div>
                 {" "}
                 <h2 className="flex justify-center font-bold ">
-                  3D Printer 3D Pen
+                  Coding Drones
                 </h2>
+                <br />
                 <ul className="list-disc flex flex-col items-center text-[#586772]">
-                  <li className="text-center">My own design product</li>
-                  <li className=""> 3D modeling training / output</li>
-                  <li className="">Making drones and robots yorself</li>
-                </ul>
-              </div>
-              <div>
-                {" "}
-                <h2 className="flex justify-center font-bold ">
-                  3D Printer 3D Pen
-                </h2>
-                <ul className="list-disc flex flex-col items-center text-[#586772]">
-                  <li className="text-center">My own design product</li>
-                  <li className=""> 3D modeling training / output</li>
-                  <li className="">Making drones and robots yorself</li>
+                  <li className="text-center">Two-dimensional coding robot</li>
+                  <li className=""> 3D coding theory</li>
+                  <li className="">Development of flight control software</li>
                 </ul>
               </div>
             </div>

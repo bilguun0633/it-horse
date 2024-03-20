@@ -5,19 +5,25 @@ import Banner from "@/components/common/banner";
 export default function Hardware() {
   const news = [
     {
-      image: "/software/image1.png",
+      image: "/software/hardware.png",
       title: "nft marketplace",
       description:
         "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
     },
     {
-      image: "/software/image1.png",
+      image: "/software/hardware.png",
       title: "nft marketplace",
       description:
         "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
     },
     {
-      image: "/software/image1.png",
+      image: "/software/hardware.png",
+      title: "nft marketplace",
+      description:
+        "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
+    },
+    {
+      image: "/software/hardware.png",
       title: "nft marketplace",
       description:
         "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
