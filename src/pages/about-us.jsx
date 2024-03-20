@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from "@/components/layout/Banner";
 import ImageContainer from "@/components/common/ImageContainer";
 import AboutUsSection from "@/components/common/about-us-section";
 import AboutUsList from "@/components/common/about-us-list";
@@ -26,12 +25,12 @@ export default function AboutUs() {
   ];
   return (
     <>
-      <div className=" relative lg:justify-center    ">
-        <div className=" h-64 w-full relative ">
+      <div className="relative  lg:justify-center">
+        <div className="relative w-full h-64 ">
           <ImageContainer src="/background/bg.png" />
-          <div className="absolute inset-0 flex justify-center items-center">
-            <div className="container text-white text-center">
-              <h1 className="text-3xl lg:text-5xl font-semibold uppercase">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="container text-center text-white">
+              <h1 className="text-3xl font-semibold uppercase lg:text-5xl">
                 about us
               </h1>
               <br />
@@ -48,7 +47,7 @@ export default function AboutUs() {
 
         <HomeStatistics />
       </div>
-      <div className="bg-gray flex justify-center ">
+      <div className="flex justify-center bg-gray ">
         <div className="w-[632px] p-10">
           <p>
             Jinie Coding Edu started out with information from the Inc. in 1998

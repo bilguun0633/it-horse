@@ -3,12 +3,12 @@ import ImageContainer from "./ImageContainer";
 
 export default function Partner() {
   return (
-    <div className="relative aspect-video">
-      <ImageContainer src="/software/partnerbg.png" />
-      <div className="absolute inset-0 flex justify-center items-center">
+    <div className="relative z-0 ">
+      <ImageContainer src="/software/partnerbg.png" className="-z-10" />
+      <div className="flex items-center justify-center py-4 lg:py-24 ">
         <div>
           <div className="w-[632px] text-white text-center">
-            <h1 className="text-3xl  font-semibold uppercase">
+            <h1 className="text-3xl font-semibold uppercase">
               become a ithorse partner
             </h1>
             <br />
@@ -18,9 +18,9 @@ export default function Partner() {
             </p>
           </div>
           <br />
-          <div className="bg-white  rounded-lg ">
-            <div className="py-5 px-20">
-              <label className="text-lg mb-4 font-semibold ">First name</label>
+          <div className="bg-white rounded-lg ">
+            <div className="px-20 py-5">
+              <label className="mb-4 text-lg font-semibold ">First name</label>
               <div className="flex items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                 <input
                   type="text"
@@ -29,8 +29,8 @@ export default function Partner() {
                 />
               </div>
             </div>
-            <div className="py-5 px-20">
-              <label className="text-lg mb-4 font-semibold">First name</label>
+            <div className="px-20 py-5">
+              <label className="mb-4 text-lg font-semibold">First name</label>
               <div className="flex items-center w-[100%] h-12  overflow-hidden border rounded-lg border-brown">
                 <input
                   type="text"
@@ -39,8 +39,8 @@ export default function Partner() {
                 />
               </div>
             </div>
-            <div className="py-5 px-20">
-              <label className="text-lg mb-4 font-semibold">Email</label>
+            <div className="px-20 py-5">
+              <label className="mb-4 text-lg font-semibold">Email</label>
               <div className="flex items-center w-[100%] h-12 overflow-hidden border rounded-lg border-brown">
                 <input
                   type="text"
@@ -50,19 +50,19 @@ export default function Partner() {
               </div>
             </div>
             <div className="justify-content-center">
-              <div className="py-5 px-20">
-                <label className="text-lg mb-4 font-semibold">Message</label>
-                <div className=" w-[100%] h-32  overflow-hidden border rounded-lg border-brown">
-                  <input
+              <div className="px-20 py-5">
+                <label className="mb-4 text-lg font-semibold">Message</label>
+                <div className=" w-[100%]  h-fit  overflow-hidden border rounded-lg border-brown">
+                  <textarea
                     type="text"
-                    className="flex justify-center px-4 outline-none placeholder:text-base-200"
+                    className="flex justify-center w-full min-h-[24px] h-32 px-4 outline-none placeholder:text-base-200"
                     placeholder="How can we help you?"
                   />
                 </div>
               </div>
             </div>
             <div className="flex justify-center py-5">
-              <button className="bg-blue rounded text-white py-2 px-14">
+              <button className="py-2 text-white rounded bg-blue px-14">
                 Submit
               </button>
             </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from "@/components/layout/Banner";
 import ImageContainer from "@/components/common/ImageContainer";
 import Image from "next/image";
 import Partner from "@/components/common/partner";
@@ -56,12 +55,12 @@ export default function PartnersBenefits() {
   ];
   return (
     <>
-      <div className=" relative lg:justify-center    ">
-        <div className=" h-64 w-full relative ">
+      <div className="relative  lg:justify-center">
+        <div className="relative w-full h-64 ">
           <ImageContainer src="/background/bg.png" />
-          <div className="absolute inset-0 flex justify-center items-center">
-            <div className="container text-white text-center">
-              <h1 className="text-3xl lg:text-5xl uppercase font-semibold">
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="container text-center text-white">
+              <h1 className="text-3xl font-semibold uppercase lg:text-5xl">
                 partners & benefits
               </h1>
               <br />
@@ -74,7 +73,7 @@ export default function PartnersBenefits() {
         </div>
       </div>
       <div className="container py-10">
-        <h4 className="mb-4 text-xl font-medium uppercase lg:text-2xl text-black lg:mb-8">
+        <h4 className="mb-4 text-xl font-medium text-black uppercase lg:text-2xl lg:mb-8">
           PARTNERS
         </h4>
         <div className="grid grid-cols-2 divide-x divide-y divide-brown lg:grid-cols-4 outline -outline-offset-1 outline-1 outline-brown">
@@ -90,13 +89,13 @@ export default function PartnersBenefits() {
         </div>
       </div>
       <div className="container py-10">
-        <h4 className="mb-4 text-xl py-4 font-medium uppercase lg:text-2xl text-BLblackCK lg:mb-8">
+        <h4 className="py-4 mb-4 text-xl font-medium uppercase lg:text-2xl text-BLblackCK lg:mb-8">
           BENEFITS
         </h4>
 
-        <div className="grid grid-cols-2 gap-2 lg:grid-cols-2  ">
-          <div className="border border-brown overflow-hidden rounded-lg">
-            <div className="grid grid-cols-2  w-full lg:grid-cols-2">
+        <div className="grid grid-cols-2 gap-2 lg:grid-cols-2 ">
+          <div className="overflow-hidden border rounded-lg border-brown">
+            <div className="grid w-full grid-cols-2 lg:grid-cols-2">
               <div className="p-10 ">
                 <Image src="/software/partner.png" width={52} height={52} />
                 <br />
@@ -118,8 +117,8 @@ export default function PartnersBenefits() {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2  lg:grid-cols-2 gap-2">
-            <div className="border border-brown rounded-lg ">
+          <div className="grid grid-cols-2 gap-2 lg:grid-cols-2">
+            <div className="border rounded-lg border-brown ">
               <div className="p-10">
                 <div className="flex justify-center">
                   <Image src="/software/partner2.png" width={52} height={52} />
@@ -135,7 +134,7 @@ export default function PartnersBenefits() {
                 </div>
               </div>
             </div>
-            <div className="border border-brown rounded-lg ">
+            <div className="border rounded-lg border-brown ">
               <div className="p-10">
                 <div className="flex justify-center">
                   <Image src="/software/partner3.png" width={52} height={52} />
@@ -153,9 +152,9 @@ export default function PartnersBenefits() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-2 lg:grid-cols-2 py-2 ">
-          <div className="grid grid-cols-2  lg:grid-cols-2 gap-2">
-            <div className="border border-brown rounded-lg ">
+        <div className="grid grid-cols-2 gap-2 py-2 lg:grid-cols-2 ">
+          <div className="grid grid-cols-2 gap-2 lg:grid-cols-2">
+            <div className="border rounded-lg border-brown ">
               <div className="p-10">
                 <div className="flex justify-center">
                   <Image src="/software/partner4.png" width={52} height={52} />
@@ -173,7 +172,7 @@ export default function PartnersBenefits() {
                 </div>
               </div>
             </div>
-            <div className="border border-brown rounded-lg ">
+            <div className="border rounded-lg border-brown ">
               <div className="p-10">
                 <div className="flex justify-center">
                   <Image src="/software/partner5.png" width={52} height={52} />
@@ -192,12 +191,12 @@ export default function PartnersBenefits() {
               </div>
             </div>
           </div>
-          <div className="border overflow-hidden border-brown rounded-lg">
-            <div className="grid grid-cols-2  w-full lg:grid-cols-2">
+          <div className="overflow-hidden border rounded-lg border-brown">
+            <div className="grid w-full grid-cols-2 lg:grid-cols-2">
               <div className="p-10 ">
                 <Image src="/software/partner6.png" width={52} height={52} />
                 <br />
-                <h1 className="uppercase font-medium text-xl">
+                <h1 className="text-xl font-medium uppercase">
                   time reduction
                 </h1>
                 <br />

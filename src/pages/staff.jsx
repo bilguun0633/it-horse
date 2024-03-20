@@ -1,5 +1,4 @@
 import React from "react";
-import Banner from "@/components/layout/Banner";
 import ImageContainer from "@/components/common/ImageContainer";
 import Image from "next/image";
 export default function StaffPage() {
@@ -33,12 +32,12 @@ export default function StaffPage() {
   return (
     <>
       <div className="py-4 ">
-        <div className=" relative lg:justify-center   ">
-          <div className=" h-64 w-full relative ">
+        <div className="relative lg:justify-center">
+          <div className="relative w-full h-64 ">
             <ImageContainer src="/background/bg.png" />
-            <div className="absolute inset-0 flex justify-center items-center">
-              <div className="container text-white text-center">
-                <h1 className="text-3xl lg:text-5xl font-semibold">
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="container text-center text-white">
+                <h1 className="text-3xl font-semibold lg:text-5xl">
                   LEAD YOUR
                 </h1>
                 <br />
@@ -46,12 +45,12 @@ export default function StaffPage() {
               </div>
             </div>
           </div>
-          <div className="py-10 h-screen">
+          <div className="h-screen py-10">
             <div className="container flex justify-center">
-              <div className="grid w-full grid-cols-2 gap-12 lg:grid-cols-4  ">
+              <div className="grid w-full grid-cols-2 gap-12 lg:grid-cols-4 ">
                 {roleList.map(({ url, image, name, role }, index) => (
                   <div key={index} className="w-full">
-                    <div className="flex  border border-gray relative justify-center overflow-hidden items-center aspect-square rounded-full bg-gray-300">
+                    <div className="relative flex items-center justify-center overflow-hidden bg-gray-300 border rounded-full border-gray aspect-square">
                       <ImageContainer src={image} />
                     </div>
                     <br />
@@ -59,7 +58,7 @@ export default function StaffPage() {
                       <h2 className="flex justify-center text-xl font-medium uppercase">
                         {name}
                       </h2>
-                      <p className="flex justify-center uppercase font-medium text-blue">
+                      <p className="flex justify-center font-medium uppercase text-blue">
                         {role}
                       </p>
                     </div>
