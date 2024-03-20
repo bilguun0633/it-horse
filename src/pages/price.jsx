@@ -12,7 +12,7 @@ export default function PricePage() {
           title="Price"
           description="Is mission has always been to organize the world's information and make it universally accessible and useful."
         />
-        <div className="flex justify-center h-screen py-10 bg-gray">
+        <div className="flex justify-center  py-10 bg-gray">
           <div className="w-[848px] bg-white rounded-xl border border-brown  ">
             <div className="">
               <div className="px-20 py-5">
@@ -35,7 +35,7 @@ export default function PricePage() {
                 </div>
               </div>
               <div className="px-20 py-5">
-                <label className="mb-4 text-lg font-semibold ">Name</label>
+                <label className="mb-4 text-lg font-semibold">Name</label>
                 <div className="flex items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                   <input
                     type="text"

@@ -91,12 +91,12 @@ export default function PartnersBenefits() {
                 <br />
                 <h1 className="text-xl font-medium">COST REDUCTION</h1>
                 <br />
-                <p className="">
+                <p className="text-[#586772] ">
                   Our table editor makes Postgres easy to use, even for
                   non-techies. You can do everything right in our dashboard.
                 </p>
                 <br />
-                <ul>
+                <ul className="list-disc text-[#586772]">
                   <li>100% portable</li>
                   <li>Built-in Auth RLS</li>
                   <li>Easy to extend</li>
@@ -117,7 +117,7 @@ export default function PartnersBenefits() {
                 <div className="text-center">
                   <h1 className="text-xl font-medium">EXPERTISE ACQUISITION</h1>
                   <br />
-                  <p>
+                  <p className="text-[#586772]">
                     Our table editor makes Postgres easy to use, even for
                     non-techies. You can do everything right in our dashboard.
                   </p>
@@ -133,7 +133,7 @@ export default function PartnersBenefits() {
                 <div className="text-center">
                   <h1 className="text-xl font-medium">RESOURCE EFFICIENCY</h1>
                   <br />
-                  <p>
+                  <p className="text-[#586772]">
                     Our table editor makes Postgres easy to use, even for
                     non-techies. You can do everything right in our dashboard.
                   </p>
@@ -155,7 +155,7 @@ export default function PartnersBenefits() {
                     business process
                   </h1>
                   <br />
-                  <p>
+                  <p className="text-[#586772]">
                     Our table editor makes Postgres easy to use, even for
                     non-techies. You can do everything right in our dashboard.
                   </p>
@@ -173,7 +173,7 @@ export default function PartnersBenefits() {
                     EXPERTISE ACQUISITION
                   </h1>
                   <br />
-                  <p>
+                  <p className="text-[#586772]">
                     Our table editor makes Postgres easy to use, even for
                     non-techies. You can do everything right in our dashboard.
                   </p>
@@ -190,12 +190,12 @@ export default function PartnersBenefits() {
                   time reduction
                 </h1>
                 <br />
-                <p className="">
+                <p className="text-[#586772]">
                   Our table editor makes Postgres easy to use, even for
                   non-techies. You can do everything right in our dashboard.
                 </p>
                 <br />
-                <ul>
+                <ul className="list-disc text-[#586772]">
                   <li>100% portable</li>
                   <li>Built-in Auth RLS</li>
                   <li>Easy to extend</li>

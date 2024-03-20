@@ -40,18 +40,18 @@ export default function Software() {
             {news.map(({ image, name, title, description }, index) => (
               <div
                 key={index}
-                className="w-full overflow-hidden bg-white border-2 rounded-lg border-brown "
+                className="w-full overflow-hidden bg-white border rounded-lg border-brown "
               >
                 <div className="relative flex aspect-video ">
                   <ImageContainer src={image} />
                 </div>
                 <br />
                 <div className="p-4 ">
-                  <h2 className="font-medium text-blue ">{name}</h2>
+                  <h2 className="font-medium text-blue text-2xl ">{name}</h2>
                   <br />
-                  <h2 className="text-xl font-semibold uppercase">{title}</h2>
+                  <h2 className="text-2xl font-medium uppercase">{title}</h2>
                   <br />
-                  <p className="">{description}</p>
+                  <p className="text-[#586772]">{description}</p>
                 </div>
               </div>
             ))}

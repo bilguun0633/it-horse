@@ -117,6 +117,10 @@ export default function Header() {
           name: "Partners & Benefits",
           url: "/partners-benefits",
         },
+        {
+          name: "Certificates & Agreements",
+          url: "/certficates",
+        },
       ],
     },
   ];

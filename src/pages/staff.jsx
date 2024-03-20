@@ -2,6 +2,8 @@ import React from "react";
 import ImageContainer from "@/components/common/ImageContainer";
 import Image from "next/image";
 import Banner from "@/components/common/banner";
+
+import { useState } from "react";
 export default function StaffPage() {
   const roleList = [
     {
@@ -40,7 +42,7 @@ export default function StaffPage() {
         <div className="h-screen py-10">
           <div className="container flex justify-center">
             <div className="grid w-full grid-cols-2 gap-12 lg:grid-cols-4 ">
-              {roleList.map(({ url, image, name, role }, index) => (
+              {roleList.map(({ image, name, role }, index) => (
                 <div key={index} className="w-full">
                   <div className="relative flex items-center justify-center overflow-hidden bg-gray-300 border rounded-full border-gray aspect-square">
                     <ImageContainer src={image} />

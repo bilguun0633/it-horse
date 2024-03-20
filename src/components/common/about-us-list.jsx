@@ -62,6 +62,28 @@ export default function AboutUsList() {
                 <div className="  ">
                   {description?.map(({ title }, index) => (
                     <ul key={index}>
+                      <li className="text-[#586772]">{title}</li>
+                    </ul>
+                  ))}
+                </div>
+              </ul>
+            </div>
+          ))}
+        </div>
+        <div className=" ">
+          {list.map(({ name, description }, index) => (
+            <div className="" key={index}>
+              <ul
+                key={index}
+                className={`text-bold  border-[#4E4B6633] flex gap-2 py-2 ${
+                  index !== 0 ? "border-t" : ""
+                }`}
+              >
+                <li className="font-semibold w-32 flex-shrink-0">{name}</li>
+
+                <div className="  ">
+                  {description?.map(({ title }, index) => (
+                    <ul key={index} className="text-[#586772]">
                       <li>{title}</li>
                     </ul>
                   ))}
@@ -83,29 +105,7 @@ export default function AboutUsList() {
 
                 <div className="  ">
                   {description?.map(({ title }, index) => (
-                    <ul key={index}>
-                      <li>{title}</li>
-                    </ul>
-                  ))}
-                </div>
-              </ul>
-            </div>
-          ))}
-        </div>
-        <div className=" ">
-          {list.map(({ name, description }, index) => (
-            <div className="" key={index}>
-              <ul
-                key={index}
-                className={`text-bold  border-[#4E4B6633] flex gap-2 py-2 ${
-                  index !== 0 ? "border-t" : ""
-                }`}
-              >
-                <li className="font-semibold w-32 flex-shrink-0">{name}</li>
-
-                <div className="  ">
-                  {description?.map(({ title }, index) => (
-                    <ul key={index}>
+                    <ul key={index} className="text-[#586772]">
                       <li>{title}</li>
                     </ul>
                   ))}

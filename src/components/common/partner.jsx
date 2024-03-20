@@ -20,7 +20,7 @@ export default function Partner() {
           <br />
           <div className="bg-white rounded-lg ">
             <div className="px-20 py-5">
-              <label className="mb-4 text-lg font-semibold ">First name</label>
+              <label className="mb-4 text-lg font-semibold  ">First name</label>
               <div className="flex items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                 <input
                   type="text"
@@ -30,7 +30,7 @@ export default function Partner() {
               </div>
             </div>
             <div className="px-20 py-5">
-              <label className="mb-4 text-lg font-semibold">First name</label>
+              <label className="mb-4 text-lg font-semibold">Last name</label>
               <div className="flex items-center w-[100%] h-12  overflow-hidden border rounded-lg border-brown">
                 <input
                   type="text"

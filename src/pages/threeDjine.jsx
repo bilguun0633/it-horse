@@ -18,7 +18,7 @@ export default function ThreeDjine() {
 
               <Image src="/icons/logo.png" alt="" width={420} height={64} />
             </div>
-            <div>
+            <div className="text-[#586772]">
               <p>
                 Jinie Coding Edu started out with information from the Inc. in
                 1998 with unique content and educational know-how. It&s an armed
@@ -48,7 +48,7 @@ export default function ThreeDjine() {
             </div>
           </div>
         </div>
-        <div className="relative w-full h-screen ">
+        <div className="relative aspect-video">
           <ImageContainer src="/background/jenibg.png" />
           <div className="absolute flex justify-center items-center inset-0  ">
             <div className=" ">
@@ -116,7 +116,7 @@ export default function ThreeDjine() {
           </div>
         </div>
 
-        <div className="container bg-white py-6">
+        <div className="container bg-white py-20">
           <div>
             <div className="flex justify-center">
               <h1 className="uppercase text-3xl font-medium">how it work</h1>
@@ -159,71 +159,48 @@ export default function ThreeDjine() {
               </div>
             </div>
             <div className="grid w-full grid-cols-4  lg:grid-cols-4 py-12">
-              <div className="flex justify-center">
-                <div>
-                  <h2 className="flex justify-center font-bold">
-                    3D Printer 3D Pen
-                  </h2>
-                  <ul>
-                    <li className="flex justify-center">
-                      My own design product
-                    </li>
-                    <li className="flex justify-center">
-                      {" "}
-                      3D modeling training / output
-                    </li>
-                    <li className="flex justify-center">
-                      Making drones and robots yorself
-                    </li>
-                  </ul>
-                </div>
-              </div>
               <div>
                 {" "}
-                <h2 className="flex justify-center font-bold">
+                <h2 className="flex justify-center font-bold ">
                   3D Printer 3D Pen
                 </h2>
-                <ul>
-                  <li className="flex justify-center">My own design product</li>
-                  <li className="flex justify-center">
-                    {" "}
-                    3D modeling training / output
-                  </li>
-                  <li className="flex justify-center">
-                    Making drones and robots yorself
-                  </li>
+                <ul className="list-disc flex flex-col items-center text-[#586772]">
+                  <li className="text-center">My own design product</li>
+                  <li className=""> 3D modeling training / output</li>
+                  <li className="">Making drones and robots yorself</li>
                 </ul>
               </div>
               <div>
                 {" "}
-                <h2 className="flex justify-center font-bold">
+                <h2 className="flex justify-center font-bold ">
                   3D Printer 3D Pen
                 </h2>
-                <ul>
-                  <li className="flex justify-center">My own design product</li>
-                  <li className="flex justify-center">
-                    {" "}
-                    3D modeling training / output
-                  </li>
-                  <li className="flex justify-center">
-                    Making drones and robots yorself
-                  </li>
+                <ul className="list-disc flex flex-col items-center text-[#586772]">
+                  <li className="text-center">My own design product</li>
+                  <li className=""> 3D modeling training / output</li>
+                  <li className="">Making drones and robots yorself</li>
                 </ul>
               </div>
               <div>
                 {" "}
-                <h2 className="flex justify-center font-bold pb-4">
+                <h2 className="flex justify-center font-bold ">
                   3D Printer 3D Pen
                 </h2>
-                <ul>
-                  <li className="flex justify-center">My own design product</li>
-                  <li className="flex justify-center">
-                    {" "}
-                    3D modeling training / output
-                  </li>
-                  <li className="flex justify-center">
-                    Making drones and robots yorself
-                  </li>
+                <ul className="list-disc flex flex-col items-center text-[#586772]">
+                  <li className="text-center">My own design product</li>
+                  <li className=""> 3D modeling training / output</li>
+                  <li className="">Making drones and robots yorself</li>
+                </ul>
+              </div>
+              <div>
+                {" "}
+                <h2 className="flex justify-center font-bold ">
+                  3D Printer 3D Pen
+                </h2>
+                <ul className="list-disc flex flex-col items-center text-[#586772]">
+                  <li className="text-center">My own design product</li>
+                  <li className=""> 3D modeling training / output</li>
+                  <li className="">Making drones and robots yorself</li>
                 </ul>
               </div>
             </div>
