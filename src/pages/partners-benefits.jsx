@@ -2,6 +2,7 @@ import React from "react";
 import ImageContainer from "@/components/common/ImageContainer";
 import Image from "next/image";
 import Partner from "@/components/common/partner";
+import Banner from "@/components/common/banner";
 export default function PartnersBenefits() {
   const imageList = [
     {
@@ -56,21 +57,10 @@ export default function PartnersBenefits() {
   return (
     <>
       <div className="relative  lg:justify-center">
-        <div className="relative w-full h-64 ">
-          <ImageContainer src="/background/bg.png" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="container text-center text-white">
-              <h1 className="text-3xl font-semibold uppercase lg:text-5xl">
-                partners & benefits
-              </h1>
-              <br />
-              <p>
-                Is mission has always been to organize the world's information
-                and make it universally accessible and useful.
-              </p>
-            </div>
-          </div>
-        </div>
+        <Banner
+          title="partners & benefits"
+          description="Is mission has always been to organize the world's information and make it universally accessible and useful."
+        />
       </div>
       <div className="container py-10">
         <h4 className="mb-4 text-xl font-medium text-black uppercase lg:text-2xl lg:mb-8">

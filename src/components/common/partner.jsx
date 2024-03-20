@@ -13,8 +13,8 @@ export default function Partner() {
             </h1>
             <br />
             <p>
-              Is mission has always been to organize the world's information and
-              make it universally accessible and useful.
+              Is mission has always been to organize the world&apos;s
+              information and make it universally accessible and useful.
             </p>
           </div>
           <br />

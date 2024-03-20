@@ -1,6 +1,7 @@
 import React from "react";
 import ImageContainer from "@/components/common/ImageContainer";
 import Image from "next/image";
+import Banner from "@/components/common/banner";
 export default function Announcement() {
   const test = [
     {
@@ -27,40 +28,31 @@ export default function Announcement() {
   return (
     <>
       <div className="relative  lg:justify-center">
-        <div className="relative w-full h-64 ">
-          <ImageContainer src="/background/bg.png" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="container text-center text-white">
-              <h1 className="text-3xl uppercase lg:text-5xl">announcement</h1>
-              <br />
-              <p>
-                Is mission has always been to organize the world's information
-                and make it universally accessible and useful.
-              </p>
-            </div>
-          </div>
-        </div>
+        <Banner
+          title="announcement"
+          description="Is mission has always been to organize the world's information and make it universally accessible and useful."
+        />
       </div>
-      <div className="grid grid-cols-3 gap-6 ">
-        <div className="bg-[#EDF3FE] h-screen ">
-          <div className="]">
+      <div className="grid grid-cols-3  ">
+        <div className="bg-[#EDF3FE] h-screen  ">
+          <div className="">
             <h1 className="p-4 text-2xl font-semibold uppercase">
               announcement
             </h1>
             <div className="grid grid-cols-3 gap-2 px-4">
-              <button className="h-8 px-8 text-xs text-black bg-white border rounded hover:bg-blue hover:text-white border-brown ">
+              <button className="h-8 px-8 text text-black bg-white border rounded hover:bg-blue hover:text-white border-brown ">
                 All
               </button>
-              <button className="h-8 px-8 text-xs text-black bg-white border rounded hover:bg-blue hover:text-white border-brown">
+              <button className="h-8 px-8 text text-black bg-white border rounded hover:bg-blue hover:text-white border-brown">
                 Notice
               </button>
-              <button className="h-8 text-xs text-black bg-white border rounded  hover:bg-blue hover:text-white border-brown">
+              <button className="h-8 text text-black bg-white border rounded  hover:bg-blue hover:text-white border-brown">
                 New releases
               </button>
             </div>
           </div>
           <div className="p-4 ">
-            <div className="flex  items-center bg-white w-[332px] h-9 pl-4 overflow-hidden border-2 rounded border-brown hover:border-blue ">
+            <div className="flex  items-center bg-white  h-9 pl-4 overflow-hidden border-2 rounded border-brown hover:border-blue ">
               <i className="flex-shrink-0 ri-search-line text-brown"></i>
               <input
                 type="text"
@@ -73,7 +65,7 @@ export default function Announcement() {
             </div>
           </div>
           {test.map(({ name, subtitle }, index) => (
-            <div className="px-4 py-2">
+            <div className="px-4 py-2" key={index}>
               <div className="h-32 overflow-hidden bg-white border-2 rounded-lg  border-brown hover:border-blue">
                 <div className="p-4">
                   <div className="bg-[#EDF3FE] rounded w-32 h-6 ">

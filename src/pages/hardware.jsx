@@ -1,6 +1,7 @@
 import React from "react";
 import ImageContainer from "@/components/common/ImageContainer";
 import Image from "next/image";
+import Banner from "@/components/common/banner";
 export default function Hardware() {
   const news = [
     {
@@ -25,16 +26,10 @@ export default function Hardware() {
   return (
     <>
       <div className="relative  lg:justify-center">
-        <div className="relative w-full h-64 ">
-          <ImageContainer src="/background/bg.png" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="container text-center text-white">
-              <h1 className="text-3xl font-semibold lg:text-5xl">HARDWARE</h1>
-              <br />
-              <p>Building a better business with superior software</p>
-            </div>
-          </div>
-        </div>
+        <Banner
+          title="hardware"
+          description="Is mission has always been to organize the world's information and make it universally accessible and useful."
+        />
       </div>
       <div className=" lg:py-10 bg-gray">
         <div className="container flex justify-center">

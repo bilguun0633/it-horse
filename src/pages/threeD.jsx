@@ -1,5 +1,6 @@
 import React from "react";
 import ImageContainer from "@/components/common/ImageContainer";
+import Banner from "@/components/common/banner";
 import Image from "next/image";
 export default function ThreeD() {
   const news = [
@@ -28,16 +29,10 @@ export default function ThreeD() {
   return (
     <>
       <div className="relative  lg:justify-center">
-        <div className="relative w-full h-64 ">
-          <ImageContainer src="/background/bg.png" />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="container text-center text-white">
-              <h1 className="text-3xl font-semibold lg:text-5xl">3D</h1>
-              <br />
-              <p>Building a better business with superior software</p>
-            </div>
-          </div>
-        </div>
+        <Banner
+          title="3D"
+          description="Is mission has always been to organize the world's information and make it universally accessible and useful."
+        />
       </div>
       <div className=" lg:py-10 bg-gray">
         <div className="container flex justify-center">

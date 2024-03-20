@@ -1,38 +1,27 @@
 import React from "react";
 import ImageContainer from "@/components/common/ImageContainer";
 import Image from "next/image";
+import Banner from "@/components/common/banner";
 
 export default function ThreeDjine() {
   return (
     <div>
       <div className=" relative lg:justify-center    ">
-        <div className=" h-64 w-full relative ">
-          <ImageContainer src="/background/bg.png" />
-          <div className="absolute inset-0 flex justify-center items-center">
-            <div className="container text-white text-center">
-              <h1 className="text-3xl lg:text-5xl uppercase font-semibold">
-                3d products - jinie
-              </h1>
-              <br />
-              <p>
-                Is mission has always been to organize the world's information
-                and make it universally accessible and useful.
-              </p>
-            </div>
-          </div>
-        </div>
+        <Banner
+          title="3d products - jinie"
+          description="Is mission has always been to organize the world's information and make it universally accessible and useful."
+        />
         <div className="container py-20">
           <div className="grid grid-cols-2 gap-10 lg:grid-cols-2 ">
-            <div className=" flex items-center relative border rounded border-brown overflow-hidden h-[300px]">
-              <ImageContainer src="/background/jine.png" />
-              <div className=" ">
-                <ImageContainer src="/icons/logo.png" with={420} heigth={64} />
-              </div>
+            <div className=" flex items-center justify-center border rounded relative z-0  border-brown overflow-hidden h-[300px]">
+              <ImageContainer src="/background/jine.png" className="-z-10" />
+
+              <Image src="/icons/logo.png" alt="" width={420} height={64} />
             </div>
             <div>
               <p>
                 Jinie Coding Edu started out with information from the Inc. in
-                1998 with unique content and educational know-how. It's an armed
+                1998 with unique content and educational know-how. It&s an armed
                 educational technology company.
               </p>
               <br />
@@ -49,7 +38,7 @@ export default function ThreeDjine() {
               <p>
                 What we need to do now is to be able to move quickly to change.
                 jinie Coding edu, with his unstoppable passion, is a constant
-                effort in your faith and in your support. I'll reciprocate and
+                effort in your faith and in your support. I&ll reciprocate and
                 move on.{" "}
               </p>
               <br />
@@ -69,8 +58,8 @@ export default function ThreeDjine() {
                 </h1>
                 <br />
                 <p>
-                  Is mission has always been to organize the world's information
-                  and make it universally accessible and useful.
+                  Is mission has always been to organize the world&apos;s
+                  information and make it universally accessible and useful.
                 </p>
               </div>
               <div className="py-5 container">
@@ -99,8 +88,8 @@ export default function ThreeDjine() {
                   <div>
                     <p className="text-white">
                       Core 3D Creative Convergence Maker Coding Academy of the
-                      Fourth Industrial Revolution "101 Coding Labs Comic
-                      Academy," focusing on the National Center Diversify
+                      Fourth Industrial Revolution &apos;101 Coding Labs Comic
+                      Academy,&apos; focusing on the National Center Diversify
                       training content delivery and product diversification We
                       are trying to increase our sales.
                     </p>
@@ -133,11 +122,11 @@ export default function ThreeDjine() {
               <h1 className="uppercase text-3xl font-medium">how it work</h1>
             </div>
             <p className="text-[#586772] flex justify-center">
-              Jinie's step-by-step learning and teaching from the basics step by
-              step
+              Jinie&apos;s step-by-step learning and teaching from the basics
+              step by step
             </p>
             <div className="flex justify-center py-8 ">
-              <div className="grid w-full grid-cols-4  lg:grid-cols-4">
+              <div className="grid w-full grid-cols-1  lg:grid-cols-4">
                 <div className="flex justify-center font-medium text-xl uppercase">
                   step1
                 </div>
@@ -153,20 +142,19 @@ export default function ThreeDjine() {
               </div>
             </div>
             <div className="">
-              <div className=" bg-[#D9D9D9]  w-full h-2">
-                <div className="grid  grid-cols-4  lg:grid-cols-4 py-4">
-                  <div className="flex justify-center">
-                    <div className="  aspect-square w-6 border-blue border-8 rounded-full "></div>
-                  </div>
-                  <div className="flex justify-center">
-                    <div className="flex justify-center aspect-square w-6 border-blue border-8 rounded-full"></div>
-                  </div>
-                  <div className=" flex justify-center">
-                    <div className="flex justify-center aspect-square w-6 border-blue border-8 rounded-full"></div>
-                  </div>
-                  <div className="flex justify-center">
-                    <div className="flex justify-center aspect-square w-6 border-blue border-8 rounded-full"></div>
-                  </div>
+              <div className=" bg-[#D9D9D9]  w-full h-2"></div>
+              <div className="-mt-8 grid  grid-cols-1  lg:grid-cols-4 py-4">
+                <div className="flex justify-center">
+                  <div className="  aspect-square w-6 border-blue border-[6px] bg-white rounded-full "></div>
+                </div>
+                <div className="flex justify-center">
+                  <div className="flex justify-center aspect-square w-6 border-blue border-[6px] bg-white rounded-full"></div>
+                </div>
+                <div className=" flex justify-center">
+                  <div className="flex justify-center aspect-square w-6 border-blue border-[6px] bg-white rounded-full"></div>
+                </div>
+                <div className="flex justify-center">
+                  <div className="flex justify-center aspect-square w-6 border-blue border-[6px] bg-white rounded-full"></div>
                 </div>
               </div>
             </div>
