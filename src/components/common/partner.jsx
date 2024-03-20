@@ -21,7 +21,7 @@ export default function Partner() {
           <div className="bg-white rounded-lg ">
             <div className="px-20 py-5">
               <label className="mb-4 text-lg font-semibold  ">First name</label>
-              <div className="flex items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
+              <div className="flex mt-2 items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                 <input
                   type="text"
                   className="flex-1 px-4 outline-none placeholder:text-base-200"
@@ -31,7 +31,7 @@ export default function Partner() {
             </div>
             <div className="px-20 py-5">
               <label className="mb-4 text-lg font-semibold">Last name</label>
-              <div className="flex items-center w-[100%] h-12  overflow-hidden border rounded-lg border-brown">
+              <div className="flex mt-2 items-center w-[100%] h-12  overflow-hidden border rounded-lg border-brown">
                 <input
                   type="text"
                   className="flex-1 px-4 outline-none placeholder:text-base-200"
@@ -41,7 +41,7 @@ export default function Partner() {
             </div>
             <div className="px-20 py-5">
               <label className="mb-4 text-lg font-semibold">Email</label>
-              <div className="flex items-center w-[100%] h-12 overflow-hidden border rounded-lg border-brown">
+              <div className="flex mt-2 items-center w-[100%] h-12 overflow-hidden border rounded-lg border-brown">
                 <input
                   type="text"
                   className="flex-1 px-4 outline-none placeholder:text-base-200"
@@ -52,10 +52,10 @@ export default function Partner() {
             <div className="justify-content-center">
               <div className="px-20 py-5">
                 <label className="mb-4 text-lg font-semibold">Message</label>
-                <div className=" w-[100%]  h-fit  overflow-hidden border rounded-lg border-brown">
+                <div className=" mt-2 w-[100%]  h-fit  overflow-hidden border rounded-lg border-brown">
                   <textarea
                     type="text"
-                    className="flex justify-center w-full min-h-[24px] h-32 px-4 outline-none placeholder:text-base-200"
+                    className="flex p-2 justify-center w-full min-h-[24px] h-32 px-4 outline-none placeholder:text-base-200"
                     placeholder="How can we help you?"
                   />
                 </div>
