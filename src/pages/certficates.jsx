@@ -67,7 +67,7 @@ export default function Certficates() {
             {cert.map(({ image, title, subtitle }, index) => (
               <div
                 key={index}
-                className="w-full overflow-hidden bg-white border-2 rounded-lg  border-brown"
+                className="w-full overflow-hidden bg-white border rounded-lg  border-brown"
               >
                 <div className="relative  aspect-square ">
                   <ImageContainer src={image} />

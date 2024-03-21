@@ -5,6 +5,7 @@ import AboutUsList from "@/components/common/about-us-list";
 import HomeStatistics from "@/components/Home/HomeStatistics";
 import Banner from "@/components/common/banner";
 import Flag from "react-flagkit";
+import HomeAbout from "@/components/Home/HomeAbout";
 
 export default function AboutUs() {
   const internationalList = [
@@ -35,7 +36,6 @@ export default function AboutUs() {
       </div>
       <div className="">
         <AboutUsSection />
-
         <HomeStatistics />
       </div>
       <div className="flex justify-center text-white font-medium bg-[#00000066] ">

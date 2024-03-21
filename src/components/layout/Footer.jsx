@@ -29,7 +29,14 @@ export default function Footer() {
       <div className="top-0   z-50 h-fit   p-6   ">
         <div className="container   lg:flex  items-center justify-between border-b border-brown py-8">
           <div className="flex items-center text-3xl  font-medium">
-            <h2>IT HORSE</h2>
+            <Image
+              src="/icons/it-horse-blue.png"
+              alt="logo"
+              width={40}
+              height={40}
+              // layout="fixed"
+            />
+            <h2 className="px-4">IT HORSE</h2>
           </div>
 
           <div className="flex gap-6 justify-end 2xl:justify-content-end ">

@@ -55,7 +55,7 @@ export default function Announcement() {
             </div>
           </div>
           <div className="p-4 ">
-            <div className="flex items-center pl-4 overflow-hidden bg-white border-2 rounded h-9 border-brown hover:border-blue ">
+            <div className="flex items-center pl-4 overflow-hidden bg-white border rounded h-9 border-brown hover:border-blue ">
               <i className="flex-shrink-0 ri-search-line text-brown"></i>
               <input
                 type="text"
@@ -73,7 +73,7 @@ export default function Announcement() {
               key={index}
               onClick={() => setTabIndex(index)}
             >
-              <div className="h-32 overflow-hidden bg-white border-2 rounded-lg border-brown hover:border-blue">
+              <div className="h-32 overflow-hidden bg-white border rounded-lg border-brown hover:border-blue">
                 <div className="p-4">
                   <div className="bg-[#EDF3FE] rounded w-32 h-6 ">
                     <div

@@ -1,10 +1,9 @@
-import React from "react";
-import ImageContainer from "./ImageContainer";
+import ImageContainer from "../common/ImageContainer";
 
 export default function AboutUsSection() {
   return (
     <div className="container relative z-0 py-4 lg:flex lg:items-center lg:py-24">
-      <ImageContainer src="/background/422251511.png" className="-z-10" />
+      <ImageContainer src="/software/frame1.png" className="-z-10" />
       <div className="lg:w-[50%] lg:pr-8">
         <h2 className="mb-4 text-3xl font-semibold">ABOUT US</h2>
         <p className="mb-4 text-[#586772]">
@@ -25,6 +24,7 @@ export default function AboutUsSection() {
           highly functional digital products to deliver maximum value and ensure
           business sustainability.
         </p>
+
         <br />
         <div className="flex gap-4 ">
           <button className="text-blue border rounded border-blue h-12 px-4 ">
