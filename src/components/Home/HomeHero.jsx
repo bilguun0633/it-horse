@@ -4,6 +4,16 @@ import ImageContainer from "../common/ImageContainer";
 export default function HomeHero() {
   const videoRef = useRef(null);
   const [isMuted, setIsMuted] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(true);
+  function togglePlay() {
+    if (videoRef.current.paused) {
+      setIsPlaying(true);
+      videoRef.current.play();
+    } else {
+      setIsPlaying(false);
+      videoRef.current.pause();
+    }
+  }
   return (
     <div className="relative z-0 w-full h-screen">
       {/* <ImageContainer src="/image/background.png" alt="" className="-z-10" /> */}
@@ -30,6 +40,28 @@ export default function HomeHero() {
             Building a better business with superior software
             <br /> CUSTOM SOFTWARE DEVELOPMENT COMPANY
           </p>
+        </div>
+      </div>
+      <div className="absolute flex gap-3 right-8 bottom-8">
+        <div
+          className="flex items-center justify-center w-12 h-12 border border-white rounded-full cursor-pointer transitioned hover:bg-white/20 hover:scale-105 active:scale-100"
+          onClick={() => setIsMuted((prev) => !prev)}
+        >
+          <i
+            className={`ri-${
+              isMuted ? "volume-mute" : "volume-up"
+            }-line text-white text-xl`}
+          ></i>
+        </div>
+        <div
+          className="flex items-center justify-center w-12 h-12 border border-white rounded-full cursor-pointer transitioned hover:bg-white/20 hover:scale-105 active:scale-100"
+          onClick={() => togglePlay()}
+        >
+          <i
+            className={`ri-${
+              isPlaying ? "pause" : "play"
+            }-line text-white text-xl`}
+          ></i>
         </div>
       </div>
     </div>
