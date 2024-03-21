@@ -12,7 +12,7 @@ export default function ThreeDjine() {
           description="Is mission has always been to organize the world's information and make it universally accessible and useful."
         />
         <div className="container py-20">
-          <div className="grid grid-cols-2 gap-10 lg:grid-cols-2 ">
+          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 ">
             <div className=" flex items-center justify-center border rounded relative z-0  border-brown overflow-hidden h-[300px]">
               <ImageContainer src="/background/jine.png" className="-z-10" />
 
@@ -63,7 +63,7 @@ export default function ThreeDjine() {
                 </p>
               </div>
               <div className="py-5 container">
-                <div className="grid w-full grid-cols-2  lg:grid-cols-2 border-b-2 border-[#5FECFF] py-5  ">
+                <div className="grid w-full grid-cols-1  lg:grid-cols-2 border-b-2 border-[#5FECFF] py-5  ">
                   <div className="flex items-center">
                     <h1 className="uppercase text-white font-bold text-3xl ">
                       training content development
@@ -79,7 +79,7 @@ export default function ThreeDjine() {
                   </div>
                 </div>
                 <br />
-                <div className="grid w-full grid-cols-2 border-b-2 border-[#5FECFF] py-5 ">
+                <div className="grid w-full grid-cols-1 border-b-2 border-[#5FECFF] py-5 ">
                   <div className="flex items-center">
                     <h1 className="text-white font-bold text-3xl uppercase">
                       101 coding lab instituti
@@ -96,7 +96,7 @@ export default function ThreeDjine() {
                   </div>
                 </div>
                 <br />
-                <div className="grid w-full grid-cols-2  border-b-2 border-[#5FECFF] py-10">
+                <div className="grid w-full grid-cols-1 border-b-2 border-[#5FECFF] py-10">
                   <div className="flex items-center">
                     <h1 className="text-white font-bold text-3xl uppercase">
                       educational service business

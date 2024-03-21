@@ -6,9 +6,11 @@ import Hamburger from "hamburger-react";
 import { useRouter } from "next/router";
 import Flag from "react-flagkit";
 import useTranslation from "next-translate/useTranslation";
+import { AnimatePresence } from "framer-motion";
 
 export default function Header() {
   // const { t } = useTranslation("main");
+  const [show, setShow] = useState(false);
 
   const router = useRouter();
 
@@ -177,9 +179,111 @@ export default function Header() {
                 </motion.div>
               </div>
             ))}
+            <div className=" flex items-center h-full pt-8 lg:hidden">
+              <Hamburger
+                toggled={show}
+                toggle={setShow}
+                size={24}
+                color="#04141F"
+              />
+            </div>
           </motion.div>
+          <div className="absolute flex items-center h-full right-4 pt-8  lg:hidden">
+            <Hamburger
+              toggled={show}
+              toggle={setShow}
+              size={24}
+              color="#04141F"
+            />
+          </div>
         </div>
       </div>
+      <MobileDropdown
+        handleLocale={handleLocale}
+        show={show}
+        list={list}
+        onClose={() => setShow(false)}
+        router={router}
+      />
     </div>
+  );
+}
+function MobileDropdown({ show, list, onClose, handleLocale, router }) {
+  const [dropdownIndex, setDropdownIndex] = useState(null);
+
+  function handleClick(index) {
+    if (dropdownIndex === index) {
+      setDropdownIndex(null);
+    } else {
+      setDropdownIndex(index);
+    }
+  }
+
+  return (
+    <AnimatePresence>
+      {show && (
+        <motion.div
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ opacity: 1, height: "auto" }}
+          exit={{ opacity: 0, height: 0 }}
+          transition={{ duration: 0.3 }}
+          className="absolute w-full overflow-hidden bg-white border-b top-16 border-base-50"
+        >
+          <div className="flex flex-col items-center gap-4 p-4">
+            {list.map(({ dropdown, name, url }, index) => {
+              if (dropdown) {
+                return (
+                  <div key={index}>
+                    <h4
+                      className="flex items-center h-full gap-2 text-lg cursor-pointer lg:text-xl text-base-600 active:scale-75 transitioned"
+                      onClick={() => handleClick(index)}
+                    >
+                      {name}
+                      <i
+                        className={`mt-0.5 text-2xl ri-arrow-down-s-line transitioned ${
+                          dropdownIndex === index ? "rotate-180" : ""
+                        }`}
+                      ></i>
+                    </h4>
+                    <AnimatePresence>
+                      {dropdownIndex === index && (
+                        <motion.div
+                          initial={{ opacity: 0, height: 0 }}
+                          animate={{ opacity: 1, height: "auto" }}
+                          exit={{ opacity: 0, height: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="overflow-hidden"
+                        >
+                          <div className="flex flex-col items-center gap-4 pt-4">
+                            {dropdown.map(({ name, url }, index) => (
+                              <Link href={url} key={index} onClick={onClose}>
+                                <div className="flex items-center h-full cursor-pointer text-base-400 active:text-primary transitioned">
+                                  {name}
+                                </div>
+                              </Link>
+                            ))}
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                );
+              } else {
+                return (
+                  <Link href={url} key={index} onClick={onClose}>
+                    <div className="flex items-center h-full text-lg cursor-pointer lg:text-xl text-base-600 active:scale-75 transitioned">
+                      {name}
+                    </div>
+                  </Link>
+                );
+              }
+            })}
+            {/* <button onClick={handleLocale}>
+              <Flag country={router.locale === "en" ? "MN" : "US"} />
+            </button> */}
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }

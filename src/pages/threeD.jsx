@@ -43,7 +43,7 @@ export default function ThreeD() {
       </div>
       <div className=" lg:py-10 bg-gray">
         <div className="container flex justify-center">
-          <div className="grid grid-cols-2 gap-2 lg:grid-cols-2 lg:gap-4 ">
+          <div className="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4 ">
             {news.map(({ image, title, description }, index) => (
               <div
                 key={index}
