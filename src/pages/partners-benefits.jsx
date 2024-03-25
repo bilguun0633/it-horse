@@ -83,7 +83,7 @@ export default function PartnersBenefits() {
           BENEFITS
         </h4>
 
-        <div className="grid grid-cols-2 gap-2 lg:grid-cols-2 ">
+        <div className="grid xl:grid-cols-2 gap-2 lg:grid-cols-2 ">
           <div className="overflow-hidden border rounded-lg border-brown">
             <div className="grid w-full grid-cols-2 lg:grid-cols-2">
               <div className="p-10 ">
@@ -142,7 +142,7 @@ export default function PartnersBenefits() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-2 py-2 lg:grid-cols-2 ">
+        <div className="grid xl:grid-cols-2 gap-2 py-2 lg:grid-cols-2 ">
           <div className="grid grid-cols-2 gap-2 lg:grid-cols-2">
             <div className="border rounded-lg border-brown ">
               <div className="p-10">

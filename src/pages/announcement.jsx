@@ -40,8 +40,8 @@ export default function Announcement() {
           description="Is mission has always been to organize the world's information and make it universally accessible and useful."
         />
       </div>
-      <div className="grid grid-cols-3 ">
-        <div className="bg-[#EDF3FE] lg:px-12 py-20 ">
+      <div className="grid xl:grid-cols-3 ">
+        <div className="bg-[#EDF3FE] lg:px-12 py-20 w-full ">
           <div className="">
             <h1 className="px-4  text-2xl font-semibold uppercase">
               announcement

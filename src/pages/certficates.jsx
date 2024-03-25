@@ -96,7 +96,7 @@ export default function Certficates() {
       />
       <div className="bg-[#F8F8F8] py-20">
         <div className="container relative">
-          <div className="grid grid-cols-4  gap-4">
+          <div className="grid xl:grid-cols-4 md:grid-cols-2  gap-4">
             {cert.map(({ image, title, subtitle }, index) => (
               <div
                 key={index}

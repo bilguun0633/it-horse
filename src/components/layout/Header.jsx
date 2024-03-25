@@ -130,18 +130,18 @@ export default function Header() {
   return (
     <div
       className={`fixed inset-x-0 top-0 z-50 h-fit transition ${
-        !isHome || isHover || isScrolled
+        !isHome || isHover || isScrolled || show
           ? "bg-white "
           : "text-white bg-transparent"
       }`}
     >
-      <div className="container">
+      <div className="container z-0">
         <div className="relative flex items-center xl:justify-center lg:justify-center md:justify-end sm:justify-end  w-full">
-          <div className="absolute top-0 left-0 flex items-center justify-center   h-16 lg:h-24">
+          <div className="absolute z-10 top-0 left-0 flex items-center justify-center   h-16 lg:h-24">
             <Link href="/">
               <Image
                 src={`/icons/it-horse-${
-                  !isHome || isHover || isScrolled ? "blue" : "white"
+                  !isHome || isHover || isScrolled || show ? "blue" : "white"
                 }.png`}
                 alt="logo"
                 width={50}
@@ -155,11 +155,11 @@ export default function Header() {
             onMouseLeave={() => setIsHover(false)}
             transition={{ duration: 0.3 }}
             animate={{ height: isHover ? "auto" : "96px" }}
-            className="hidden gap-12  overflow-hidden lg:flex"
+            className="hidden gap-12 overflow-hidden lg:flex"
           >
             {list.map(({ name, dropdown }, index) => (
               <div key={index}>
-                <p className="flex items-center justify-center h-24 font-bold transition cursor-default">
+                <p className="hidden lg:flex items-center justify-center h-24 font-bold transition  ">
                   {name}
                 </p>
                 <motion.div
@@ -179,7 +179,7 @@ export default function Header() {
                 </motion.div>
               </div>
             ))}
-            <div className="flex gap-3 ">
+            <div className="lg:flex lg:gap-3 ">
               <button
                 onClick={() => handleLocale("mn")}
                 className="flex items-center justify-center h-24 font-bold transition cursor-default  "
@@ -200,8 +200,8 @@ export default function Header() {
               </button>
             </div>
           </motion.div>
-          <div className=" h-16 ">
-            <div className=" flex items-center justify-end  lg:hidden">
+          <div className=" flex items-center h-16 ">
+            <div className=" absolute  h-full right-4 lg:hidden">
               <Hamburger
                 toggled={show}
                 toggle={setShow}
@@ -292,9 +292,26 @@ function MobileDropdown({ show, list, onClose, handleLocale, router }) {
                 );
               }
             })}
-            {/* <button onClick={handleLocale}>
-              <Flag country={router.locale === "en" ? "MN" : "US"} />
-            </button> */}
+            <div className="flex gap-3">
+              <button
+                onClick={() => handleLocale("mn")}
+                className="flex items-center justify-center h-24 font-bold transition cursor-default  "
+              >
+                MN
+              </button>
+              <button
+                onClick={() => handleLocale("en")}
+                className="flex items-center justify-center h-24 font-bold transition cursor-default"
+              >
+                EN
+              </button>
+              <button
+                onClick={() => handleLocale("kr")}
+                className="flex items-center justify-center h-24 font-bold transition cursor-default"
+              >
+                KR
+              </button>
+            </div>
           </div>
         </motion.div>
       )}
