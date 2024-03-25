@@ -7,7 +7,11 @@ import parse from "html-react-parser";
 
 export default function Announcement() {
   const [tabIndex, setTabIndex] = useState(0);
+  const currentDate = new Date();
+  const fullYear = currentDate.getFullYear();
 
+  const fullMonth = currentDate.getMonth() + 1;
+  const fullDay = currentDate.getDate();
   const test = [
     {
       name: "New Releases",
@@ -37,19 +41,19 @@ export default function Announcement() {
         />
       </div>
       <div className="grid grid-cols-3 ">
-        <div className="bg-[#EDF3FE] h-screen lg:px-12 py-20 ">
+        <div className="bg-[#EDF3FE] lg:px-12 py-20 ">
           <div className="">
             <h1 className="px-4  text-2xl font-semibold uppercase">
               announcement
             </h1>
-            <div className="grid grid-cols-3 py-4 gap-2 px-4">
-              <button className="h-8 px-8  text-black bg-white border rounded text-lg hover:bg-blue hover:text-white border-brown ">
+            <div className="grid lg:grid-cols-3 py-4 gap-2 px-4  md:grid-cols-1">
+              <button className="h-8 px-8  text-black bg-white border rounded text hover:bg-blue hover:text-white border-brown ">
                 All
               </button>
-              <button className="h-8 px-8 text-black bg-white border rounded text-lg hover:bg-blue hover:text-white border-brown">
+              <button className="h-8 px-8 text-black bg-white border rounded text hover:bg-blue hover:text-white border-brown">
                 Notice
               </button>
-              <button className="h-8 text-black bg-white border rounded text--lg hover:bg-blue hover:text-white border-brown">
+              <button className="h-8 text-black bg-white border rounded text hover:bg-blue hover:text-white border-brown">
                 New releases
               </button>
             </div>
@@ -62,7 +66,7 @@ export default function Announcement() {
                 placeholder="Search"
                 className="flex-1 px-4 outline-none placeholder:text-base-200"
               />
-              <button className="h-full rounded w-20 text-white bg-blue ">
+              <button className=" h-full w-full rounded  text-white bg-blue ">
                 Search
               </button>
             </div>
@@ -85,6 +89,12 @@ export default function Announcement() {
                   </div>
                   <br />
                   <h1 className="text-sm font-semibold">{subtitle}</h1>
+
+                  <div className="flex gap-3 pt-2 text-sm text-[#586772] ">
+                    <p className=""> Mar</p>
+                    <p> {fullDay}</p>
+                    <p> {fullYear}</p>
+                  </div>
                 </div>
               </div>
             </div>

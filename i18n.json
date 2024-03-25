@@ -1,0 +1,7 @@
+{
+    "defaultLocale": "en",
+    "locales": ["mn", "en", "kr"],
+    "localeDetection": false,
+    "pages": { "*": ["main"] }
+  }
+  

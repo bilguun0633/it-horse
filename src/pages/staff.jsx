@@ -11,7 +11,7 @@ export default function StaffPage() {
   const roleList = [
     {
       image: "/image/staff-profile.png",
-      name: "lee song woong 1",
+      name: "Seongwoong Lee",
       role: "CEO",
       position: "Head of corporate research institute",
       proffesion: "Industrial engineer",
@@ -21,33 +21,54 @@ export default function StaffPage() {
     },
     {
       image: "/image/staff-profile.png",
-      name: "lee song woong 2",
-      role: "CEO",
-      position: "Head of corporate research institute",
-      proffesion: "Industrial engineer",
-      education: "Office Information Equipment Application Technician Level 2",
-      phone: "010-4588-2794 ",
+      name: "Jinmoon Lee",
+      role: "Director",
+      position: "Dedicated agent",
+      proffesion: " Department of information and Communication Engineering",
+      education: "Widuk University",
+      phone: "051-331-0110 ",
+      email: "incom8280@naver.com",
+    },
+    {
+      image: "/image/staff-profile.png",
+      name: "Da-ye Kang",
+      role: "Design Department head",
+      position: "Dedicated agent",
+      proffesion: "Clothing (Ph.D.)",
+      education: "Silla Graduate School",
+
+      phone: "051-331-0110 ",
       email: "incom2794@naver.com",
     },
     {
       image: "/image/staff-profile.png",
-      name: "lee song woong 3",
-      role: "CEO",
-      position: "Head of corporate research institute",
-      proffesion: "Industrial engineer",
-      education: "Office Information Equipment Application Technician Level 2",
-      phone: "010-4588-2794 ",
-      email: "incom2794@naver.com",
+      name: "San-gnam Lim ",
+      role: "Director",
+      position: "Research assistant",
+      proffesion: "Department of Chemical Engineering",
+      education: "Dongeui Technical University",
+      phone: "010-3054-1144",
+      email: "incom1144@naver.com",
     },
     {
-      image: "/image/staff-profile.png",
-      name: "lee song woong 4",
-      role: "CEO",
-      position: "Head of corporate research institute",
-      proffesion: "Industrial engineer",
-      education: "Office Information Equipment Application Technician Level 2",
-      phone: "010-4588-2794 ",
-      email: "incom2794@naver.com",
+      image: "/image/koo-beom.png",
+      name: " Koo Beom-geun",
+      role: "Deputy",
+      position: "Dedicted agent",
+      proffesion: "Department of Genetic Engineering",
+      education: "Dong-A University",
+      phone: "010-3524-4281",
+      email: "incom4281@naver.com",
+    },
+    {
+      image: "/image/noh-joo-won.png",
+      name: " Noh Joo-won",
+      role: "Researcher",
+      position: "Research assistant",
+      proffesion: "Department of Visual design",
+      education: "Busan Gyeongsang National University",
+      phone: "010-9689-9395",
+      email: "incom9395@naver.com",
     },
   ];
 
@@ -61,7 +82,7 @@ export default function StaffPage() {
           title="Staff"
           description="Is mission has always been to organize the world's information and make it universally accessible and useful."
         />
-        <div className="h-screen py-10">
+        <div className=" py-10">
           <div className="container flex justify-center">
             <div className="grid w-full grid-cols-2 gap-12 lg:grid-cols-4 ">
               {roleList.map(({ image, name, role }, index) => (

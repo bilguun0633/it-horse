@@ -48,10 +48,10 @@ export default function ThreeDjine() {
             </div>
           </div>
         </div>
-        <div className="relative aspect-video">
-          <ImageContainer src="/background/jenibg.png" />
-          <div className="absolute flex justify-center items-center inset-0  ">
-            <div className=" ">
+        <div className="relative z-0">
+          <ImageContainer src="/background/jenibg.png" className="-z-10" />
+          <div className=" flex justify-center items-center inset-0  ">
+            <div className="py-20 ">
               <div className=" text-white text-center">
                 <h1 className="text-3xl lg:text-5xl uppercase font-medium">
                   business domain
@@ -79,7 +79,7 @@ export default function ThreeDjine() {
                   </div>
                 </div>
                 <br />
-                <div className="grid w-full grid-cols-1 border-b-2 border-[#5FECFF] py-5 ">
+                <div className="grid w-full grid-cols-1 lg:grid-cols-2 border-b-2 border-[#5FECFF] py-5 ">
                   <div className="flex items-center">
                     <h1 className="text-white font-bold text-3xl uppercase">
                       101 coding lab instituti
@@ -96,7 +96,7 @@ export default function ThreeDjine() {
                   </div>
                 </div>
                 <br />
-                <div className="grid w-full grid-cols-1 border-b-2 border-[#5FECFF] py-10">
+                <div className="grid w-full grid-cols-1 lg:grid-cols-2 border-b-2 border-[#5FECFF] py-10">
                   <div className="flex items-center">
                     <h1 className="text-white font-bold text-3xl uppercase">
                       educational service business
@@ -130,86 +130,115 @@ export default function ThreeDjine() {
 
             <br />
             <div className="flex justify-center py-8 ">
-              <div className="grid w-full grid-cols-1  lg:grid-cols-4">
-                <div className="flex justify-center font-medium text-xl uppercase">
-                  step1
+              <div className="grid w-full grid-cols-1   lg:grid-cols-4 md:grid-cols-2">
+                <div className="  ">
+                  <h1 className="flex justify-center font-medium text-xl uppercase md:pt-2 sm:pt-2">
+                    step01
+                  </h1>
+                  <div className="py-4">
+                    <div className=" bg-[#D9D9D9]  w-full h-2"></div>
+
+                    <div className="flex justify-center -mt-4 ">
+                      <div className="  aspect-square w-6  border-blue border-[6px] bg-white rounded-full "></div>
+                    </div>
+                  </div>
+                  <div>
+                    {" "}
+                    <h2 className=" font-bold  flex justify-center md:pt-2 sm:pt-2">
+                      3D Printer 3D Pen
+                    </h2>
+                    <br />
+                    <ul className="list-disc flex flex-col items-center text-[#586772]">
+                      <li className="text-center">My own design product</li>
+                      <li className=""> 3D modeling training / output</li>
+                      <li className="">Making drones and robots yorself</li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="flex justify-center font-medium text-xl uppercase">
-                  step2
+                <div className="  ">
+                  <h1 className="flex justify-center font-medium text-xl uppercase md:pt-2 sm:pt-2">
+                    step02
+                  </h1>
+                  <div className="py-4">
+                    <div className=" bg-[#D9D9D9]  w-full h-2"></div>
+
+                    <div className="flex justify-center -mt-4 ">
+                      <div className="  aspect-square w-6  border-blue border-[6px] bg-white rounded-full "></div>
+                    </div>
+                  </div>
+                  <div>
+                    {" "}
+                    <h2 className=" font-bold  flex justify-center md:pt-2 sm:pt-2">
+                      Scratch Found
+                    </h2>
+                    <br />
+                    <ul className="list-disc flex flex-col justify-center items-center text-[#586772]">
+                      <li className="text-center">
+                        Education in a software-driven society
+                      </li>
+                      <li className=" text-center">
+                        {" "}
+                        Various customized education for elemantary /middle/high
+                        schools
+                      </li>
+                      <li className="">Advanced use Aduino and C</li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="flex justify-center font-medium text-xl uppercase">
-                  step3
+                <div className="  ">
+                  <h1 className="flex justify-center font-medium text-xl uppercase md:pt-2 sm:pt-2">
+                    step03
+                  </h1>
+                  <div className="py-4">
+                    <div className=" bg-[#D9D9D9]  w-full h-2"></div>
+
+                    <div className="flex justify-center -mt-4 ">
+                      <div className="  aspect-square w-6  border-blue border-[6px] bg-white rounded-full "></div>
+                    </div>
+                  </div>
+                  <div>
+                    {" "}
+                    <h2 className=" font-bold  flex justify-center md:pt-2 sm:pt-2">
+                      Coding
+                    </h2>
+                    <br />
+                    <ul className="list-disc flex flex-col items-center text-[#586772]">
+                      <li className="text-center">
+                        Software - ioT production{" "}
+                      </li>
+                      <li className=""> Various contents training curricula</li>
+                      <li className="">Capstore Project</li>
+                    </ul>
+                  </div>
                 </div>
-                <div className="flex justify-center font-medium text-xl uppercase">
-                  step4
+                <div className="  ">
+                  <h1 className="flex justify-center font-medium text-xl uppercase md:pt-2 sm:pt-2">
+                    step04
+                  </h1>
+                  <div className="py-4">
+                    <div className=" bg-[#D9D9D9]  w-full h-2"></div>
+
+                    <div className="flex justify-center -mt-4 ">
+                      <div className="  aspect-square w-6  border-blue border-[6px] bg-white rounded-full "></div>
+                    </div>
+                  </div>
+                  <div>
+                    {" "}
+                    <h2 className=" font-bold  flex justify-center md:pt-2 sm:pt-2">
+                      Coding Drones
+                    </h2>
+                    <br />
+                    <ul className="list-disc flex flex-col items-center text-[#586772]">
+                      <li className="text-center">
+                        Two-dimensional coding rabot
+                      </li>
+                      <li className=""> 3D coding theory </li>
+                      <li className="">
+                        Development of flight control software
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div className="">
-              <div className=" bg-[#D9D9D9]  w-full h-2"></div>
-              <div className="-mt-8 grid  grid-cols-1  lg:grid-cols-4 py-4">
-                <div className="flex justify-center">
-                  <div className="  aspect-square w-6 border-blue border-[6px] bg-white rounded-full "></div>
-                </div>
-                <div className="flex justify-center">
-                  <div className="flex justify-center aspect-square w-6 border-blue border-[6px] bg-white rounded-full"></div>
-                </div>
-                <div className=" flex justify-center">
-                  <div className="flex justify-center aspect-square w-6 border-blue border-[6px] bg-white rounded-full"></div>
-                </div>
-                <div className="flex justify-center">
-                  <div className="flex justify-center aspect-square w-6 border-blue border-[6px] bg-white rounded-full"></div>
-                </div>
-              </div>
-            </div>
-            <div className="grid w-full grid-cols-4  lg:grid-cols-4 py-12">
-              <div>
-                {" "}
-                <h2 className="flex justify-center font-bold ">
-                  3D Printer 3D Pen
-                </h2>
-                <br />
-                <ul className="list-disc flex flex-col items-center text-[#586772]">
-                  <li className="text-center">My own design product</li>
-                  <li className=""> 3D modeling training / output</li>
-                  <li className="">Making drones and robots yorself</li>
-                </ul>
-              </div>
-              <div>
-                {" "}
-                <h2 className="flex justify-center  font-bold ">
-                  Scratch Found
-                </h2>
-                <br />
-                <ul className="list-disc flex flex-col items-center text-[#586772]">
-                  <li className="text-center">
-                    Education in a software-driven society
-                  </li>
-                  <li className=" ">Advanced use of Aduino and C</li>
-                  <li className="">Advanced use of Aduino and C</li>
-                </ul>
-              </div>
-              <div>
-                {" "}
-                <h2 className="flex justify-center font-bold ">Coding</h2>
-                <br />
-                <ul className="list-disc flex flex-col items-center text-[#586772]">
-                  <li className="text-center">Software - IoT production</li>
-                  <li className=""> Various contents training curricula</li>
-                  <li className="">Capstone Project</li>
-                </ul>
-              </div>
-              <div>
-                {" "}
-                <h2 className="flex justify-center font-bold ">
-                  Coding Drones
-                </h2>
-                <br />
-                <ul className="list-disc flex flex-col items-center text-[#586772]">
-                  <li className="text-center">Two-dimensional coding robot</li>
-                  <li className=""> 3D coding theory</li>
-                  <li className="">Development of flight control software</li>
-                </ul>
               </div>
             </div>
           </div>

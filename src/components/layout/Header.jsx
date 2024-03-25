@@ -9,14 +9,14 @@ import useTranslation from "next-translate/useTranslation";
 import { AnimatePresence } from "framer-motion";
 
 export default function Header() {
-  // const { t } = useTranslation("main");
+  const { t } = useTranslation("main");
   const [show, setShow] = useState(false);
 
   const router = useRouter();
 
-  function handleLocale() {
+  function handleLocale(lang) {
     router.push(router.asPath, undefined, {
-      locale: router?.locales?.find((item) => item !== router.locale),
+      locale: lang,
     });
   }
 
@@ -131,13 +131,13 @@ export default function Header() {
     <div
       className={`fixed inset-x-0 top-0 z-50 h-fit transition ${
         !isHome || isHover || isScrolled
-          ? "bg-white"
+          ? "bg-white "
           : "text-white bg-transparent"
       }`}
     >
       <div className="container">
-        <div className="relative flex items-center justify-center w-full">
-          <div className="absolute top-0 left-0 flex items-center justify-center h-16 lg:h-24">
+        <div className="relative flex items-center xl:justify-center lg:justify-center md:justify-end sm:justify-end  w-full">
+          <div className="absolute top-0 left-0 flex items-center justify-center   h-16 lg:h-24">
             <Link href="/">
               <Image
                 src={`/icons/it-horse-${
@@ -155,7 +155,7 @@ export default function Header() {
             onMouseLeave={() => setIsHover(false)}
             transition={{ duration: 0.3 }}
             animate={{ height: isHover ? "auto" : "96px" }}
-            className="hidden gap-12 overflow-hidden lg:flex"
+            className="hidden gap-12  overflow-hidden lg:flex"
           >
             {list.map(({ name, dropdown }, index) => (
               <div key={index}>
@@ -179,7 +179,29 @@ export default function Header() {
                 </motion.div>
               </div>
             ))}
-            <div className=" flex items-center h-full pt-8 lg:hidden">
+            <div className="flex gap-3 ">
+              <button
+                onClick={() => handleLocale("mn")}
+                className="flex items-center justify-center h-24 font-bold transition cursor-default  "
+              >
+                MN
+              </button>
+              <button
+                onClick={() => handleLocale("en")}
+                className="flex items-center justify-center h-24 font-bold transition cursor-default"
+              >
+                EN
+              </button>
+              <button
+                onClick={() => handleLocale("kr")}
+                className="flex items-center justify-center h-24 font-bold transition cursor-default"
+              >
+                KR
+              </button>
+            </div>
+          </motion.div>
+          <div className=" h-16 ">
+            <div className=" flex items-center justify-end  lg:hidden">
               <Hamburger
                 toggled={show}
                 toggle={setShow}
@@ -187,14 +209,6 @@ export default function Header() {
                 color="#04141F"
               />
             </div>
-          </motion.div>
-          <div className="absolute flex items-center h-full right-4 pt-8  lg:hidden">
-            <Hamburger
-              toggled={show}
-              toggle={setShow}
-              size={24}
-              color="#04141F"
-            />
           </div>
         </div>
       </div>

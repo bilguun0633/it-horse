@@ -46,8 +46,8 @@ export default function AboutUsList() {
     },
   ];
   return (
-    <div className="container bg-warming rounded w-full h-[26rem] ">
-      <div className="grid w-full grid-cols-1 gap-12 lg:grid-cols-3 p-5">
+    <div className="container bg-warming rounded  ">
+      <div className="grid w-full grid-cols-1 gap-12 lg:grid-cols-3 px-5 py-10">
         <div className=" ">
           {list.map(({ name, description }, index) => (
             <div className="" key={index}>

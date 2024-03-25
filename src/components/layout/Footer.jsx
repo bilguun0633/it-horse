@@ -26,9 +26,9 @@ export default function Footer() {
   ];
   return (
     <div className="bg-gray  ">
-      <div className="top-0   z-50 h-fit   p-6   ">
-        <div className="container   lg:flex  items-center justify-between border-b border-brown py-8">
-          <div className="flex items-center text-3xl  font-medium">
+      <div className="top-0   z-50 h-fit   p-6  md:p-4 ">
+        <div className="container   lg:flex  items-center justify-between border-b border-brown md:p-2 py-8">
+          <div className="flex items-center text-3xl md:justify-center sm:justify-center font-medium sm:py-2 md:py-2">
             <Image
               src="/icons/it-horse-blue.png"
               alt="logo"
@@ -39,7 +39,7 @@ export default function Footer() {
             <h2 className="px-4">IT HORSE</h2>
           </div>
 
-          <div className="flex gap-6 justify-end 2xl:justify-content-end ">
+          <div className="flex items-center gap-6 justify-end 2xl:justify-content-end md:justify-center sm:justify-center ">
             <Image alt="" src="/image/hover_btn.png" width={48} height={48} />
             <Image alt="" src="/icons/hover_btn.png" width={50} height={50} />
             <Image alt="" src="/icons/ig.png" width={48} height={48} />
@@ -47,19 +47,19 @@ export default function Footer() {
         </div>
         <br />
 
-        <div className="container lg:flex justify-between">
-          <div className=" lg:flex items-center   2xl:gap-4">
+        <div className="container xl:flex lg:flex justify-between  ">
+          <div className=" flex items-center md:justify-center sm:justify-center gap-4">
             {list.map(({ name }, index) => (
               <div
                 key={index}
-                className="flex items-center h-24 text-sm xl:text-base  text-base-600  "
+                className="flex items-center h-24 text  text-[#586772]  "
               >
                 {name}
               </div>
             ))}
           </div>
-          <div className="flex 2xl:justify-content-end items-center">
-            <p> Copyright © IT Horse | Design by IO | Powered by JINE </p>
+          <div className="flex 2xl:justify-content-end text-[#586772] lg:justify-content-end items-center md:justify-center sm:justify-center">
+            <p> Copyright © IT Horse | Design by IO  | Powered by JINE </p>
           </div>
         </div>
       </div>
