@@ -49,7 +49,7 @@ export default function ThreeD() {
                 key={index}
                 className="w-full overflow-hidden bg-white border rounded-lg border-brown "
               >
-                <div className="relative flex aspect-video ">
+                <div className="relative flex aspect-[3/2] ">
                   <ImageContainer src={image} />
                 </div>
                 <br />

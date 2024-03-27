@@ -42,7 +42,7 @@ export default function HomeHero() {
             Building a better business with superior software
             <br /> CUSTOM SOFTWARE DEVELOPMENT COMPANY
           </p>
-          <div className="absolute flex gap-3 right-20  bottom-10">
+          <div className="absolute flex gap-3 right-32  bottom-10">
             <div
               className="flex items-center justify-center w-12 h-12 border border-white rounded-full cursor-pointer transitioned hover:bg-white/20 hover:scale-105 active:scale-100"
               onClick={() => setIsMuted((prev) => !prev)}

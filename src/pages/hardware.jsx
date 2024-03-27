@@ -6,25 +6,43 @@ export default function Hardware() {
   const news = [
     {
       image: "/software/hardware.png",
-      title: "nft marketplace",
+      title: "3d printinter",
       description:
         "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
     },
     {
-      image: "/software/hardware.png",
-      title: "nft marketplace",
+      image: "/portfolio/image20.png",
+      title: "jinie drone",
       description:
         "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
     },
     {
-      image: "/software/hardware.png",
-      title: "nft marketplace",
+      image: "/portfolio/image21.png",
+      title: "jinie 3d pen",
       description:
         "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
     },
     {
-      image: "/software/hardware.png",
-      title: "nft marketplace",
+      image: "/portfolio/image22.png",
+      title: "jinie color pen",
+      description:
+        "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
+    },
+    {
+      image: "/portfolio/image23.png",
+      title: "jinie coding board",
+      description:
+        "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
+    },
+    {
+      image: "/portfolio/image24.png",
+      title: "3d printinter",
+      description:
+        "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
+    },
+    {
+      image: "/portfolio/image25.png",
+      title: "smart farm",
       description:
         "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
     },
@@ -45,7 +63,7 @@ export default function Hardware() {
                 key={index}
                 className="w-full overflow-hidden bg-white border rounded-lg border-brown "
               >
-                <div className="relative flex aspect-video ">
+                <div className="relative flex aspect-[3/2] ">
                   <ImageContainer src={image} />
                 </div>
                 <br />
