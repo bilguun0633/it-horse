@@ -1,9 +1,6 @@
 {
-    "homeHero":{
-    "lead_your":"ирээдүйгээ ",
-    "future":"удирдна"
-   }
-   
-   
-   
-   }
+  "homeHero": {
+    "lead_your": "ирээдүйгээ ",
+    "future": "удирдна"
+  }
+}

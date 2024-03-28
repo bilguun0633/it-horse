@@ -1,7 +1,6 @@
 {
-    "defaultLocale": "en",
-    "locales": ["mn", "en", "kr"],
-    "localeDetection": false,
-    "pages": { "*": ["main"] }
-  }
-  
+  "defaultLocale": "en",
+  "locales": ["mn", "en", "kr"],
+  "localeDetection": false,
+  "pages": { "*": ["main"] }
+}

@@ -88,7 +88,7 @@ export default function HomeSolutions() {
                   </p>
                 </div>
               </div>
-            )
+            ),
           )}
         </div>
       </div>
