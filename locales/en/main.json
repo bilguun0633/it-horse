@@ -101,10 +101,44 @@
     "time_reduction_bullet3": "Easy to extend"
 
   },
-  "software": {
-    "software_title": "SOFTWARE",
-    "software_mission": "Is mission has always been to organize the world's information and make it universally accessible and useful."
-  },
+  "software_io": {
+    "software_title": "SOFTWARE - IO TECHNOLOGY",
+    "software_mission": "Is mission has always been to organize the world's information and make it universally accessible and useful.",
+    "about": "IOTECH is an software development company. We provide comprehensive services including development of mobile applications, web-oriented applications, business software solutions, as well as software integration and updating, support, and maintenance of software applications.",
+    "mission": "Our mission is to enhancing the business growth of our customers with creative Design and Development to deliver market-defining high-quality solutions that create value and reliable competitive advantage for our clients around the world. Our mission is to deliver optimal solutions with quality and services at reasonable prices. For us customer satisfaction is given top place. We are very friendly in our dealings to the customers and it helps us retain existing clients and expand customer circle. We always try to improve the quality of our products by exploring innovative ideas.",
+    "we_provide_title": "WE PROVIDE AGILE SOFTWARE DEVELOPMENT SERVICES",
+    "we_provide_text": "Based on years of experience, we know that every business has a different software and hardware environment. That is why we provide a wide range of software development services. Check out the key services below.",
+    "design_sprint": "DESIGN SPRINT",
+    "design_sprint_text": "We convert your idea into solid, safe, and reliable custom software with our full-cycle software development services, including: Web app solution Mobile app solutions UI/UX",
+    "development_title": "DEVELOPMENT",
+    "development_text": "Our team can provide support at any stage of custom mobile app development, from creating a proof-of-concept app to an MVP: Web application development Cross-platform apps for iOS and Android Hybrid and mobile web Native apps development",
+    "consulting_title": "IT CONSULTING",
+    "consulting_text":"Our team covers all IT strategies and provides IT consulting services that help optimize your business and make it grow:",
+    "process_title":"OUR PROCESS",
+    "process_text":"We are a passionate software and design company that specializes in beautiful and easy-to-use digital design & web development services.",
+    "step01": "STEP01",
+"step01_title": "Ideas",
+"step01_text1": "Definition",
+"step01_text2": "Problem",
+"step01_text3": "Logic",
+"step01_text4": "Analysis",
+"step02": "STEP02",
+"step02_title": "Planning",
+"step02_text1": "Requirement",
+"step02_text2": "Google venture",
+"step02_text3": "Prototype",
+"step02_text4": "UX UI design",
+"step03": "STEP03",
+"step03_title": "Development",
+"step03_text1": "Back-End",
+"step03_text2": "Front-End",
+"step03_text3": "Core system",
+"step03_text4": "Mobile",
+"step04": "STEP04",
+"step04_title": "Testing",
+"step04_text1": "Debugging",
+"step04_text2": "Maintenance"
+},
   "3d_products": {
     "3d_products_title": "3D PRODUCTS - JINIE",
     "3d_products_mission": "Is mission has always been to organize the world's information and make it universally accessible and useful.",
@@ -140,24 +174,78 @@
 "step04_text1": "Two-dimensional coding rabot",
 "step04_text2": "3D coding theory",
 "step04_text3": "Development of flight control software"
-
-
-
-
-
-
-
-   
-
-
-
-
-
-    
-
-
-
-  }
+  },
+  "software":{
+    "title":"SOFTWARE",
+    "mission":"Is mission has always been to organize the world's information and make it universally accessible and useful.",
+    "website":"Website",
+    "web_job1":"MAJESTIC MARKETPLACE",
+    "web_job1_text":"The Majestic project has created a blockchain-based web system for buying, minting, and auctioning NFTs.",
+    "web_job2":"AGRIGOLD.IO",
+    "web_job2_text":"ICO presentation website of Agrigold project was made. In addition, the project's marketing promotion work was completed twice",
+    "web_job3":"CNETRALS",
+    "web_job3_text":"Premium Building Materials LLC was founded in 2011 under the name Premium Concrete to operate in the field of construction materials production and supply",
+    "web_job4":"KHAN BANK",
+    "web_job4_text":"KAAN Bank is a national leading commercial bank with a total of 545 branches across the country, providing comprehensive banking and financial services to more than 82 percent of Mongolia's population, or 2.8 million customers",
+    "web_job5":"EMONOS",
+    "web_job5_text":"Online sales and delivery services for medicines and health products are continuously delivered to our customers 24 hours a day.",
+    "web_job6":"MILLENNIUM PLAZA",
+    "web_job6_text":"Ideally set in the centre of Ulaanbaatar, MIllennium Plaza Hotel & Mall Ulaanbaatar features air-conditioned rooms, a terrace, free WiFi and a restaurant. This 4-star hotel offers a bar.",
+    "web_job7":"XAC BANK IPO",
+    "web_job7_text":"A project with the purpose of purchasing securities offered to the public by Khas Bank, monitoring the progress of shares, and disseminating detailed information.",
+    "web_job8":"KHAN BANK IPO",
+    "web_job8_text":"A project with the purpose of purchasing securities offered by Khan Bank to the public, monitoring the progress of shares, and disseminating detailed information",
+    "web_job9":"METAGRO",
+    "web_job9_text":"Metagro Company was established in 2021 with the goal of developing high-quality agricultural food products that meet international standards through a combination of intensive animal husbandry and smart agriculture.",
+    "mobile":"Mobile application",
+    "mobile_title":"G-CHAIN TECHNOLOGY",
+    "mobile_text":"G-chain is a crypto wallet app based on the blockchain. It is an advanced mobile application that allows you to buy and transfer tokens, as well as trade with other coins.",
+    "mobile_job1":"G-CHAIN TECHNOLOGY",
+    "mobile_job1_text":"G-chain is a crypto wallet app based on the blockchain. It is an advanced mobile application that allows you to buy and transfer tokens, as well as trade with other coins.",
+    "mobile_job2":"TOKI",
+    "mobile_job2_text":"The coffee delivery mini-app module within the Toki app is completed with design and development.",
+    "mobile_job3":"MSE",
+    "mobile_job3_text":"This mobile app displays stock prices and other information traded on the Mongolian Stock Exchange. You can create your own list of stocks you are interested in.",
+    "mobile_job4":"CENTRAL",
+    "mobile_job4_text":"Using the Central platform, you can receive real-time information on the progress of orders and deliveries. Also, an application that solves the problems faced by the project site, office, and suppliers.",
+    "mobile_job5":"MTRIP",
+    "mobile_job5_text":"The Mtrip application is designed to provide the cheapest and fastest way to book flight tickets online.",
+    "mobile_job6":"BLINDCARE",
+    "mobile_job6_text":"Get professional psychological advice, take psychological tests, self-assess and anonymously share your psychological problems with others.",
+    "mobile_job7":"SUPER 92",
+    "mobile_job7_text":"A mobile application that allows you to collect, use and gift bonus points based on fuel purchases and loyalty programs. With the mini-merchant app, you can purchase car-related product incentives such as vouchers and coupons.",
+    "mobile_job8":"UPOINT",
+    "mobile_job8_text":"Loyalty program integrated platform for obtaining information about products and discounts of organizations, collecting and spending points, viewing status, participating in contests, creating groups and adding members.",
+    "mobile_job9":"TDB CAPITAL",
+    "mobile_job9_text":"You can get all services related to securities, such as opening an account, managing your account, trading, viewing detailed information about the price of securities, and trading between users."
+  },
+  "price": {
+    "title": "PRICE",
+    "mission": "Is mission has always been to organize the world's information and make it universally accessible and useful.",
+    "type":"type",
+    "front_end":"Front-End",
+    "back_end":"Back-End",
+    "mobile_dev":"Mobile development",
+    "outsourcing":"Project outsourcing",
+    "title1":"title",
+    "title1_inside":"Scarlet",
+    "name":"name",
+    "name_inside":"Johansson",
+    "email":"Email",
+    "email_inside":"blackwidow@ithorse.com",
+    "phone":"Phone number",
+    "phone_inside":"+976 95398822",
+    "inquiry":"Inquiry details",
+    "inquiry_inside":"How can we help you?",
+    "agree_infor":"Agree to collect and use personal information",
+    "send_req":"Send request"
+  },
+  "faq": {
+    "title":"FREQUENTLY ASKED QUESTIONS",
+    "mission":"Is mission has always been to organize the world's information and make it universally accessible and useful.",
+    "q1":"LOREM IPSUM DOLOR SIT, AMET CONSECTETUR ADIPISICING ELIT. ODIT, REICIENDIS.",
+    "a1":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quod corrupti aut libero porro soluta, voluptatibus numquam optio harum facilis. Accusamus natus ipsa officiis recusandae vitae nisi vel, omnis ullam nulla obcaecati nobis enim fuga repellat, temporibus consectetur in beatae perspiciatis mollitia aut, quia esse. Illo nostrum facilis voluptate dolor."
+  },
   
 
   
@@ -170,5 +258,5 @@
 
   
 
-  
+  "a":{} 
 }
