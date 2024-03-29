@@ -7,22 +7,18 @@ export default function HomeAbout() {
       <div className="lg:w-[50%] lg:pr-8">
         <h2 className="mb-4 text-3xl font-semibold">ABOUT US</h2>
         <p className="mb-4 text-[#586772]">
-          Since 2008, IT Horse has been helping companies in the FinTech,
-          healthcare, real estate, supply chain management, and other industries
-          succeed with custom software solutions. Driven by our clients’
-          business-specific needs and time and budget constraints, our software
-          development company builds and augments secure, stable, scalable, and
-          highly functional digital products to deliver maximum value and ensure
-          business sustainability.
+          Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate,
+          supply chain management, and other industries succeed with custom software solutions.
+          Driven by our clients’ business-specific needs and time and budget constraints, our
+          software development company builds and augments secure, stable, scalable, and highly
+          functional digital products to deliver maximum value and ensure business sustainability.
         </p>
         <p className="mb-4 text-[#586772]">
-          Since 2008, IT Horse has been helping companies in the FinTech,
-          healthcare, real estate, supply chain management, and other industries
-          succeed with custom software solutions. Driven by our clients’
-          business-specific needs and time and budget constraints, our software
-          development company builds and augments secure, stable, scalable, and
-          highly functional digital products to deliver maximum value and ensure
-          business sustainability.
+          Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate,
+          supply chain management, and other industries succeed with custom software solutions.
+          Driven by our clients’ business-specific needs and time and budget constraints, our
+          software development company builds and augments secure, stable, scalable, and highly
+          functional digital products to deliver maximum value and ensure business sustainability.
         </p>
         <br />
       </div>

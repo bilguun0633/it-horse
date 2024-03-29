@@ -1,8 +1,11 @@
 import React from "react";
-import ImageContainer from "@/components/common/ImageContainer";
+
 import Image from "next/image";
-import Partner from "@/components/common/partner";
+
+import ImageContainer from "@/components/common/ImageContainer";
 import Banner from "@/components/common/banner";
+import Partner from "@/components/common/partner";
+
 export default function PartnersBenefits() {
   const imageList = [
     {
@@ -92,8 +95,8 @@ export default function PartnersBenefits() {
                 <h1 className="text-xl font-medium">COST REDUCTION</h1>
                 <br />
                 <p className="text-[#586772] ">
-                  Our table editor makes Postgres easy to use, even for
-                  non-techies. You can do everything right in our dashboard.
+                  Our table editor makes Postgres easy to use, even for non-techies. You can do
+                  everything right in our dashboard.
                 </p>
                 <br />
                 <ul className="list-disc text-[#586772]">
@@ -118,8 +121,8 @@ export default function PartnersBenefits() {
                   <h1 className="text-xl font-medium">EXPERTISE ACQUISITION</h1>
                   <br />
                   <p className="text-[#586772]">
-                    Our table editor makes Postgres easy to use, even for
-                    non-techies. You can do everything right in our dashboard.
+                    Our table editor makes Postgres easy to use, even for non-techies. You can do
+                    everything right in our dashboard.
                   </p>
                 </div>
               </div>
@@ -134,8 +137,8 @@ export default function PartnersBenefits() {
                   <h1 className="text-xl font-medium">RESOURCE EFFICIENCY</h1>
                   <br />
                   <p className="text-[#586772]">
-                    Our table editor makes Postgres easy to use, even for
-                    non-techies. You can do everything right in our dashboard.
+                    Our table editor makes Postgres easy to use, even for non-techies. You can do
+                    everything right in our dashboard.
                   </p>
                 </div>
               </div>
@@ -151,13 +154,11 @@ export default function PartnersBenefits() {
                 </div>
                 <br />
                 <div className="text-center">
-                  <h1 className="text-xl font-medium uppercase">
-                    business process
-                  </h1>
+                  <h1 className="text-xl font-medium uppercase">business process</h1>
                   <br />
                   <p className="text-[#586772]">
-                    Our table editor makes Postgres easy to use, even for
-                    non-techies. You can do everything right in our dashboard.
+                    Our table editor makes Postgres easy to use, even for non-techies. You can do
+                    everything right in our dashboard.
                   </p>
                 </div>
               </div>
@@ -169,13 +170,11 @@ export default function PartnersBenefits() {
                 </div>
                 <br />
                 <div className="text-center">
-                  <h1 className="text-xl font-medium uppercase">
-                    EXPERTISE ACQUISITION
-                  </h1>
+                  <h1 className="text-xl font-medium uppercase">EXPERTISE ACQUISITION</h1>
                   <br />
                   <p className="text-[#586772]">
-                    Our table editor makes Postgres easy to use, even for
-                    non-techies. You can do everything right in our dashboard.
+                    Our table editor makes Postgres easy to use, even for non-techies. You can do
+                    everything right in our dashboard.
                   </p>
                 </div>
               </div>
@@ -186,13 +185,11 @@ export default function PartnersBenefits() {
               <div className="p-10 ">
                 <Image src="/software/partner6.png" width={52} height={52} />
                 <br />
-                <h1 className="text-xl font-medium uppercase">
-                  time reduction
-                </h1>
+                <h1 className="text-xl font-medium uppercase">time reduction</h1>
                 <br />
                 <p className="text-[#586772]">
-                  Our table editor makes Postgres easy to use, even for
-                  non-techies. You can do everything right in our dashboard.
+                  Our table editor makes Postgres easy to use, even for non-techies. You can do
+                  everything right in our dashboard.
                 </p>
                 <br />
                 <ul className="list-disc text-[#586772]">

@@ -1,6 +1,7 @@
 import React from "react";
-import Banner from "@/components/common/banner";
+
 import ImageContainer from "@/components/common/ImageContainer";
+import Banner from "@/components/common/banner";
 
 export default function Certficates() {
   const cert = [
@@ -53,14 +54,12 @@ export default function Certficates() {
     {
       image: "/certficate/cert7.png",
       title: "K-BIZ Korea Federation of SMEs ",
-      subtitle:
-        "Direct production confirmation certificate Internet support development service ",
+      subtitle: "Direct production confirmation certificate Internet support development service ",
     },
     {
       image: "/certficate/cert7.png",
       title: "K-BIZ Korea Federation of SMEs ",
-      subtitle:
-        "Direct production confirmation certificate software engineering industry",
+      subtitle: "Direct production confirmation certificate software engineering industry",
     },
     {
       image: "/certficate/cert8.png",

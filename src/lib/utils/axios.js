@@ -11,8 +11,8 @@ const fetcher = axios.create({
 });
 
 fetcher.interceptors.response.use(
-  (response) => response,
-  (error) => console.error(error),
+  response => response,
+  error => console.error(error),
 );
 
 export default fetcher;

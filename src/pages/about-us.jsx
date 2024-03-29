@@ -1,11 +1,13 @@
 import React from "react";
-import ImageContainer from "@/components/common/ImageContainer";
-import AboutUsSection from "@/components/common/about-us-section";
-import AboutUsList from "@/components/common/about-us-list";
-import HomeStatistics from "@/components/Home/HomeStatistics";
-import Banner from "@/components/common/banner";
+
 import Flag from "react-flagkit";
+
 import HomeAbout from "@/components/Home/HomeAbout";
+import HomeStatistics from "@/components/Home/HomeStatistics";
+import ImageContainer from "@/components/common/ImageContainer";
+import AboutUsList from "@/components/common/about-us-list";
+import AboutUsSection from "@/components/common/about-us-section";
+import Banner from "@/components/common/banner";
 
 export default function AboutUs() {
   const internationalList = [
@@ -41,25 +43,22 @@ export default function AboutUs() {
       <div className="flex justify-center text-white font-medium bg-[#00000066] ">
         <div className="w-[632px] p-10">
           <p>
-            Jinie Coding Edu started out with information from the Inc. in 1998
-            with unique content and educational know-how. It&s an armed
-            educational technology company
+            Jinie Coding Edu started out with information from the Inc. in 1998 with unique content
+            and educational know-how. It&s an armed educational technology company
           </p>
           <br />
           <p>
-            3D printers, 3D pens, Aduino, and artificial intelligence (software)
-            are essential to the knowledge industry. Schools and public
-            institutions are required to directly research, develop, and
-            manufacture school districts and connect various educational
-            contents In addition, I will show you various possibilities of
-            Jinie-Coding Edu (state) from the national academy membership
-            business A lot of people worked together for this.
+            3D printers, 3D pens, Aduino, and artificial intelligence (software) are essential to
+            the knowledge industry. Schools and public institutions are required to directly
+            research, develop, and manufacture school districts and connect various educational
+            contents In addition, I will show you various possibilities of Jinie-Coding Edu (state)
+            from the national academy membership business A lot of people worked together for this.
           </p>
           <br />
           <p>
-            What we need to do now is to be able to move quickly to change.
-            jinie Coding edu, with his unstoppable passion, is a constant effort
-            in your faith and in your support. I&ll reciprocate and move on.
+            What we need to do now is to be able to move quickly to change. jinie Coding edu, with
+            his unstoppable passion, is a constant effort in your faith and in your support. I&ll
+            reciprocate and move on.
           </p>
           <p>Thank you. </p>
           <p>Jinie-Code-Edu Executives and Employees</p>
@@ -73,12 +72,10 @@ export default function AboutUs() {
         <div className="container flex justify-end">
           <div className="w-[364px] py-4 lg:py-24">
             <div className="mb-8 lg:mb-16">
-              <h2 className="mb-4 text-3xl font-semibold uppercase">
-                international presence
-              </h2>
+              <h2 className="mb-4 text-3xl font-semibold uppercase">international presence</h2>
               <p className="text-[#586772]">
-                Is mission has always been to organize the world&apos;s
-                information and make it universally accessible and useful.
+                Is mission has always been to organize the world&apos;s information and make it
+                universally accessible and useful.
               </p>
             </div>
             <div className="flex flex-col gap-4 lg:gap-8">

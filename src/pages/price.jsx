@@ -1,9 +1,12 @@
 import React from "react";
-import ImageContainer from "@/components/common/ImageContainer";
+
 import Image from "next/image";
-import Banner from "@/components/common/banner";
-import InputRadio from "@/components/common/InputRadio";
+
+import ImageContainer from "@/components/common/ImageContainer";
 import InputCheckbox from "@/components/common/InputCheckbox";
+import InputRadio from "@/components/common/InputRadio";
+import Banner from "@/components/common/banner";
+
 export default function PricePage() {
   return (
     <>
@@ -55,9 +58,7 @@ export default function PricePage() {
                 </div>
               </div>
               <div className="px-20 py-5">
-                <label className="mb-4 text-lg font-semibold ">
-                  Phone number
-                </label>
+                <label className="mb-4 text-lg font-semibold ">Phone number</label>
                 <div className="flex mt-4 items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                   <input
                     type="text"
@@ -68,9 +69,7 @@ export default function PricePage() {
               </div>
               <div className="justify-content-center">
                 <div className="px-20 py-5">
-                  <label className=" text-lg font-semibold  ">
-                    Inquiry details
-                  </label>
+                  <label className=" text-lg font-semibold  ">Inquiry details</label>
                   <div className=" mt-4 w-[100%]  h-fit  overflow-hidden border rounded-lg border-brown">
                     <textarea
                       type="text"
@@ -84,9 +83,7 @@ export default function PricePage() {
                 </div>
               </div>
               <div className="flex justify-center py-5">
-                <button className="py-2 text-white rounded bg-blue px-14">
-                  Send request
-                </button>
+                <button className="py-2 text-white rounded bg-blue px-14">Send request</button>
               </div>
             </div>
           </div>

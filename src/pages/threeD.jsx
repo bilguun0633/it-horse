@@ -1,7 +1,10 @@
 import React from "react";
+
+import Image from "next/image";
+
 import ImageContainer from "@/components/common/ImageContainer";
 import Banner from "@/components/common/banner";
-import Image from "next/image";
+
 export default function ThreeD() {
   const news = [
     {

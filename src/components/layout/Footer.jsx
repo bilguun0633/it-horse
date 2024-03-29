@@ -1,4 +1,5 @@
 import React from "react";
+
 import Image from "next/image";
 
 export default function Footer() {
@@ -50,10 +51,7 @@ export default function Footer() {
         <div className="container xl:flex lg:flex justify-between  ">
           <div className=" flex items-center md:justify-center justify-between gap-4">
             {list.map(({ name }, index) => (
-              <div
-                key={index}
-                className="flex items-center h-24 text  text-[#586772]  "
-              >
+              <div key={index} className="flex items-center h-24 text  text-[#586772]  ">
                 {name}
               </div>
             ))}

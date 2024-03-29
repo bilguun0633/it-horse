@@ -1,4 +1,5 @@
 import React from "react";
+
 import ImageContainer from "../common/ImageContainer";
 
 export default function HomeTechnologies() {
@@ -53,12 +54,10 @@ export default function HomeTechnologies() {
       <div className="container relative z-0 py-4 lg:py-24">
         <ImageContainer src="/background/blue-pattern.jpg" className="-z-10" />
         <div className="flex flex-col items-center mb-4 text-center lg:mb-8">
-          <h2 className="mb-4 text-3xl font-semibold text-white uppercase">
-            Main technologies
-          </h2>
+          <h2 className="mb-4 text-3xl font-semibold text-white uppercase">Main technologies</h2>
           <p className="max-w-[720px] text-[#B2B9BE]">
-            Is mission has always been to organize the world&apos;s information
-            and make it universally accessible and useful.
+            Is mission has always been to organize the world&apos;s information and make it
+            universally accessible and useful.
           </p>
         </div>
         <div className="grid gap-4 lg:grid-cols-4">
@@ -68,9 +67,7 @@ export default function HomeTechnologies() {
               className="flex flex-col justify-between p-4 bg-white rounded-lg lg:p-8"
             >
               <div>
-                <h4 className="mb-4 text-lg font-semibold uppercase lg:mb-8">
-                  {title}
-                </h4>
+                <h4 className="mb-4 text-lg font-semibold uppercase lg:mb-8">{title}</h4>
                 <ul className="flex flex-col gap-2 pl-3 list-disc marker:text-2xl marker:text-blue marker:leading-none">
                   {children.map((child, childIndex) => (
                     <li className="text-sm text-[#586772]" key={childIndex}>

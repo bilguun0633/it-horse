@@ -1,5 +1,6 @@
-import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+
+import { AnimatePresence, motion } from "framer-motion";
 
 export default function Accordion({ title, description }) {
   const [show, setShow] = useState(false);
@@ -22,7 +23,7 @@ export default function Accordion({ title, description }) {
           className={`p-4 text-lg leading-normal transition uppercase cursor-pointer ${
             show ? "text-blue" : ""
           }`}
-          onClick={() => setShow((prev) => !prev)}
+          onClick={() => setShow(prev => !prev)}
         >
           {title}
         </h2>

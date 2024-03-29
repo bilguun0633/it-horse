@@ -1,4 +1,5 @@
 import React from "react";
+
 import ImageContainer from "./ImageContainer";
 
 export default function Partner() {
@@ -8,13 +9,11 @@ export default function Partner() {
       <div className="flex xl:items-center justify-center py-4 container ">
         <div>
           <div className="w-full text-white text-center">
-            <h1 className="text-3xl font-semibold uppercase">
-              become a ithorse partner
-            </h1>
+            <h1 className="text-3xl font-semibold uppercase">become a ithorse partner</h1>
             <br />
             <p>
-              Is mission has always been to organize the world&apos;s
-              information and make it universally accessible and useful.
+              Is mission has always been to organize the world&apos;s information and make it
+              universally accessible and useful.
             </p>
           </div>
           <br />
@@ -62,9 +61,7 @@ export default function Partner() {
               </div>
             </div>
             <div className="flex justify-center py-5">
-              <button className="py-2 text-white rounded bg-blue px-14">
-                Submit
-              </button>
+              <button className="py-2 text-white rounded bg-blue px-14">Submit</button>
             </div>
           </div>
         </div>
