@@ -75,5 +75,100 @@
     "staff": "Staff",
     "customer_service": "Customer Service",
     "copyright": "Copyright © IT Horse | Design by IO  | Powered by JINE"
+  },
+  "partnerBenefits":{
+    "partnerBenefits_title": "PARTNERS & BENEFITS",
+    "partnerBenefits_mission": "Is mission has always been to organize the world's information and make it universally accessible and useful.",
+    "partners":"PARTNERS",
+    "benefits":"BENEFITS",
+    "cost_title":"COST REDUCTION",
+    "cost_text1":"Our table editor makes Postgres easy to use, even for non-techies. You can do everything right in our dashboard.",
+    "cost_bullet1": "100% portable",
+    "cost_bullet2": "Built-in Auth RLS",
+    "cost_bullet3": "Easy to extend",
+    "expertise_title1": "EXPERTISE ACQUISITION",
+    "expertise_text1": "Our table editor makes Postgres easy to use, even for non-techies. You can do everything right in our dashboard.",
+    "resource_title" : "RESOURCE EFFICIENCY",
+    "resource_text" : "Our table editor makes Postgres easy to use, even for non-techies. You can do everything right in our dashboard.",
+    "business_title" : "BUSINESS PROCESS",
+    "business_text" : "Our table editor makes Postgres easy to use, even for non-techies. You can do everything right in our dashboard.",
+    "expertise_title2": "EXPERTISE ACQUISITION",
+    "expertise_text2": "Our table editor makes Postgres easy to use, even for non-techies. You can do everything right in our dashboard.",
+    "time_reduction_title":"TIME REDUCTION",
+    "time_reduction_text1":"Our table editor makes Postgres easy to use, even for non-techies. You can do everything right in our dashboard.",
+    "time_reduction_bullet1": "100% portable",
+    "time_reduction_bullet2": "Built-in Auth RLS",
+    "time_reduction_bullet3": "Easy to extend"
+
+  },
+  "software": {
+    "software_title": "SOFTWARE",
+    "software_mission": "Is mission has always been to organize the world's information and make it universally accessible and useful."
+  },
+  "3d_products": {
+    "3d_products_title": "3D PRODUCTS - JINIE",
+    "3d_products_mission": "Is mission has always been to organize the world's information and make it universally accessible and useful.",
+    "3d_products_text": "Jinie Coding Edu started out with information from the Inc. in 1998 with unique content and educational know-how. It&s an armed educational technology company. 3D printers, 3D pens, Aduino, and artificial intelligence (software) are essential to the knowledge industry. Schools and public institutions are required to directly research, develop, and manufacture school districts and connect various educational contents In addition, I will show you various possibilities of Jinie-Coding Edu (state) from the national academy membership business A lot of people worked together for this. What we need to do now is to be able to move quickly to change. jinie Coding edu, with his unstoppable passion, is a constant effort in your faith and in your support. I&ll reciprocate and move on. Thank you. Jinie-Code-Edu Executives and Employees",
+    "business_domain_title": "BUSINESS DOMAIN",
+    "business_domain_mission": "Is mission has always been to organize the world's information and make it universally accessible and useful.",
+
+   "training_content": "TRAINING CONTENT DEVELOPMENT",
+   "training_text": "Launching the jinieCoding Classroom in schools, adults, and the public sector. We offer 3D creative convergence training. 3D printers, drones, coding. We offer a variety of curricula.",
+   "coding_lab": "101 CODING LAB INSTITUTI",
+   "coding_lab_text": "Core 3D Creative Convergence Maker Coding Academy of the Fourth Industrial Revolution '101 Coding Labs Comic Academy,' focusing on the National Center Diversify training content delivery and product diversification We are trying to increase our sales.",
+   "educational_service": "EDUCATIONAL SERVICE BUSINESS",
+   "educational_text": "Maker coding education, jiniecoding, du Training content development and 3D pen, 3D coding drones In addition to parish creation, there is a need for each educational content. We are producing and training our own textbooks.",
+"how_works": "HOW IT WORK",
+"how_works_text": "Jinie's step-by-step learning and teaching from the basics step by step",
+"step01": "STEP01",
+"step01_title": "3D Printer 3D Pen",
+"step01_text1": "My own design product",
+"step01_text2": "3D modeling training / output",
+"step01_text3": "Making drones and robots yorself",
+"step02": "STEP02",
+"step02_title": "Scratch Found",
+"step02_text1": "Education in a software-driven society",
+"step02_text2": "Various customized education for elemantary /middle/high schools",
+"step02_text3": "Advanced use Aduino and C",
+"step03": "STEP03",
+"step03_title": "Coding",
+"step03_text1": "Software - ioT production",
+"step03_text2": "Various contents training curricula",
+"step03_text3": "Capstore Project",
+"step04": "STEP04",
+"step04_title": "Coding Drones",
+"step04_text1": "Two-dimensional coding rabot",
+"step04_text2": "3D coding theory",
+"step04_text3": "Development of flight control software"
+
+
+
+
+
+
+
+   
+
+
+
+
+
+    
+
+
+
   }
+  
+
+  
+
+
+
+
+
+
+
+  
+
+  
 }
