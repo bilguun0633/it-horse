@@ -5,7 +5,7 @@
 
 @layer component {
   .transitioned {
-    @apply transition-all ease-out duration-300;
+    @apply transition-all duration-300 ease-out;
   }
 }
 
@@ -18,7 +18,7 @@
 }
 
 body {
-  @apply text-sm lg:text-base overflow-x-hidden overflow-y-scroll relative;
+  @apply relative overflow-x-hidden overflow-y-scroll text-sm lg:text-base;
 }
 
 i {
@@ -26,11 +26,11 @@ i {
 }
 
 .container {
-  /* @apply px-4; */
+  @apply px-4;
 }
 
 .custom-radio input:checked ~ .checkmark {
-  @apply border-green-300 border-4;
+  @apply border-4 border-green-300;
 }
 
 .custom-checkbox input:checked ~ .checkmark {

@@ -1,6 +1,7 @@
-import Header from "./Header";
-import Footer from "./Footer";
 import { useRouter } from "next/router";
+
+import Footer from "./Footer";
+import Header from "./Header";
 
 export default function Provider({ children }) {
   const { pathname } = useRouter();

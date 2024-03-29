@@ -1,7 +1,10 @@
 import React from "react";
+import { useRef, useState } from "react";
+
 import useTranslation from "next-translate/useTranslation";
-import { useState, useRef } from "react";
+
 import ImageContainer from "../common/ImageContainer";
+
 export default function HomeHero() {
   const { t } = useTranslation("main");
   const videoRef = useRef(null);
@@ -26,11 +29,7 @@ export default function HomeHero() {
         muted={isMuted}
         className="absolute inset-0 object-cover w-full h-full brightness-75"
       >
-        <source
-          src="/background/cover.mp4"
-          className="object-cover "
-          type="video/mp4"
-        />
+        <source src="/background/cover.mp4" className="object-cover " type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="container flex  items-end w-full h-full py-4 lg:py-24">
@@ -45,23 +44,17 @@ export default function HomeHero() {
           <div className="absolute flex gap-3 right-32  bottom-10">
             <div
               className="flex items-center justify-center w-12 h-12 border border-white rounded-full cursor-pointer transitioned hover:bg-white/20 hover:scale-105 active:scale-100"
-              onClick={() => setIsMuted((prev) => !prev)}
+              onClick={() => setIsMuted(prev => !prev)}
             >
               <i
-                className={`ri-${
-                  isMuted ? "volume-mute" : "volume-up"
-                }-line text-white text-xl`}
+                className={`ri-${isMuted ? "volume-mute" : "volume-up"}-line text-white text-xl`}
               ></i>
             </div>
             <div
               className="flex items-center justify-center w-12 h-12 border border-white rounded-full cursor-pointer transitioned hover:bg-white/20 hover:scale-105 active:scale-100"
               onClick={() => togglePlay()}
             >
-              <i
-                className={`ri-${
-                  isPlaying ? "pause" : "play"
-                }-line text-white text-xl`}
-              ></i>
+              <i className={`ri-${isPlaying ? "pause" : "play"}-line text-white text-xl`}></i>
             </div>
           </div>
         </div>

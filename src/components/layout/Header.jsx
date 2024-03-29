@@ -1,12 +1,14 @@
+import { useEffect, useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import Hamburger from "hamburger-react";
 import { useRouter } from "next/router";
-import Flag from "react-flagkit";
-import useTranslation from "next-translate/useTranslation";
+
+import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
+import Hamburger from "hamburger-react";
+import useTranslation from "next-translate/useTranslation";
+import Flag from "react-flagkit";
 
 export default function Header() {
   const { t } = useTranslation("main");
@@ -130,14 +132,12 @@ export default function Header() {
   return (
     <div
       className={`fixed inset-x-0 top-0 z-50 h-fit transition ${
-        !isHome || isHover || isScrolled || show
-          ? "bg-white "
-          : "text-white bg-transparent"
+        !isHome || isHover || isScrolled || show ? "bg-white " : "text-white bg-transparent"
       }`}
     >
       <div className="container z-0">
-        <div className="relative flex items-center xl:justify-center lg:justify-center md:justify-end sm:justify-end  w-full">
-          <div className="absolute z-10 top-0 left-0 flex items-center justify-center   h-16 lg:h-24">
+        <div className="relative flex items-center w-full xl:justify-center lg:justify-center md:justify-end sm:justify-end">
+          <div className="absolute top-0 left-0 z-10 flex items-center justify-center h-16 lg:h-24">
             <Link href="/">
               <Image
                 src={`/icons/it-horse-${
@@ -159,7 +159,7 @@ export default function Header() {
           >
             {list.map(({ name, dropdown }, index) => (
               <div key={index}>
-                <p className="hidden lg:flex items-center justify-center h-24 font-bold transition  ">
+                <p className="items-center justify-center hidden h-24 font-bold transition lg:flex ">
                   {name}
                 </p>
                 <motion.div
@@ -182,7 +182,7 @@ export default function Header() {
             <div className="lg:flex lg:gap-3 ">
               <button
                 onClick={() => handleLocale("mn")}
-                className="flex items-center justify-center h-24 font-bold transition cursor-default  "
+                className="flex items-center justify-center h-24 font-bold transition cursor-default "
               >
                 MN
               </button>
@@ -200,14 +200,9 @@ export default function Header() {
               </button>
             </div>
           </motion.div>
-          <div className=" flex items-center h-16 ">
-            <div className=" absolute  h-full right-4 lg:hidden">
-              <Hamburger
-                toggled={show}
-                toggle={setShow}
-                size={24}
-                color="#04141F"
-              />
+          <div className="flex items-center h-16 ">
+            <div className="absolute h-full right-4 lg:hidden">
+              <Hamburger toggled={show} toggle={setShow} size={24} color="#04141F" />
             </div>
           </div>
         </div>
@@ -295,7 +290,7 @@ function MobileDropdown({ show, list, onClose, handleLocale, router }) {
             <div className="flex gap-3">
               <button
                 onClick={() => handleLocale("mn")}
-                className="flex items-center justify-center h-24 font-bold transition cursor-default  "
+                className="flex items-center justify-center h-24 font-bold transition cursor-default "
               >
                 MN
               </button>

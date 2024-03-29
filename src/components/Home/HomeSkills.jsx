@@ -45,21 +45,15 @@ export default function HomeSkills() {
       <div className="flex flex-col items-center mb-4 text-center lg:mb-8">
         <h2 className="mb-4 text-3xl font-semibold uppercase">skills</h2>
         <p className="max-w-[720px] text-[#586772]">
-          Is mission has always been to organize the world&apos;s information
-          and make it universally accessible and useful.
+          Is mission has always been to organize the world&apos;s information and make it
+          universally accessible and useful.
         </p>
       </div>
       <div className="grid gap-4 lg:grid-cols-3">
         {list.map(({ logo, title, description }, index) => (
-          <div
-            key={index}
-            className="rounded-lg border border-[#4E4B6633] overflow-hidden"
-          >
+          <div key={index} className="rounded-lg border border-[#4E4B6633] overflow-hidden">
             <div className="aspect-[16/8] relative w-full z-0 flex justify-center items-center">
-              <ImageContainer
-                src="/background/card-pattern.png"
-                className="-z-10"
-              />
+              <ImageContainer src="/background/card-pattern.png" className="-z-10" />
               <div className="relative w-20 h-20">
                 <ImageContainer src={logo} />
               </div>

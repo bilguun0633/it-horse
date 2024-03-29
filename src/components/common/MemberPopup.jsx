@@ -1,14 +1,12 @@
-import { OnClickOutside } from "@/lib/utils/on-click-outside";
-import ImageContainer from "./ImageContainer";
 import { useRef } from "react";
+
 import { AnimatePresence, motion } from "framer-motion";
 
-export default function MemberPopup({
-  member,
-  onClose,
-  onClickPrev,
-  onClickNext,
-}) {
+import { OnClickOutside } from "@/lib/utils/on-click-outside";
+
+import ImageContainer from "./ImageContainer";
+
+export default function MemberPopup({ member, onClose, onClickPrev, onClickNext }) {
   const ref = useRef(null);
 
   OnClickOutside(ref, onClose, member);
@@ -39,9 +37,7 @@ export default function MemberPopup({
               </div>
             </div>
             <div className="flex-1">
-              <h4 className="mb-1 text-xl font-semibold uppercase lg:text-3xl">
-                {member.name}
-              </h4>
+              <h4 className="mb-1 text-xl font-semibold uppercase lg:text-3xl">{member.name}</h4>
               <p className="mb-4 text-lg text-blue lg:mb-16">{member.role}</p>
               <p className="mb-2">{member.position}</p>
               <p className="mb-2">{member.proffesion}</p>
@@ -49,9 +45,7 @@ export default function MemberPopup({
               <div className="w-full h-[1px] bg-[#4E4B6633] mb-4"></div>
               <div className="flex">
                 <div className="flex-1">
-                  <p className="text-lg uppercase ">
-                    phone number - {member.phone}
-                  </p>
+                  <p className="text-lg uppercase ">phone number - {member.phone}</p>
                   <p className="text-lg uppercase ">email - {member.email}</p>
                 </div>
                 <div className="flex items-end flex-shrink-0 gap-2">

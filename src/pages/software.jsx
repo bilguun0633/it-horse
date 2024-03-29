@@ -1,7 +1,8 @@
 import React from "react";
+
 import ImageContainer from "@/components/common/ImageContainer";
-import Image from "next/image";
 import Banner from "@/components/common/banner";
+
 export default function Software() {
   const news = [
     {
@@ -133,7 +134,7 @@ export default function Software() {
   ];
   return (
     <>
-      <div className="relative  lg:justify-center">
+      <div className="relative lg:justify-center">
         <Banner
           title="software"
           description="Is mission has always been to organize the world's information and make it universally accessible and useful."
@@ -152,7 +153,7 @@ export default function Software() {
                 </div>
                 <br />
                 <div className="p-4 ">
-                  <h2 className="font-medium text-blue text-2xl ">{name}</h2>
+                  <h2 className="text-2xl font-medium text-blue ">{name}</h2>
                   <br />
                   <h2 className="text-2xl font-medium uppercase">{title}</h2>
                   <br />

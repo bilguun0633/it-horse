@@ -1,7 +1,10 @@
 import React from "react";
-import ImageContainer from "@/components/common/ImageContainer";
+
 import Image from "next/image";
+
+import ImageContainer from "@/components/common/ImageContainer";
 import Banner from "@/components/common/banner";
+
 export default function Hardware() {
   const news = [
     {

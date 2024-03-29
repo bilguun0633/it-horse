@@ -6,9 +6,7 @@ export default function Banner({ title, description }) {
       <ImageContainer src="/background/bg.png" />
       <div className="absolute inset-0 flex items-center justify-center">
         <div className="container text-center text-white">
-          <h1 className="text-3xl uppercase lg:text-5xl font-semibold">
-            {title}
-          </h1>
+          <h1 className="text-3xl uppercase lg:text-5xl font-semibold">{title}</h1>
           <br />
           <p>{description}</p>
         </div>
