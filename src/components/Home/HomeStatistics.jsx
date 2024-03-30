@@ -1,20 +1,20 @@
 export default function HomeStatistics() {
   const list = [
     {
-      value: "15+",
+      value: "5+",
       text: "years of experience in software engineering and IT consulting",
     },
     {
-      value: "500+",
+      value: "30+",
       text: "software developers and other IT professionals on board",
     },
     {
-      value: "35+",
-      text: "active clients building and augmenting software with us",
+      value: "45+",
+      text: "active clients building and augmenting software and hardware with us",
     },
     {
-      value: "35+",
-      text: "active clients building and augmenting software with us",
+      value: "80+",
+      text: "projects successfully delivered to clients worldwide",
     },
   ];
 

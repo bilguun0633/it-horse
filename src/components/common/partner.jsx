@@ -12,8 +12,7 @@ export default function Partner() {
             <h1 className="text-3xl font-semibold uppercase">become a ithorse partner</h1>
             <br />
             <p>
-              Is mission has always been to organize the world&apos;s information and make it
-              universally accessible and useful.
+            Embark on a Collaborative Voyage: Become a Valued Partner and Shape the Future Together
             </p>
           </div>
           <br />
@@ -24,7 +23,7 @@ export default function Partner() {
                 <input
                   type="text"
                   className="flex-1 px-4 outline-none placeholder:text-base-200"
-                  placeholder="Scarlett"
+                  placeholder="Min-jun"
                 />
               </div>
             </div>
@@ -34,7 +33,7 @@ export default function Partner() {
                 <input
                   type="text"
                   className="flex-1 px-4 outline-none placeholder:text-base-200"
-                  placeholder="Johansson"
+                  placeholder="Kim"
                 />
               </div>
             </div>
@@ -44,7 +43,7 @@ export default function Partner() {
                 <input
                   type="text"
                   className="flex-1 px-4 outline-none placeholder:text-base-200"
-                  placeholder="blackwidow@ithorse.com"
+                  placeholder="contact@ithorse.com"
                 />
               </div>
             </div>

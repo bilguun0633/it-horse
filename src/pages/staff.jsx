@@ -15,7 +15,7 @@ export default function StaffPage() {
     {
       image: "/image/staff-profile.png",
       name: "Seongwoong Lee",
-      role: "CEO",
+      role: "CHIEF EXECUTIVE OFFICER",
       position: "Head of corporate research institute",
       proffesion: "Industrial engineer",
       education: "Office Information Equipment Application Technician Level 2",
@@ -23,7 +23,27 @@ export default function StaffPage() {
       email: "incom2794@naver.com",
     },
     {
-      image: "/image/staff-profile.png",
+      image: "/io/image1.png",
+      name: "Enkh-amgalan",
+      role: "CHIEF TECHNOLOGY OFFICER",
+      position: "CHIEF TECHNOLOGY OFFICER",
+      proffesion: "Computer Engineering",
+      education: "Istanbul University of Turkey",
+      phone: "",
+      email: "",
+    },
+    {
+      image: "/io/image2.png",
+      name: "Tulga",
+      role: "CHIEF OPERATION OFFICER",
+      position: "CHIEF OPERATION OFFICER",
+      proffesion: "Software Engineering",
+      education: "Mongolian University of Science and Technology",
+      phone: "",
+      email: "",
+    },
+    {
+      image: "/image/default-avatar2.png",
       name: "Jinmoon Lee",
       role: "Director",
       position: "Dedicated agent",
@@ -33,18 +53,38 @@ export default function StaffPage() {
       email: "incom8280@naver.com",
     },
     {
-      image: "/image/staff-profile.png",
+      image: "/image/avatar.png",
       name: "Da-ye Kang",
       role: "Design Department head",
       position: "Dedicated agent",
       proffesion: "Clothing (Ph.D.)",
       education: "Silla Graduate School",
-
       phone: "051-331-0110 ",
       email: "incom2794@naver.com",
     },
+    
+  ];
+  const IoList = [
     {
-      image: "/image/staff-profile.png",
+      image: "/io/image13.png",
+      name: "Enkhtuvshin",
+      role: "HEAD OF R&D DEPARTMENT",
+      proffesion: "Software Engineering",
+      education: "National University of Mongolia",
+      phone: "",
+      email: "",
+    },
+    {
+      image: "/io/image8.png",
+      name: "Garidmagnai",
+      role: "HEAD OF PROJECT MANAGER",
+      proffesion: "Software Engineering",
+      education: "National University of Mongolia",
+      phone: "",
+      email: "",
+    },
+    {
+      image: "/image/default-avatar.png",
       name: "San-gnam Lim ",
       role: "Director",
       position: "Research assistant",
@@ -73,67 +113,77 @@ export default function StaffPage() {
       phone: "010-9689-9395",
       email: "incom9395@naver.com",
     },
-  ];
-  const IoList = [
-    {
-      image: "/io/image1.png",
-      name: "Enkh-amgalan",
-      role: "CEO",
-    },
-    {
-      image: "/io/image2.png",
-      name: "Tulga",
-      role: "CTO",
-    },
-    {
-      image: "/io/image13.png",
-      name: "Enkhtuvshin",
-      role: "BACK-END DEVELOPER",
-    },
     {
       image: "/io/image4.png",
       name: "Orgil",
       role: "SYSTEM ADMINSTRATOR",
+      proffesion: "Software Engineering",
+      education: "National University of Mongolia",
+      phone: "",
+      email: "",
     },
     {
       image: "/io/image5.png",
       name: "Murun",
-      role: "BACK-END DEVELOPER",
+      role: "SOFTWARE DEVELOPER",
+      proffesion: "Software Engineering",
+      education: "National University of Mongolia",
+      phone: "",
+      email: "",
     },
     {
       image: "/io/image6.png",
       name: "naranbaatar",
-      role: "FRONT-END DEVELOPER",
+      role: "SOFTWARE DEVELOPER",
+      proffesion: "Software Engineering",
+      education: "National University of Mongolia",
+      phone: "",
+      email: "",
     },
     {
       image: "/io/image7.png",
       name: "Enkhamarbaysgalan",
       role: "MOBILE DEVELOPER",
-    },
-    {
-      image: "/io/image8.png",
-      name: "Garidmagnai",
-      role: "CEPROJECT MANAGERO",
+      proffesion: "Software Engineering",
+      education: "National University of Mongolia",
+      phone: "",
+      email: "",
     },
     {
       image: "/io/image9.png",
       name: "Tuguldur",
       role: "UX/UI DESIGNER",
+      proffesion: "Software Engineering",
+      education: "National University of Mongolia",
+      phone: "",
+      email: "",
     },
     {
       image: "/io/image10.png",
       name: "Burenkhuu",
-      role: "BACK-END DEVELOPER",
+      role: "SOFTWARE DEVELOPER",
+      proffesion: "Software Engineering",
+      education: "National University of Mongolia",
+      phone: "",
+      email: "",
     },
     {
       image: "/io/image11.png",
       name: "Naranbaatar",
-      role: "front-end developer",
+      role: "SOFTWARE DEVELOPER",
+      proffesion: "Software Engineering",
+      education: "National University of Mongolia",
+      phone: "",
+      email: "",
     },
     {
       image: "/io/image12.png",
       name: "Enkhzul",
-      role: "mobile developer",
+      role: "SOFTWARE DEVELOPER",
+      proffesion: "Software Engineering",
+      education: "National University of Mongolia",
+      phone: "",
+      email: "",
     },
   ];
 
@@ -145,10 +195,10 @@ export default function StaffPage() {
       <div className="relative lg:justify-center">
         <Banner
           title="Staff"
-          description="Is mission has always been to organize the world's information and make it universally accessible and useful."
+          description="Meet the Innovators Behind the Scenes: Our team of dedicated professionals is the driving force behind our cutting-edge solutions. Get to know the brilliant minds committed to transforming your digital landscape"
         />
         <div className="container py-10">
-          <h1 className="py-10 text-4xl text-black uppercase">jinie edu tech</h1>
+          <h1 className="py-10 text-4xl text-black uppercase">Management</h1>
           <div className="container flex justify-center">
             <div className="grid w-full grid-cols-2 gap-12 lg:grid-cols-4 ">
               {roleList.map(({ image, name, role }, index) => (
@@ -173,7 +223,7 @@ export default function StaffPage() {
           </div>
         </div>
         <div className="container py-10">
-          <h1 className="py-10 text-4xl text-black uppercase">io technology</h1>
+          <h1 className="py-10 text-4xl text-black uppercase">Research & Development</h1>
           <div className="container flex justify-center">
             <div className="grid w-full grid-cols-2 gap-12 lg:grid-cols-4 ">
               {IoList.map(({ image, name, role }, index) => (

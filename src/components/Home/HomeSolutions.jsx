@@ -1,50 +1,50 @@
 export default function HomeSolutions() {
   const list = [
     {
-      icon: "database-2",
-      title: "Database",
+      icon: "puzzle-2",
+      title: "Low Code",
       description:
-        "Effective on the target floor after mid-thirties. Unlike other social networking sites, you need to prepare advertisements and landings that take advantage of IT unique sensibility.",
+        "Low-code solutions streamline software development by enabling users to create applications through graphical user interfaces and configuration instead of traditional hand-coded programming. This approach significantly reduces development time, enhances agility, and allows users with varying technical expertise to build, deploy, and manage applications efficiently.",
       reverse: false,
       contrast: false,
     },
     {
-      icon: "lock",
-      title: "authentication",
+      icon: "bnb",
+      title: "Blockchain",
       description:
-        "Effective on the target floor after mid-thirties. Unlike other social networking sites, you need to prepare advertisements and landings that take advantage of IT unique sensibility.",
+        "Blockchain technology is a decentralized and distributed ledger system that ensures secure, transparent, and tamper-proof record-keeping of transactions across a network of computers. It underpins cryptocurrencies and enables trustless, peer-to-peer transactions without the need for a central authority, opening avenues for innovations in finance, supply chain management, and beyond.",
       reverse: false,
       contrast: true,
     },
     {
-      icon: "mail",
-      title: "edge functions",
+      icon: "box-3",
+      title: "3D Object",
       description:
-        "Effective on the target floor after mid-thirties. Unlike other social networking sites, you need to prepare advertisements and landings that take advantage of IT unique sensibility.",
+        "3D object technology involves the creation, manipulation, and visualization of three-dimensional models in digital environments. This technology is pivotal in various fields such as gaming, animation, industrial design, and virtual reality, allowing for the detailed representation of objects that can be examined and interacted with from all angles, enhancing realism and user experience.",
       reverse: true,
       contrast: true,
     },
     {
       icon: "cloud",
-      title: "storage",
+      title: "IOT",
       description:
-        "Effective on the target floor after mid-thirties. Unlike other social networking sites, you need to prepare advertisements and landings that take advantage of IT unique sensibility.",
+        "In the realm of IoT, focusing on GPS and RFID-based systems represents a strategic approach to harnessing location intelligence and asset tracking capabilities. GPS technology allows for precise, real-time geolocation tracking. RFID technology, on the other hand, provides a means for identifying and tracking assets or individuals through radio frequency signals, enabling efficient inventory management, access control, and supply chain visibility.",
       reverse: true,
       contrast: false,
     },
     {
-      icon: "cursor",
-      title: "realtime",
+      icon: "pencil-ruler-2",
+      title: "Enterprise software",
       description:
-        "Effective on the target floor after mid-thirties. Unlike other social networking sites, you need to prepare advertisements and landings that take advantage of IT unique sensibility.",
+        "Our expertise spans custom software development for both enterprise and personal systems, including mobile applications across diverse sectors such as medical, finance, retail-chain, industry, and advertisement. We tailor solutions to meet the unique needs of each field, ensuring innovative, efficient, and scalable outcomes that drive success and transformation.",
       reverse: false,
       contrast: true,
     },
     {
-      icon: "brain",
-      title: "artificial intelligence",
+      icon: "server",
+      title: "Hardware, Infrastructure",
       description:
-        "Effective on the target floor after mid-thirties. Unlike other social networking sites, you need to prepare advertisements and landings that take advantage of IT unique sensibility.",
+        "Alongside our software development, we offer comprehensive services in hardware procurement, infrastructure consulting, and system hosting. Our approach ensures not only the delivery of top-tier software solutions but also the optimization of the underlying hardware and infrastructure, providing a seamless, integrated experience for businesses looking to enhance efficiency and scalability across their operations.",
       reverse: false,
       contrast: false,
     },
@@ -56,8 +56,7 @@ export default function HomeSolutions() {
         <div className="flex flex-col items-center mb-4 text-center lg:mb-8">
           <h2 className="mb-4 text-3xl font-semibold uppercase">Solutions</h2>
           <p className="max-w-[720px] text-[#586772]">
-            Is mission has always been to organize the world&apos;s information and make it
-            universally accessible and useful.
+          Tailored Solutions to Navigate the Digital Frontier: Explore How We Can Transform Your World.
           </p>
         </div>
         <div className="grid bg-white lg:grid-cols-2">

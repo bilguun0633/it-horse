@@ -7,18 +7,10 @@ export default function HomeAbout() {
       <div className="lg:w-[50%] lg:pr-8">
         <h2 className="mb-4 text-3xl font-semibold">ABOUT US</h2>
         <p className="mb-4 text-[#586772]">
-          Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate,
-          supply chain management, and other industries succeed with custom software solutions.
-          Driven by our clients’ business-specific needs and time and budget constraints, our
-          software development company builds and augments secure, stable, scalable, and highly
-          functional digital products to deliver maximum value and ensure business sustainability.
+        Welcome to ITHORSE, a beacon of innovation in the realms of software development, 3D object creation, and cutting-edge hardware solutions. With a rich heritage spanning over five years, our journey is marked by relentless dedication to quality, precision, and transforming ideas into tangible realities. Based in the heart of the technology revolution, we have expanded our expertise across borders, now embracing the vibrant creativity and technological prowess of Korean software development through strategic outsourcing.
         </p>
         <p className="mb-4 text-[#586772]">
-          Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate,
-          supply chain management, and other industries succeed with custom software solutions.
-          Driven by our clients’ business-specific needs and time and budget constraints, our
-          software development company builds and augments secure, stable, scalable, and highly
-          functional digital products to deliver maximum value and ensure business sustainability.
+        At ITHORSE, we are not just about creating software and products; we are about crafting experiences that resonate with our clients and end-users. Our team, a blend of seasoned experts and dynamic innovators, works tirelessly to exceed expectations, pushing the boundaries of what is possible in the digital realm. Whether it's bespoke software solutions, mesmerizing 3D models, or groundbreaking hardware, our creations stand as testaments to our commitment to excellence and innovation.
         </p>
         <br />
       </div>

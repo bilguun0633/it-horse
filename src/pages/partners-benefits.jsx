@@ -62,7 +62,7 @@ export default function PartnersBenefits() {
       <div className="relative  lg:justify-center">
         <Banner
           title="partners & benefits"
-          description="Is mission has always been to organize the world's information and make it universally accessible and useful."
+          description="Building Success Together: Our Partners and Their Benefits - At ITHorse, we believe in the power of collaboration to drive innovation and success. This section highlights our esteemed partners and the mutual benefits of our collaborations. Discover how joining forces with ITHorse not only accelerates technological advancement but also opens up new opportunities for growth, expertise sharing, and achieving collective milestones. Learn more about how our partnerships are shaping the future of technology and how your organization can be part of this exciting journey."
         />
       </div>
       <div className="container py-10">
