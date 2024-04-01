@@ -22,8 +22,7 @@ export default function AboutUs() {
       name: "korea",
       flag: "KR",
       children: [
-        "Room 1507, Building 110, Eden Apartment, 46 Heungan-ro, Gumi-si, Gyeongsangbuk-do",
-        "Room 1507, Building 110, Eden Apartment, 46 Heungan-ro, Gumi-si, Gyeongsangbuk-do",
+        "Room 1507, Building 110, Eden Apartment, 46 Heungan-ro, Gumi-si, Gyeongsangbuk-do"
       ],
     },
   ];

@@ -3,50 +3,50 @@ import ImageContainer from "../common/ImageContainer";
 export default function HomeSkills() {
   const list = [
     {
-      logo: "/icons/react.png",
-      title: "react js",
+      logo: "/icons/java.png",
+      title: "java",
       description:
-        "Our table editor makes Postgres easy to use, even for non-techies. You can do everything right in our dashboard.",
+        "Java is a versatile and robust programming language, ideal for building secure, high-performance applications across platforms.",
     },
     {
-      logo: "/icons/flutter.png",
-      title: "flutter",
+      logo: "/icons/dotnet.png",
+      title: ".NET",
       description:
-        "Our table editor makes Postgres easy to use, even for non-techies. You can do everything right in our dashboard.",
+        ".NET is a comprehensive framework from Microsoft, enabling the development of dynamic web, mobile, and desktop applications.",
     },
     {
       logo: "/icons/python.png",
       title: "python",
       description:
-        "Our table editor makes Postgres easy to use, even for non-techies. You can do everything right in our dashboard.",
+        "Python is a highly readable and flexible programming language, renowned for its simplicity and scalability, making it ideal for web development, data analysis, artificial intelligence, and more.",
     },
     {
-      logo: "/icons/vue.png",
-      title: "vue js",
+      logo: "/icons/react.png",
+      title: "react js",
       description:
-        "Our table editor makes Postgres easy to use, even for non-techies. You can do everything right in our dashboard.",
+        "React is a powerful JavaScript library for building user interfaces, especially single-page applications with interactive UIs.",
+    },
+    {
+      logo: "/icons/flutter.png",
+      title: "flutter",
+      description:
+        "Flutter is an open-source UI software development kit from Google, used for crafting natively compiled applications for mobile, web, and desktop from a single codebase.",
     },
     {
       logo: "/icons/figma.png",
       title: "figma",
       description:
-        "Our table editor makes Postgres easy to use, even for non-techies. You can do everything right in our dashboard.",
+        "Figma is a cloud-based design tool that enables collaborative interface design, prototyping, and code generation, streamlining the design-to-development workflow.",
     },
-    {
-      logo: "/icons/postman.png",
-      title: "postman",
-      description:
-        "Our table editor makes Postgres easy to use, even for non-techies. You can do everything right in our dashboard.",
-    },
+    
   ];
 
   return (
     <div className="container py-4 lg:py-24">
       <div className="flex flex-col items-center mb-4 text-center lg:mb-8">
-        <h2 className="mb-4 text-3xl font-semibold uppercase">skills</h2>
+        <h2 className="mb-4 text-3xl font-semibold uppercase">Main Technologies</h2>
         <p className="max-w-[720px] text-[#586772]">
-          Is mission has always been to organize the world&apos;s information and make it
-          universally accessible and useful.
+        Empowering Innovation with Cutting-Edge Technologies.
         </p>
       </div>
       <div className="grid gap-4 lg:grid-cols-3">

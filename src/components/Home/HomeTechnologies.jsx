@@ -54,10 +54,9 @@ export default function HomeTechnologies() {
       <div className="container relative z-0 py-4 lg:py-24">
         <ImageContainer src="/background/blue-pattern.jpg" className="-z-10" />
         <div className="flex flex-col items-center mb-4 text-center lg:mb-8">
-          <h2 className="mb-4 text-3xl font-semibold text-white uppercase">Main technologies</h2>
+          <h2 className="mb-4 text-3xl font-semibold text-white uppercase">Why ITHORSE?</h2>
           <p className="max-w-[720px] text-[#B2B9BE]">
-            Is mission has always been to organize the world&apos;s information and make it
-            universally accessible and useful.
+          Choosing ITHorse means partnering with a leader in innovative software and hardware solutions. Our diverse expertise spans custom software development for various sectors, including medical, finance, and retail, along with cutting-edge IoT systems using GPS and RFID technologies. Beyond software, we excel in hardware procurement, infrastructure consulting, and system hosting, ensuring a comprehensive tech ecosystem for your business. At ITHorse, we're dedicated to tailoring our solutions to meet your unique needs, driving efficiency, scalability, and transformation across your operations. Why ITHorse? Because we're committed to your success every step of the way.
           </p>
         </div>
         <div className="grid gap-4 lg:grid-cols-4">
