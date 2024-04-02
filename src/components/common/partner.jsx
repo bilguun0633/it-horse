@@ -1,24 +1,25 @@
 import React from "react";
 
+import useTranslation from "next-translate/useTranslation";
+
 import ImageContainer from "./ImageContainer";
 
 export default function Partner() {
+  const { t } = useTranslation("main");
   return (
     <div className="relative z-0 ">
       <ImageContainer src="/software/partnerbg.png" className="-z-10" />
-      <div className="flex xl:items-center justify-center py-4 container ">
+      <div className="container flex justify-center py-4 xl:items-center ">
         <div>
-          <div className="w-full text-white text-center">
-            <h1 className="text-3xl font-semibold uppercase">become a ithorse partner</h1>
+          <div className="w-full text-center text-white">
+            <h1 className="text-3xl font-semibold uppercase">{t("home_page.become")}</h1>
             <br />
-            <p>
-            Embark on a Collaborative Voyage: Become a Valued Partner and Shape the Future Together
-            </p>
+            <p>{t("home_page.become1")}</p>
           </div>
           <br />
           <div className="bg-white rounded-lg ">
             <div className="px-20 py-5">
-              <label className="mb-4 text-lg font-semibold  ">First name</label>
+              <label className="mb-4 text-lg font-semibold ">{t("home_page.register")}</label>
               <div className="flex mt-2 items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                 <input
                   type="text"
@@ -28,8 +29,8 @@ export default function Partner() {
               </div>
             </div>
             <div className="px-20 py-5">
-              <label className="mb-4 text-lg font-semibold">Last name</label>
-              <div className="flex mt-2 items-center w-full h-12  overflow-hidden border rounded-lg border-brown">
+              <label className="mb-4 text-lg font-semibold">{t("home_page.register1")}</label>
+              <div className="flex items-center w-full h-12 mt-2 overflow-hidden border rounded-lg border-brown">
                 <input
                   type="text"
                   className="flex-1 px-4 outline-none placeholder:text-base-200"
@@ -38,7 +39,7 @@ export default function Partner() {
               </div>
             </div>
             <div className="px-20 py-5">
-              <label className="mb-4 text-lg font-semibold">Email</label>
+              <label className="mb-4 text-lg font-semibold">{t("home_page.register2")}</label>
               <div className="flex mt-2 items-center w-[100%] h-12 overflow-hidden border rounded-lg border-brown">
                 <input
                   type="text"
@@ -49,7 +50,7 @@ export default function Partner() {
             </div>
             <div className="justify-content-center">
               <div className="px-20 py-5">
-                <label className="mb-4 text-lg font-semibold">Message</label>
+                <label className="mb-4 text-lg font-semibold">{t("home_page.register3")}</label>
                 <div className=" mt-2 w-[100%]  h-fit  overflow-hidden border rounded-lg border-brown">
                   <textarea
                     type="text"
@@ -60,7 +61,9 @@ export default function Partner() {
               </div>
             </div>
             <div className="flex justify-center py-5">
-              <button className="py-2 text-white rounded bg-blue px-14">Submit</button>
+              <button className="py-2 text-white rounded bg-blue px-14">
+                {t("home_page.register4")}
+              </button>
             </div>
           </div>
         </div>

@@ -1,8 +1,9 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function ImageContainer({ src, className }) {
   return (
     <Image
+      layout="fill"
       fill
       alt=""
       quality={100}

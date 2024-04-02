@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -46,29 +46,29 @@ export default function Header() {
 
   const list = [
     {
-      name: "Company",
+      name: t("header.company"),
       url: "",
       dropdown: [
         {
-          name: "Software-IO",
+          name: t("header.software-io"),
           url: "/software-io",
         },
         {
-          name: "3D Products-JINE",
+          name: t("header.3d-product"),
           url: "/threeDjine",
         },
         {
-          name: "Hardware-It Horse",
+          name: t("header.hardware-ithorse"),
           url: "/hardware-it",
         },
       ],
     },
     {
-      name: "Portfolio",
+      name: t("header.portfolio"),
       url: "",
       dropdown: [
         {
-          name: "Software",
+          name: t("header.software"),
           url: "/software",
         },
         {
@@ -76,53 +76,53 @@ export default function Header() {
           url: "/threeD",
         },
         {
-          name: "Hardware",
+          name: t("header.hardware"),
           url: "/hardware",
         },
       ],
     },
     {
-      name: "Staff",
+      name: t("header.staff"),
       url: "",
       dropdown: [
         {
-          name: "Staff",
+          name: t("header.staff"),
           url: "/staff",
         },
       ],
     },
     {
-      name: "Customer Service",
+      name: t("header.customer-service"),
       url: "",
       dropdown: [
         {
-          name: "Price",
+          name: t("header.price"),
           url: "/price",
         },
         {
-          name: "FAQ",
+          name: t("header.faq"),
           url: "/faq",
         },
         {
-          name: "Announcement",
+          name: t("header.announcement"),
           url: "/announcement",
         },
       ],
     },
     {
-      name: "About US",
+      name: t("header.about-us"),
       url: "",
       dropdown: [
         {
-          name: "About Us",
+          name: t("header.about-us"),
           url: "/about-us",
         },
         {
-          name: "Partners & Benefits",
+          name: t("header.partners"),
           url: "/partners-benefits",
         },
         {
-          name: "Certificates & Agreements",
+          name: t("header.certficate"),
           url: "/certficates",
         },
       ],

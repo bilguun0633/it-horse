@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import parse from "html-react-parser";
 

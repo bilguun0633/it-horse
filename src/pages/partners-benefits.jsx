@@ -1,6 +1,6 @@
 import React from "react";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import ImageContainer from "@/components/common/ImageContainer";
 import Banner from "@/components/common/banner";
@@ -9,57 +9,49 @@ import Partner from "@/components/common/partner";
 export default function PartnersBenefits() {
   const imageList = [
     {
-      image: "/about/image1.svg",
-      width: 169,
+      image: "/partners/image1.png",
+      width: 143,
+      height: 40,
     },
     {
-      image: "/about/image2.svg",
-      width: 173,
+      image: "/partners/image2.png",
+      width: 58,
+      height: 40,
     },
     {
-      image: "/about/image3.svg",
-      width: 98,
+      image: "/partners/image3.png",
+      width: 155,
+      height: 45,
     },
     {
-      image: "/about/image4.svg",
-      width: 209,
+      image: "/partners/image4.png",
+      width: 100,
+      height: 64,
     },
     {
-      image: "/about/image5.svg",
-      width: 116,
+      image: "/partners/image5.png",
+      width: 80,
+      height: 64,
     },
     {
-      image: "/about/image12.svg",
-      width: 106,
+      image: "/partners/image6.png",
+      width: 171,
+      height: 40,
     },
     {
-      image: "/about/image6.svg",
-      width: 125,
+      image: "",
+      width: 0,
+      height: 0,
     },
     {
-      image: "/about/image7.svg",
-      width: 172,
-    },
-    {
-      image: "/about/image8.svg",
-      width: 145,
-    },
-    {
-      image: "/about/image9.svg",
-      width: 164,
-    },
-    {
-      image: "/about/image10.svg",
-      width: 145,
-    },
-    {
-      image: "/about/image11.svg",
-      width: 164,
+      image: "",
+      width: 0,
+      height: 0,
     },
   ];
   return (
     <>
-      <div className="relative  lg:justify-center">
+      <div className="relative lg:justify-center">
         <Banner
           title="partners & benefits"
           description="Building Success Together: Our Partners and Their Benefits - At ITHorse, we believe in the power of collaboration to drive innovation and success. This section highlights our esteemed partners and the mutual benefits of our collaborations. Discover how joining forces with ITHorse not only accelerates technological advancement but also opens up new opportunities for growth, expertise sharing, and achieving collective milestones. Learn more about how our partnerships are shaping the future of technology and how your organization can be part of this exciting journey."
@@ -70,12 +62,12 @@ export default function PartnersBenefits() {
           PARTNERS
         </h4>
         <div className="grid grid-cols-2 divide-x divide-y divide-brown lg:grid-cols-4 outline -outline-offset-1 outline-1 outline-brown">
-          {imageList.map(({ image, width }, index) => (
+          {imageList.map(({ image, width, height }, index) => (
             <div
               key={index}
               className="relative flex items-center justify-center px-4 aspect-video group"
             >
-              <Image width={width} alt="" height={0} src={image} />
+              <Image width={width} alt="" height={height} src={image} />
               <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 opacity-0 transitioned "></div>
             </div>
           ))}
@@ -86,7 +78,7 @@ export default function PartnersBenefits() {
           BENEFITS
         </h4>
 
-        <div className="grid xl:grid-cols-2 gap-2 lg:grid-cols-2 ">
+        <div className="grid gap-2 xl:grid-cols-2 lg:grid-cols-2 ">
           <div className="overflow-hidden border rounded-lg border-brown">
             <div className="grid w-full grid-cols-2 lg:grid-cols-2">
               <div className="p-10 ">
@@ -145,7 +137,7 @@ export default function PartnersBenefits() {
             </div>
           </div>
         </div>
-        <div className="grid xl:grid-cols-2 gap-2 py-2 lg:grid-cols-2 ">
+        <div className="grid gap-2 py-2 xl:grid-cols-2 lg:grid-cols-2 ">
           <div className="grid grid-cols-2 gap-2 lg:grid-cols-2">
             <div className="border rounded-lg border-brown ">
               <div className="p-10">

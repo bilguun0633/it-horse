@@ -1,50 +1,54 @@
 import React from "react";
 
+import useTranslation from "next-translate/useTranslation";
+
 import ImageContainer from "../common/ImageContainer";
 
 export default function HomeTechnologies() {
+  const { t } = useTranslation("main");
   const list = [
     {
-      title: "Custom software development",
+      title: t("home_page.custom"),
       children: [
-        "Solutions tailored to specific business needs",
-        "Domain experience",
-        "Technical excellence",
-        "Process visibility",
-        "Constraint management framework",
-        "Compliance with non-functional requirements",
+        t("home_page.custom1"),
+        t("home_page.custom2"),
+        t("home_page.custom3"),
+        t("home_page.custom4"),
+        t("home_page.custom5"),
+        t("home_page.custom6"),
       ],
     },
     {
-      title: "Development team augmentation",
+      title: t("home_page.development"),
       children: [
-        "Off-site and on-site team staffing and ramp-up",
-        "Extensive talent base",
-        "Talent nurturing and retention policy",
-        "Management of distributed teams",
-        "Performance managemant",
+        t("home_page.development1"),
+        t("home_page.development2"),
+        t("home_page.development3"),
+        t("home_page.development4"),
+        t("home_page.development5"),
+        t("home_page.development6"),
       ],
     },
     {
-      title: "IT consulting and digital advisory",
+      title: t("home_page.digital"),
       children: [
-        "Architecture assessment",
-        "Technical feasibility audit",
-        "Development process audit",
-        "Solution design",
-        "Proof of concept development",
-        "Development strategy",
+        t("home_page.digital1"),
+        t("home_page.digital2"),
+        t("home_page.digital3"),
+        t("home_page.digital4"),
+        t("home_page.digital5"),
+        t("home_page.digital6"),
       ],
     },
     {
-      title: "Digital transformation",
+      title: t("home_page.cunsulting"),
       children: [
-        "Solutions tailored to specific business needs",
-        "Domain experience",
-        "Technical excellence",
-        "Process visibility",
-        "Constraint management framework",
-        "Compliance with non-functional requirements",
+        t("home_page.cunsulting1"),
+        t("home_page.cunsulting2"),
+        t("home_page.cunsulting3"),
+        t("home_page.cunsulting4"),
+        t("home_page.cunsulting5"),
+        t("home_page.cunsulting6"),
       ],
     },
   ];
@@ -54,10 +58,10 @@ export default function HomeTechnologies() {
       <div className="container relative z-0 py-4 lg:py-24">
         <ImageContainer src="/background/blue-pattern.jpg" className="-z-10" />
         <div className="flex flex-col items-center mb-4 text-center lg:mb-8">
-          <h2 className="mb-4 text-3xl font-semibold text-white uppercase">Why ITHORSE?</h2>
-          <p className="max-w-[720px] text-[#B2B9BE]">
-          Choosing ITHorse means partnering with a leader in innovative software and hardware solutions. Our diverse expertise spans custom software development for various sectors, including medical, finance, and retail, along with cutting-edge IoT systems using GPS and RFID technologies. Beyond software, we excel in hardware procurement, infrastructure consulting, and system hosting, ensuring a comprehensive tech ecosystem for your business. At ITHorse, we're dedicated to tailoring our solutions to meet your unique needs, driving efficiency, scalability, and transformation across your operations. Why ITHorse? Because we're committed to your success every step of the way.
-          </p>
+          <h2 className="mb-4 text-3xl font-semibold text-white uppercase">
+            {t("home_page.why-ithorse")}
+          </h2>
+          <p className="max-w-[720px] text-[#B2B9BE]">{t("home_page.why-ithorse1")}</p>
         </div>
         <div className="grid gap-4 lg:grid-cols-4">
           {list.map(({ title, children }, index) => (

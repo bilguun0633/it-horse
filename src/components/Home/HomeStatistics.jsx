@@ -1,20 +1,23 @@
+import useTranslation from "next-translate/useTranslation";
+
 export default function HomeStatistics() {
+  const { t } = useTranslation("main");
   const list = [
     {
       value: "5+",
-      text: "years of experience in software engineering and IT consulting",
+      text: t("home_page.sum_text1"),
     },
     {
       value: "30+",
-      text: "software developers and other IT professionals on board",
+      text: t("home_page.sum_text2"),
     },
     {
       value: "45+",
-      text: "active clients building and augmenting software and hardware with us",
+      text: t("home_page.sum_text3"),
     },
     {
       value: "80+",
-      text: "projects successfully delivered to clients worldwide",
+      text: t("home_page.sum_text4"),
     },
   ];
 

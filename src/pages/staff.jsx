@@ -1,7 +1,9 @@
 import React from "react";
 import { useState } from "react";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
+
+import useTranslation from "next-translate/useTranslation";
 
 import ImageContainer from "@/components/common/ImageContainer";
 import MemberPopup from "@/components/common/MemberPopup";
@@ -10,7 +12,7 @@ import Banner from "@/components/common/banner";
 export default function StaffPage() {
   const [currentMember, setCurrentMember] = useState(null);
   const [ioCurrentMember, setIoCurrentMember] = useState(null);
-
+  const { t } = useTranslation("main");
   const roleList = [
     {
       image: "/image/staff-profile.png",
@@ -62,7 +64,6 @@ export default function StaffPage() {
       phone: "051-331-0110 ",
       email: "incom2794@naver.com",
     },
-    
   ];
   const IoList = [
     {
@@ -193,12 +194,9 @@ export default function StaffPage() {
   return (
     <>
       <div className="relative lg:justify-center">
-        <Banner
-          title="Staff"
-          description="Meet the Innovators Behind the Scenes: Our team of dedicated professionals is the driving force behind our cutting-edge solutions. Get to know the brilliant minds committed to transforming your digital landscape"
-        />
+        <Banner title={t("header.staff")} description={t("staff.subtitle")} />
         <div className="container py-10">
-          <h1 className="py-10 text-4xl text-black uppercase">Management</h1>
+          <h1 className="py-10 text-4xl text-black uppercase">{t("staff.managment")}</h1>
           <div className="container flex justify-center">
             <div className="grid w-full grid-cols-2 gap-12 lg:grid-cols-4 ">
               {roleList.map(({ image, name, role }, index) => (
@@ -209,7 +207,7 @@ export default function StaffPage() {
                   >
                     <ImageContainer src={image} />
                     <div className="absolute inset-0 z-10 flex items-center justify-center transition opacity-0 backdrop-brightness-50 hover:opacity-100">
-                      <p className="font-light text-white uppercase">See more</p>
+                      <p className="font-light text-white uppercase">{t("staff.see-more")}</p>
                     </div>
                   </div>
                   <br />
@@ -223,7 +221,7 @@ export default function StaffPage() {
           </div>
         </div>
         <div className="container py-10">
-          <h1 className="py-10 text-4xl text-black uppercase">Research & Development</h1>
+          <h1 className="py-10 text-4xl text-black uppercase">{t("staff.research")}</h1>
           <div className="container flex justify-center">
             <div className="grid w-full grid-cols-2 gap-12 lg:grid-cols-4 ">
               {IoList.map(({ image, name, role }, index) => (
@@ -234,7 +232,7 @@ export default function StaffPage() {
                   >
                     <ImageContainer src={image} />
                     <div className="absolute inset-0 z-10 flex items-center justify-center transition opacity-0 backdrop-brightness-50 hover:opacity-100">
-                      <p className="font-light text-white uppercase">See more</p>
+                      <p className="font-light text-white uppercase">{t("staff.see-more")}</p>
                     </div>
                   </div>
                   <br />

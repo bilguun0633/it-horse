@@ -1,144 +1,127 @@
 import React from "react";
 
+import useTranslation from "next-translate/useTranslation";
+
 import ImageContainer from "@/components/common/ImageContainer";
 import Banner from "@/components/common/banner";
 
 export default function Software() {
+  const { t } = useTranslation("main");
+
   const news = [
     {
       image: "/portfolio/image1.png",
-      name: "Websit ",
-      title: "majestic marketplace",
-      description:
-        "The Majestic project has created a blockchain-based web system for buying, minting, and auctioning NFTs.",
+      name: t("software.website"),
+      title: t("software.web_job1"),
+      description: t("software.web_job1_text"),
     },
     {
       image: "/portfolio/image2.png",
-      name: "Mobile application",
+      name: t("software.mobile"),
       title: "G-chain technology",
-      description:
-        "G-chain is a crypto wallet app based on the blockchain. It is an advanced mobile application that allows you to buy and transfer tokens, as well as trade with other coins.",
+      description: t("software.mobile_text"),
     },
     {
       image: "/portfolio/image3.png",
-      name: "Website",
-      title: "Agrigold.io",
-      description:
-        "ICO presentation website of Agrigold project was made. In addition, the project's marketing promotion work was completed twice.",
+      name: t("software.website"),
+      title: t("software.web_job2"),
+      description: t("software.web_job2_text"),
     },
     {
       image: "/portfolio/image4.png",
-      name: "Mobile application",
+      name: t("software.mobile"),
       title: "toki",
-      description:
-        "The coffee delivery mini-app module within the Toki app is completed with design and development.",
+      description: t("software.mobile_job2_text"),
     },
     {
       image: "/portfolio/image5.png",
-      name: "Website",
+      name: t("software.website"),
       title: "cnetrals",
-      description:
-        "Premium Building Materials LLC was founded in 2011 under the name Premium Concrete to operate in the field of construction materials production and supply",
+      description: t("software.web_job3_text"),
     },
     {
       image: "/portfolio/image6.png",
-      name: "Mobile application",
+      name: t("software.mobile"),
       title: "mse",
-      description:
-        "This mobile app displays stock prices and other information traded on the Mongolian Stock Exchange. You can create your own list of stocks you are interested in.",
+      description: t("software.mobile_job3_text"),
     },
     {
       image: "/portfolio/image7.png",
-      name: "Website",
+      name: t("software.website"),
       title: "khan bank",
-      description:
-        "KAAN Bank is a national leading commercial bank with a total of 545 branches across the country, providing comprehensive banking and financial services to more than 82 percent of Mongolia's population, or 2.8 million customers.",
+      description: t("software.web_job4_text"),
     },
     {
       image: "/portfolio/image8.png",
-      name: "Mobile application",
+      name: t("software.mobile"),
       title: "central",
-      description:
-        "Using the Central platform, you can receive real-time information on the progress of orders and deliveries. Also, an application that solves the problems faced by the project site, office, and suppliers.",
+      description: t("software.mobile_job4_text"),
     },
     {
       image: "/portfolio/image9.png",
-      name: "Website",
+      name: t("software.website"),
       title: "emonos",
-      description:
-        "Online sales and delivery services for medicines and health products are continuously delivered to our customers 24 hours a day.",
+      description: t("software.web_job5_text"),
     },
     {
       image: "/portfolio/image11.png",
-      name: "Mobile application",
+      name: t("software.mobile"),
       title: "mtrip",
-      description:
-        "The Mtrip application is designed to provide the cheapest and fastest way to book flight tickets online.",
+      description: t("software.mobile_job5_text"),
     },
     {
       image: "/portfolio/image12.png",
-      name: "Mobile application",
+      name: t("software.mobile"),
       title: "blindcare",
-      description:
-        "Get professional psychological advice, take psychological tests, self-assess and anonymously share your psychological problems with others.",
+      description: t("software.mobile_job6_text"),
     },
     {
       image: "/portfolio/image13.png",
-      name: "Website",
+      name: t("software.website"),
       title: "millennium plaza",
-      description:
-        "Ideally set in the centre of Ulaanbaatar, MIllennium Plaza Hotel & Mall Ulaanbaatar features air-conditioned rooms, a terrace, free WiFi and a restaurant. This 4-star hotel offers a bar.",
+      description: t("software.web_job6_text"),
     },
     {
       image: "/portfolio/image14.png",
-      name: "Mobile application",
+      name: t("software.mobile"),
       title: "super 92",
-      description:
-        "A mobile application that allows you to collect, use and gift bonus points based on fuel purchases and loyalty programs. With the mini-merchant app, you can purchase car-related product incentives such as vouchers and coupons.",
+      description: t("software.mobile_job7_text"),
     },
     {
       image: "/portfolio/image15.png",
-      name: "Website",
+      name: t("software.website"),
       title: "xac bank ipo",
-      description:
-        "A project with the purpose of purchasing securities offered to the public by Khas Bank, monitoring the progress of shares, and disseminating detailed information.",
+      description: t("software.web_job7_text"),
     },
     {
       image: "/portfolio/image16.png",
-      name: "Mobile application",
+      name: t("software.mobile"),
       title: "upoint",
-      description:
-        "Loyalty program integrated platform for obtaining information about products and discounts of organizations, collecting and spending points, viewing status, participating in contests, creating groups and adding members",
+      description: t("software.mobile_job8_text"),
     },
     {
       image: "/portfolio/image17.png",
-      name: "Website",
+      name: t("software.website"),
       title: "Khan bank ipo",
-      description:
-        "A project with the purpose of purchasing securities offered by Khan Bank to the public, monitoring the progress of shares, and disseminating detailed information",
+      description: t("software.web_job8_text"),
     },
     {
       image: "/portfolio/image18.png",
-      name: "Mobile application",
+      name: t("software.mobile"),
       title: "tdb capital",
-      description:
-        "You can get all services related to securities, such as opening an account, managing your account, trading, viewing detailed information about the price of securities, and trading between users.",
+      description: t("software.mobile_job9_text"),
     },
     {
       image: "/portfolio/image19.png",
-      name: "Website",
+      name: t("software.website"),
       title: "Metagro",
-      description:
-        "Metagro Company was established in 2021 with the goal of developing high-quality agricultural food products that meet international standards through a combination of intensive animal husbandry and smart agriculture.",
+      description: t("software.web_job9_text"),
     },
   ];
   return (
     <>
       <div className="relative lg:justify-center">
-        <Banner
-          title="software"
-          description="Is mission has always been to organize the world's information and make it universally accessible and useful."
-        />
+        <Banner title={t("header.software")} description={t("header.subtitle")} />
       </div>
       <div className=" lg:py-10 bg-gray">
         <div className="container flex justify-center">

@@ -1,27 +1,30 @@
 import React from "react";
 
-import Image from "next/image";
+import Image from "next/legacy/image";
+
+import useTranslation from "next-translate/useTranslation";
 
 export default function Footer() {
+  const { t } = useTranslation("main");
   const list = [
     {
-      name: "Company",
+      name: t("header.company"),
       url: "",
     },
     {
-      name: "Portfolio",
+      name: t("header.portfolio"),
       url: "",
     },
     {
-      name: "Staff",
+      name: t("header.staff"),
       url: "",
     },
     {
-      name: "Customer Service",
+      name: t("header.customer-service"),
       url: "",
     },
     {
-      name: "About US",
+      name: t("header.about-us"),
       url: "",
     },
   ];
@@ -57,7 +60,7 @@ export default function Footer() {
             ))}
           </div>
           <div className="flex 2xl:justify-content-end text-[#586772] lg:justify-content-end items-center md:justify-center sm:justify-center">
-            <p> Copyright © IT Horse | Design by IO  | Powered by JINE</p>
+            <p> {t("home_page.copyright")}</p>
           </div>
         </div>
       </div>
