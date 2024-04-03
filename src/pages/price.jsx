@@ -2,53 +2,53 @@ import React from "react";
 
 import Image from "next/legacy/image";
 
+import useTranslation from "next-translate/useTranslation";
+
 import ImageContainer from "@/components/common/ImageContainer";
 import InputCheckbox from "@/components/common/InputCheckbox";
 import InputRadio from "@/components/common/InputRadio";
 import Banner from "@/components/common/banner";
 
 export default function PricePage() {
+  const { t } = useTranslation("main");
   return (
     <>
       <div className="relative lg:justify-center">
-        <Banner
-          title="Price"
-          description="Is mission has always been to organize the world's information and make it universally accessible and useful."
-        />
+        <Banner title={t("header.price")} description={t("header.subtitle")} />
         <div className="flex justify-center  py-10 bg-gray">
           <div className="w-[848px] bg-white rounded-xl border border-brown  ">
             <div className="">
               <div className="px-20 py-5">
-                <h2 className="font-semibold uppercase">Type</h2>
+                <h2 className="font-semibold uppercase">{t("price.type")}</h2>
                 <div className="flex gap-4">
-                  <InputRadio name="type" label="Front-End" />
-                  <InputRadio name="type" label="Back-End" />
-                  <InputRadio name="type" label="Mobile development" />
-                  <InputRadio name="type" label="Project outsourcing" />
+                  <InputRadio name="type" label={t("price.front_end")} />
+                  <InputRadio name="type" label={t("price.back_end")} />
+                  <InputRadio name="type" label={t("price.mobile_dev")} />
+                  <InputRadio name="type" label={t("price.outsourcing")} />
                 </div>
               </div>
               <div className="px-20 py-5">
-                <label className="mb-4 text-lg font-semibold ">Title</label>
+                <label className="mb-4 text-lg font-semibold ">{t("price.title1")}</label>
                 <div className="flex items-center mt-4 w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                   <input
                     type="text"
                     className="flex-1 px-4 outline-none placeholder:text-base-200"
-                    placeholder="Scarlett"
+                    placeholder={t("price.title1_inside")}
                   />
                 </div>
               </div>
               <div className="px-20 py-5">
-                <label className="mb-4 text-lg font-semibold">Name</label>
+                <label className="mb-4 text-lg font-semibold">{t("price.name")}</label>
                 <div className="flex items-center mt-4  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                   <input
                     type="text"
                     className="flex-1 px-4 outline-none placeholder:text-base-200"
-                    placeholder="Johansson"
+                    placeholder={t("price.name_inside")}
                   />
                 </div>
               </div>
               <div className="px-20 py-5">
-                <label className="mb-4 text-lg font-semibold ">Email</label>
+                <label className="mb-4 text-lg font-semibold ">{t("price.email")}</label>
                 <div className="flex items-center mt-4 w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                   <input
                     type="text"
@@ -58,7 +58,7 @@ export default function PricePage() {
                 </div>
               </div>
               <div className="px-20 py-5">
-                <label className="mb-4 text-lg font-semibold ">Phone number</label>
+                <label className="mb-4 text-lg font-semibold ">{t("price.phone")}</label>
                 <div className="flex mt-4 items-center  w-[100%] h-12   overflow-hidden border rounded-lg border-brown">
                   <input
                     type="text"
@@ -69,21 +69,23 @@ export default function PricePage() {
               </div>
               <div className="justify-content-center">
                 <div className="px-20 py-5">
-                  <label className=" text-lg font-semibold  ">Inquiry details</label>
+                  <label className=" text-lg font-semibold  ">{t("price.inquiry")}</label>
                   <div className=" mt-4 w-[100%]  h-fit  overflow-hidden border rounded-lg border-brown">
                     <textarea
                       type="text"
                       className="flex justify-center w-full min-h-[24px] h-32 px-4 py-2 outline-none placeholder:text-base-200"
-                      placeholder="How can we help you?"
+                      placeholder={t("price.inquiry_inside")}
                     />
                   </div>
                 </div>
                 <div className="px-20">
-                  <InputCheckbox label="Agree to collect and use personal information." />
+                  <InputCheckbox label={t("price.agree_infor")} />
                 </div>
               </div>
               <div className="flex justify-center py-5">
-                <button className="py-2 text-white rounded bg-blue px-14">Send request</button>
+                <button className="py-2 text-white rounded bg-blue px-14">
+                  {t("price.send_req")}
+                </button>
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
 
+import useTranslation from "next-translate/useTranslation";
 import Flag from "react-flagkit";
 
 import HomeAbout from "@/components/Home/HomeAbout";
@@ -10,30 +11,24 @@ import AboutUsSection from "@/components/common/about-us-section";
 import Banner from "@/components/common/banner";
 
 export default function AboutUs() {
+  const { t } = useTranslation("main");
   const internationalList = [
     {
-      name: "mongolia",
+      name: t("about-us.mongolia"),
       flag: "MN",
-      children: [
-        "Room 1507, Building 110, Eden Apartment, 46 Heungan-ro, Gumi-si, Gyeongsangbuk-do",
-      ],
+      children: [t("about-us.text1")],
     },
     {
-      name: "korea",
+      name: "about-us.korea",
       flag: "KR",
-      children: [
-        "Room 1507, Building 110, Eden Apartment, 46 Heungan-ro, Gumi-si, Gyeongsangbuk-do"
-      ],
+      children: [t("about-us.text2")],
     },
   ];
 
   return (
     <>
       <div className="relative lg:justify-center">
-        <Banner
-          title="about us"
-          description="Is mission has always been to organize the world's information and make it universally accessible and useful."
-        />
+        <Banner title={t("header.about-us")} description={t("header.subtitle")} />
       </div>
       <div className="">
         <AboutUsSection />
@@ -41,26 +36,13 @@ export default function AboutUs() {
       </div>
       <div className="flex justify-center text-white font-medium bg-[#00000066] ">
         <div className="w-[632px] p-10">
-          <p>
-            Jinie Coding Edu started out with information from the Inc. in 1998 with unique content
-            and educational know-how. It&s an armed educational technology company
-          </p>
+          <p>{t("3d_products.product_text1")}</p>
           <br />
-          <p>
-            3D printers, 3D pens, Aduino, and artificial intelligence (software) are essential to
-            the knowledge industry. Schools and public institutions are required to directly
-            research, develop, and manufacture school districts and connect various educational
-            contents In addition, I will show you various possibilities of Jinie-Coding Edu (state)
-            from the national academy membership business A lot of people worked together for this.
-          </p>
+          <p>{t("3d_products.product_text2")}</p>
           <br />
-          <p>
-            What we need to do now is to be able to move quickly to change. jinie Coding edu, with
-            his unstoppable passion, is a constant effort in your faith and in your support. I&ll
-            reciprocate and move on.
-          </p>
-          <p>Thank you. </p>
-          <p>Jinie-Code-Edu Executives and Employees</p>
+          <p>{t("3d_products.product_text3")}</p>
+          <p>{t("3d_products.product_text4")} </p>
+          <p>{t("3d_products.product_text5")}</p>
         </div>
       </div>
       <div className="py-16">
@@ -71,11 +53,10 @@ export default function AboutUs() {
         <div className="container flex justify-end">
           <div className="w-[364px] py-4 lg:py-24">
             <div className="mb-8 lg:mb-16">
-              <h2 className="mb-4 text-3xl font-semibold uppercase">international presence</h2>
-              <p className="text-[#586772]">
-                Is mission has always been to organize the world&apos;s information and make it
-                universally accessible and useful.
-              </p>
+              <h2 className="mb-4 text-3xl font-semibold uppercase">
+                {t("about-us.international")}
+              </h2>
+              <p className="text-[#586772]">{t("about-us.mission_text")}</p>
             </div>
             <div className="flex flex-col gap-4 lg:gap-8">
               {internationalList.map(({ name, flag, children }, index) => (

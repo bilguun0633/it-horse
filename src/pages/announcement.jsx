@@ -4,11 +4,13 @@ import { useState } from "react";
 import Image from "next/legacy/image";
 
 import parse from "html-react-parser";
+import useTranslation from "next-translate/useTranslation";
 
 import ImageContainer from "@/components/common/ImageContainer";
 import Banner from "@/components/common/banner";
 
 export default function Announcement() {
+  const { t } = useTranslation("main");
   const [tabIndex, setTabIndex] = useState(0);
   const currentDate = new Date();
   const fullYear = currentDate.getFullYear();
@@ -17,45 +19,39 @@ export default function Announcement() {
   const fullDay = currentDate.getDate();
   const test = [
     {
-      name: "New Releases",
-      subtitle: "Welcome to the era of zero!",
-      content:
-        "<p>Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.<br/> Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.<br/>Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.<br/>Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.</p>",
+      name: t("announcement.new-releases"),
+      subtitle: t("announcement.welcome"),
+      content: t("announcement.text1"),
     },
     {
-      name: "New Releases 2",
-      subtitle: "Welcome to the era of zero! 2",
-      content:
-        "<p>Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.<br/> Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.<br/>Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.<br/>Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.</p>",
+      name: t("announcement.new-releases"),
+      subtitle: t("announcement.welcome"),
+      content: t("announcement.text1"),
     },
     {
-      name: "New Releases ",
-      subtitle: "Welcome to the era of zero! 3",
-      content:
-        "<p>Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.<br/> Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.<br/>Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.<br/>Since 2008, IT Horse has been helping companies in the FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.</p>",
+      name: t("announcement.new-releases"),
+      subtitle: t("announcement.welcome"),
+      content: t("announcement.text1"),
     },
   ];
   return (
     <>
       <div className="relative lg:justify-center">
-        <Banner
-          title="announcement"
-          description="Is mission has always been to organize the world's information and make it universally accessible and useful."
-        />
+        <Banner title={t("header.announcement")} description={t("header.subtitle")} />
       </div>
       <div className="grid xl:grid-cols-3 ">
         <div className="bg-[#EDF3FE] lg:px-12 py-20 w-full ">
           <div className="">
-            <h1 className="px-4  text-2xl font-semibold uppercase">announcement</h1>
+            <h1 className="px-4  text-2xl font-semibold uppercase">{t("header.announcement")}</h1>
             <div className="grid lg:grid-cols-3 py-4 gap-2 px-4  md:grid-cols-1">
               <button className="h-8 px-8  text-black bg-white border rounded text hover:bg-blue hover:text-white border-brown ">
-                All
+                {t("announcement.all")}
               </button>
               <button className="h-8 px-8 text-black bg-white border rounded text hover:bg-blue hover:text-white border-brown">
-                Notice
+                {t("announcement.notice")}
               </button>
               <button className="h-8 text-black bg-white border rounded text hover:bg-blue hover:text-white border-brown">
-                New releases
+                {t("announcement.new-releases")}
               </button>
             </div>
           </div>
@@ -64,10 +60,12 @@ export default function Announcement() {
               <i className="flex-shrink-0 ri-search-line text-brown"></i>
               <input
                 type="text"
-                placeholder="Search"
+                placeholder={t("announcement.search")}
                 className="flex-1 px-4 outline-none placeholder:text-base-200"
               />
-              <button className=" h-full w-full rounded  text-white bg-blue ">Search</button>
+              <button className=" h-full w-full rounded  text-white bg-blue ">
+                {t("announcement.search")}
+              </button>
             </div>
           </div>
           {test.map(({ name, subtitle }, index) => (

@@ -1,46 +1,47 @@
 import React from "react";
 
+import useTranslation from "next-translate/useTranslation";
+
 export default function AboutUsList() {
+  const { t } = useTranslation("main");
   const list = [
     {
-      name: "NAME",
+      name: t("about-us.name"),
       description: [
         {
-          title: "ITHorse CO.,LTD",
+          title: t("about-us.name-text"),
         },
       ],
     },
     {
-      name: "CEO",
+      name: t("about-us.ceo"),
       description: [
         {
-          title: "Lee Song Woong",
+          title: t("about-us.ceo-text"),
         },
       ],
     },
     {
-      name: "Business type",
+      name: t("about-us.business_type"),
       description: [
         {
-          title: "Service Industry, Retail Business",
+          title: t("about-us.business-text"),
         },
       ],
     },
     {
-      name: "Head office",
+      name: t("about-us.head-office"),
       description: [
         {
-          title:
-            "Room 1507, Building 110, Eden Apartment, 46 Heungan-ro, Gumi-si, Gyeongsangbuk-do",
+          title: t("about-us.head-text"),
         },
       ],
     },
     {
-      name: "Mongolian branch",
+      name: t("about-us.mongolian-branch"),
       description: [
         {
-          title:
-            "Room 1507, Building 110, Eden Apartment, 46 Heungan-ro, Gumi-si, Gyeongsangbuk-do",
+          title: t("about-us.mongolian-branch-text"),
         },
       ],
     },
@@ -92,7 +93,6 @@ export default function AboutUsList() {
             </div>
           ))}
         </div>
-        
       </div>
     </div>
   );

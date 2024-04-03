@@ -1,96 +1,98 @@
 import React from "react";
 
+import useTranslation from "next-translate/useTranslation";
+
 import ImageContainer from "@/components/common/ImageContainer";
 import Banner from "@/components/common/banner";
 
 export default function Certficates() {
+  const { t } = useTranslation("main");
   const cert = [
     {
       image: "/certficate/cert1.png",
-      title: "Ministry of SMEs and Startups	",
-      subtitle: "2021 Busan Innovative Businessman Award	",
+      title: t("cert.title1"),
+      subtitle: t("cert.subtitle1"),
     },
     {
       image: "/certficate/certy1.png",
-      title: "KOREA ALACTRONIC INDUSTRIES COOPERATIVE		",
-      subtitle: "Union membership card		",
+      title: t("cert.title2"),
+      subtitle: t("cert.subtitle2"),
     },
     {
       image: "/certficate/cert2.png",
-      title: "KITA	",
-      subtitle: "Certificate of granting a trade identification number	",
+      title: t("cert.title3"),
+      subtitle: t("cert.subtitle3"),
     },
     {
       image: "/certficate/cert3.png",
-      title: "KITECH",
-      subtitle: "Saengsaengwon-Partner company designation",
+      title: t("cert.title4"),
+      subtitle: t("cert.subtitle4"),
     },
     {
       image: "/certficate/cert4.png",
-      title: "ICR	",
+      title: t("cert.title5"),
       subtitle: "ISO9001	",
     },
     {
       image: "/certficate/cert4.png",
-      title: "ICR	",
+      title: t("cert.title5"),
       subtitle: "ISO14001	",
     },
     {
       image: "/certficate/cert5.png",
-      title: "BUSAN METROPOLITAN CITY	",
-      subtitle: "Busan's representative technology start-up company	",
+      title: t("cert.title7"),
+      subtitle: t("cert.subtitle7"),
     },
     {
       image: "/certficate/cert6.png",
-      title: "KITA",
-      subtitle: "Trade Association Membership Card	",
+      title: t("cert.title8"),
+      subtitle: t("cert.subtitle8"),
     },
     {
       image: "/certficate/cert7.png",
-      title: "K-BIZ Korea Federation of SMEs",
-      subtitle:
-        "Direct production confirmation Software maintenance and support jigjeobsaengsanhwa ",
+      title: t("cert.title9"),
+      subtitle: t("cert.subtitle9"),
     },
     {
       image: "/certficate/cert7.png",
-      title: "K-BIZ Korea Federation of SMEs ",
-      subtitle: "Direct production confirmation certificate Internet support development service ",
+      title: t("cert.title9"),
+      subtitle: t("cert.subtitle10"),
     },
     {
       image: "/certficate/cert7.png",
-      title: "K-BIZ Korea Federation of SMEs ",
-      subtitle: "Direct production confirmation certificate software engineering industry",
+      title: t("cert.title9"),
+      subtitle: t("cert.subtitle11"),
     },
     {
       image: "/certficate/cert8.png",
-      title: "Ministry of SMEs and Startups",
-      subtitle: "CERTIFIC OF Inno-Biz",
+      title: t("cert.title12"),
+      subtitle: t("cert.subtitle12"),
     },
     {
       image: "/certficate/cert9.png",
-      title: "BEPA Busan Economic Promotion Agency ",
-      subtitle: "Busan Waterloo-type co-op program certificate",
+      title: t("cert.title13"),
+      subtitle: t("cert.subtitle13"),
     },
     {
       image: "/certficate/cert10.png",
-      title: "IIF Innopolis Institute Enterprise Association",
-      subtitle: "Research Institute Company of the Year 2023",
+      title: t("cert.title14"),
+      subtitle: t("cert.subtitle14"),
     },
     {
       image: "/certficate/cert11.png",
-      title: "KIPO",
-      subtitle: "Waste plastic material supply device for 3D printer",
+      title: t("cert.title15"),
+      subtitle: t("cert.subtitle15"),
     },
     {
       image: "/certficate/cert12.png",
-      title: "BUSAN METROPOLITAN CITY	",
-      subtitle: "Busan's representative technology start-up company	",
+      title: t("cert.title16"),
+      subtitle: t("cert.subtitle16"),
     },
   ];
   return (
     <div>
       <Banner
-        title="certificates and agreements"
+        title={t("cert.title")}
         description="Is mission has always been to organize the world's information and make it universally accessible and useful."
       />
       <div className="bg-[#F8F8F8] py-20">

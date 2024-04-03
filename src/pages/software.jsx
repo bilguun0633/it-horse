@@ -12,7 +12,7 @@ export default function Software() {
     {
       image: "/portfolio/image1.png",
       name: t("software.website"),
-      title: t("software.web_job1"),
+      title: "MAJESTIC MARKETPLACE",
       description: t("software.web_job1_text"),
     },
     {

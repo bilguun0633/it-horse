@@ -2,61 +2,54 @@ import React from "react";
 
 import Image from "next/legacy/image";
 
+import useTranslation from "next-translate/useTranslation";
+
 import ImageContainer from "@/components/common/ImageContainer";
 import Banner from "@/components/common/banner";
 
 export default function Hardware() {
+  const { t } = useTranslation("main");
   const news = [
     {
       image: "/software/hardware.png",
-      title: "3d printinter",
-      description:
-        "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
+      title: t("hardware.title1"),
+      description: t("hardware.text"),
     },
     {
       image: "/portfolio/image20.png",
-      title: "jinie drone",
-      description:
-        "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
+      title: t("hardware.title2"),
+      description: t("hardware.text"),
     },
     {
       image: "/portfolio/image21.png",
-      title: "jinie 3d pen",
-      description:
-        "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
+      title: t("hardware.title3"),
+      description: t("hardware.text"),
     },
     {
       image: "/portfolio/image22.png",
-      title: "jinie color pen",
-      description:
-        "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
+      title: t("hardware.title4"),
+      description: t("hardware.text"),
     },
     {
       image: "/portfolio/image23.png",
-      title: "jinie coding board",
-      description:
-        "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
+      title: t("hardware.title5"),
+      description: t("hardware.text"),
     },
     {
       image: "/portfolio/image24.png",
-      title: "3d printinter",
-      description:
-        "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
+      title: t("hardware.title6"),
+      description: t("hardware.text"),
     },
     {
       image: "/portfolio/image25.png",
-      title: "smart farm",
-      description:
-        "This is NFT Marketplace product. Traditional works of art such as paintings are valuable because they are one of a kind. with NFTs, artwork can be tokenised to create a digital certificate of ownership that can be bought and sold.",
+      title: t("hardware.title7"),
+      description: t("hardware.text"),
     },
   ];
   return (
     <>
       <div className="relative  lg:justify-center">
-        <Banner
-          title="hardware"
-          description="Is mission has always been to organize the world's information and make it universally accessible and useful."
-        />
+        <Banner title={t("header.hardware")} description={t("header.subtitle")} />
       </div>
       <div className=" py-5 bg-gray">
         <div className="container flex justify-center">

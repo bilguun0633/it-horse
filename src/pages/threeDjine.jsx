@@ -23,13 +23,13 @@ export default function ThreeDjine() {
             <div className="text-[#586772]">
               <p>{t("3d_products.products_text1")}</p>
               <br />
-              <p>{t("3d_products.products_text2")}</p>
+              <p>{t("3d_products.product_text2")}</p>
               <br />
-              <p>{t("3d_products.products_text3")}</p>
+              <p>{t("3d_products.product_text3")}</p>
               <br />
-              <p>{t("3d_products.products_text4")}.</p>
+              <p>{t("3d_products.product_text4")}.</p>
               <br />
-              <p>{t("3d_products.products_text5")}</p>
+              <p>{t("3d_products.product_text5")}</p>
             </div>
           </div>
         </div>

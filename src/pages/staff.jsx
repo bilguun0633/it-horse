@@ -17,7 +17,7 @@ export default function StaffPage() {
     {
       image: "/image/staff-profile.png",
       name: "Seongwoong Lee",
-      role: "CHIEF EXECUTIVE OFFICER",
+      role: t("staff.role1"),
       position: "Head of corporate research institute",
       proffesion: "Industrial engineer",
       education: "Office Information Equipment Application Technician Level 2",
@@ -27,7 +27,7 @@ export default function StaffPage() {
     {
       image: "/io/image1.png",
       name: "Enkh-amgalan",
-      role: "CHIEF TECHNOLOGY OFFICER",
+      role: t("staff.role2"),
       position: "CHIEF TECHNOLOGY OFFICER",
       proffesion: "Computer Engineering",
       education: "Istanbul University of Turkey",
@@ -37,7 +37,7 @@ export default function StaffPage() {
     {
       image: "/io/image2.png",
       name: "Tulga",
-      role: "CHIEF OPERATION OFFICER",
+      role: t("staff.role3"),
       position: "CHIEF OPERATION OFFICER",
       proffesion: "Software Engineering",
       education: "Mongolian University of Science and Technology",
@@ -47,7 +47,7 @@ export default function StaffPage() {
     {
       image: "/image/default-avatar2.png",
       name: "Jinmoon Lee",
-      role: "Director",
+      role: t("staff.role4"),
       position: "Dedicated agent",
       proffesion: " Department of information and Communication Engineering",
       education: "Widuk University",
@@ -57,7 +57,7 @@ export default function StaffPage() {
     {
       image: "/image/avatar.png",
       name: "Da-ye Kang",
-      role: "Design Department head",
+      role: t("staff.role5"),
       position: "Dedicated agent",
       proffesion: "Clothing (Ph.D.)",
       education: "Silla Graduate School",
@@ -69,7 +69,7 @@ export default function StaffPage() {
     {
       image: "/io/image13.png",
       name: "Enkhtuvshin",
-      role: "HEAD OF R&D DEPARTMENT",
+      role: t("staff.role6"),
       proffesion: "Software Engineering",
       education: "National University of Mongolia",
       phone: "",
@@ -78,7 +78,7 @@ export default function StaffPage() {
     {
       image: "/io/image8.png",
       name: "Garidmagnai",
-      role: "HEAD OF PROJECT MANAGER",
+      role: t("staff.role7"),
       proffesion: "Software Engineering",
       education: "National University of Mongolia",
       phone: "",
@@ -87,7 +87,7 @@ export default function StaffPage() {
     {
       image: "/image/default-avatar.png",
       name: "San-gnam Lim ",
-      role: "Director",
+      role: t("staff.role8"),
       position: "Research assistant",
       proffesion: "Department of Chemical Engineering",
       education: "Dongeui Technical University",
@@ -97,7 +97,7 @@ export default function StaffPage() {
     {
       image: "/image/koo-beom.png",
       name: " Koo Beom-geun",
-      role: "Deputy",
+      role: t("staff.role9"),
       position: "Dedicted agent",
       proffesion: "Department of Genetic Engineering",
       education: "Dong-A University",
@@ -107,7 +107,7 @@ export default function StaffPage() {
     {
       image: "/image/noh-joo-won.png",
       name: " Noh Joo-won",
-      role: "Researcher",
+      role: t("staff.role10"),
       position: "Research assistant",
       proffesion: "Department of Visual design",
       education: "Busan Gyeongsang National University",
@@ -117,7 +117,7 @@ export default function StaffPage() {
     {
       image: "/io/image4.png",
       name: "Orgil",
-      role: "SYSTEM ADMINSTRATOR",
+      role: t("staff.role11"),
       proffesion: "Software Engineering",
       education: "National University of Mongolia",
       phone: "",
@@ -126,7 +126,7 @@ export default function StaffPage() {
     {
       image: "/io/image5.png",
       name: "Murun",
-      role: "SOFTWARE DEVELOPER",
+      role: t("staff.role12"),
       proffesion: "Software Engineering",
       education: "National University of Mongolia",
       phone: "",
@@ -135,7 +135,7 @@ export default function StaffPage() {
     {
       image: "/io/image6.png",
       name: "naranbaatar",
-      role: "SOFTWARE DEVELOPER",
+      role: t("staff.role13"),
       proffesion: "Software Engineering",
       education: "National University of Mongolia",
       phone: "",
@@ -144,7 +144,7 @@ export default function StaffPage() {
     {
       image: "/io/image7.png",
       name: "Enkhamarbaysgalan",
-      role: "MOBILE DEVELOPER",
+      role: t("staff.role14"),
       proffesion: "Software Engineering",
       education: "National University of Mongolia",
       phone: "",
@@ -153,7 +153,7 @@ export default function StaffPage() {
     {
       image: "/io/image9.png",
       name: "Tuguldur",
-      role: "UX/UI DESIGNER",
+      role: t("staff.role15"),
       proffesion: "Software Engineering",
       education: "National University of Mongolia",
       phone: "",
@@ -162,7 +162,7 @@ export default function StaffPage() {
     {
       image: "/io/image10.png",
       name: "Burenkhuu",
-      role: "SOFTWARE DEVELOPER",
+      role: t("staff.role16"),
       proffesion: "Software Engineering",
       education: "National University of Mongolia",
       phone: "",
@@ -171,7 +171,7 @@ export default function StaffPage() {
     {
       image: "/io/image11.png",
       name: "Naranbaatar",
-      role: "SOFTWARE DEVELOPER",
+      role: t("staff.role17"),
       proffesion: "Software Engineering",
       education: "National University of Mongolia",
       phone: "",
@@ -180,7 +180,7 @@ export default function StaffPage() {
     {
       image: "/io/image12.png",
       name: "Enkhzul",
-      role: "SOFTWARE DEVELOPER",
+      role: t("staff.role18"),
       proffesion: "Software Engineering",
       education: "National University of Mongolia",
       phone: "",

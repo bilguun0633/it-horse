@@ -55,7 +55,7 @@ export default function Partner() {
                   <textarea
                     type="text"
                     className="flex p-2 justify-center w-full min-h-[24px] h-32 px-4 outline-none placeholder:text-base-200"
-                    placeholder="How can we help you?"
+                    placeholder={t("price.inquiry_inside")}
                   />
                 </div>
               </div>
