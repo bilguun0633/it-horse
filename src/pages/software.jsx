@@ -36,7 +36,7 @@ export default function Software() {
     {
       image: "/portfolio/image5.png",
       name: t("software.website"),
-      title: "cnetrals",
+      title: "centrals",
       description: t("software.web_job3_text"),
     },
     {
@@ -90,7 +90,7 @@ export default function Software() {
     {
       image: "/portfolio/image15.png",
       name: t("software.website"),
-      title: "xac bank ipo",
+      title: "khas bank ipo",
       description: t("software.web_job7_text"),
     },
     {

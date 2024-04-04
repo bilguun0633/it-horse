@@ -19,7 +19,7 @@ export default function AboutUs() {
       children: [t("about-us.text1")],
     },
     {
-      name: "about-us.korea",
+      name: "about-us korea",
       flag: "KR",
       children: [t("about-us.text2")],
     },
