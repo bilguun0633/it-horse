@@ -316,8 +316,37 @@
     "role16": "SOFTWARE DEVELOPER",
     "role17": "SOFTWARE DEVELOPER",
     "role18": "SOFTWARE DEVELOPER",
+    "role19": "DESIGN DEPARTMENT HEAD",
+    "role20": "CTO",
     "position1": "Head of corporate research institute",
-    "po": ""
+    "pro1": "Industrial engineer",
+    "education1": "Office Information Equipment Application Technician Level 2",
+    "position2": "CHIEF TECHNOLOGY OFFICER",
+    "pro2": "Computer Engineering",
+    "education2": "Istanbul University of Turkey",
+    "position3": "CHIEF OPERATION OFFICER",
+    "pro3": "Software Engineering",
+    "education3": "Mongolian University of Science and Technology",
+    "position4": "Dedicated agent",
+    "pro4": "Department of information and Communication Engineering",
+    "education4": "Widuk University",
+    "position5": "Dedicated agent",
+    "pro5": "Clothing (Ph.D.)",
+    "education5": "Silla Graduate School",
+    "position6": "",
+    "pro6": "",
+    "education6": "",
+    "pro7": "Software Engineering",
+    "education7": "National University of Mongolia",
+    "position8": "Research assistan",
+    "pro8": "Department of Chemical Engineering",
+    "education8": "Dongeui Technical University",
+    "position9": "Dedicted agent",
+    "pro9": "Department of Genetic Engineering",
+    "education9": "Dong-A University",
+    "position10": "Research assistant",
+    "pro10": "Department of Visual design",
+    "education10": "Busan Gyeongsang National University"
   },
   "button": {
     "business": "A business propectus",
@@ -388,5 +417,13 @@
     "serach": "Serach",
     "welcome": "Welcome to the era of zero",
     "text1": "Since 2008, IT Horse has been helping companies in FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability.<br/>Since 2008, IT Horse has been helping companies in FinTech, healthcare, real estate, supply chain management, and other industries succeed with custom software solutions. Driven by our clients’ business-specific needs and time and budget constraints, our software development company builds and augments secure, stable, scalable, and highly functional digital products to deliver maximum value and ensure business sustainability."
+  },
+  "threeD": {
+    "text1": "Cylinder prototype development",
+    "text2": "Machining and manufacturing",
+    "text3": "Mold making",
+    "text4": "Print out necessary parts",
+    "text5": "Product output and post-processing",
+    "text6": "Various product output"
   }
 }

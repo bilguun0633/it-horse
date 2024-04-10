@@ -18,7 +18,7 @@ export default function SoftwareIo() {
             <div className=" flex items-center justify-center border rounded relative z-0  border-brown overflow-hidden h-[300px]">
               <ImageContainer src="/background/jine.png" className="-z-10" />
 
-              <Image src="/icons/ioLogo.png" alt="" width={420} height={64} />
+              <Image src="/icons/ioLogo.png" alt="" width={357} height={100} />
             </div>
             <div className="text-[#586772]">
               <h1 className="text-xl font-medium text-black uppercase">{t("header.about-us")}</h1>

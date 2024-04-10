@@ -97,11 +97,11 @@ export default function Certficates() {
       />
       <div className="bg-[#F8F8F8] py-20">
         <div className="container relative">
-          <div className="grid xl:grid-cols-4 md:grid-cols-2  gap-4">
+          <div className="grid gap-4 xl:grid-cols-4 md:grid-cols-2">
             {cert.map(({ image, title, subtitle }, index) => (
               <div
                 key={index}
-                className="w-full overflow-hidden bg-white border rounded-lg  border-brown"
+                className="w-full overflow-hidden bg-white border rounded-lg border-brown"
               >
                 <div className="relative aspect-[338/380] ">
                   <ImageContainer src={image} />
