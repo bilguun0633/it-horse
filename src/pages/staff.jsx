@@ -216,7 +216,7 @@ export default function StaffPage() {
                     className="relative z-0 flex items-center justify-center overflow-hidden bg-gray-300 border rounded-full cursor-pointer border-gray aspect-square"
                     onClick={() => setCurrentMember(index)}
                   >
-                    <ImageContainer src={image} />
+                    <ImageContainer className="grayscale" src={image} />
                     <div className="absolute inset-0 z-10 flex items-center justify-center transition opacity-0 backdrop-brightness-50 hover:opacity-100">
                       <p className="font-light text-white uppercase">{t("staff.see-more")}</p>
                     </div>
@@ -241,7 +241,7 @@ export default function StaffPage() {
                     className="relative z-0 flex items-center justify-center overflow-hidden bg-gray-300 border rounded-full cursor-pointer border-gray aspect-square"
                     onClick={() => setIoCurrentMember(index)}
                   >
-                    <ImageContainer src={image} />
+                    <ImageContainer className="grayscale" src={image} />
                     <div className="absolute inset-0 z-10 flex items-center justify-center transition opacity-0 backdrop-brightness-50 hover:opacity-100">
                       <p className="font-light text-white uppercase">{t("staff.see-more")}</p>
                     </div>
