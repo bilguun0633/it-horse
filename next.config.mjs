@@ -6,12 +6,12 @@ const nextConfig = nextTranslate({
   images: {
     remotePatterns: [
       {
-        protocol: "http",
+        protocol: "https",
         hostname: "43.231.113.143",
         port: "3003",
       },
       {
-        protocol: "http",
+        protocol: "https",
         hostname: "ithorse.mn",
       },
     ],
