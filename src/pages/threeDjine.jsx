@@ -21,7 +21,7 @@ export default function ThreeDjine() {
               <Image src="/icons/logo.png" alt="" width={420} height={64} />
             </div>
             <div className="text-[#586772]">
-              <p>{t("3d_products.products_text1")}</p>
+              <p>{t("3d_products.product_text1")}</p>
               <br />
               <p>{t("3d_products.product_text2")}</p>
               <br />

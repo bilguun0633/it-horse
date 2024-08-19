@@ -17,11 +17,31 @@ export default function AboutUs() {
       name: t("about-us.mongolia"),
       flag: "MN",
       children: [t("about-us.text1")],
+      children1: [{ icon: "" }, { text: "" }],
     },
     {
       name: "about-us korea",
       flag: "KR",
       children: [t("about-us.text2")],
+      children1: [{ icon: ["ri-smartphone-line"] }, { text: "010-4588-2794" }],
+    },
+    {
+      name: "",
+      flag: "",
+      children: [t("about-us.text3")],
+      children1: [{ icon: ["ri-message-2-line"] }, { text: "incom2794@naver.com" }],
+    },
+    {
+      name: "",
+      flag: "",
+      children: [t("about-us.text4")],
+      children1: [{ icon: ["ri-phone-line"] }, { text: "051-331-0110" }],
+    },
+    {
+      name: "",
+      flag: "",
+      children: [],
+      children1: [{ icon: ["ri-global-fill"] }, { text: "http://jcodeedu.com" }],
     },
   ];
 
@@ -51,7 +71,7 @@ export default function AboutUs() {
       <div className="relative w-full aspect-[16/8]  z-0">
         <ImageContainer src="/image/main-map.png" className="-z-10" />
         <div className="container flex justify-end">
-          <div className="w-[364px] py-4 lg:py-24">
+          <div className="w-[500px] py-4 lg:py-24">
             <div className="mb-8 lg:mb-16">
               <h2 className="mb-4 text-3xl font-semibold uppercase">
                 {t("about-us.international")}
@@ -59,20 +79,52 @@ export default function AboutUs() {
               <p className="text-[#586772]">{t("about-us.mission_text")}</p>
             </div>
             <div className="flex flex-col gap-4 lg:gap-8">
-              {internationalList.map(({ name, flag, children }, index) => (
+              {internationalList.map(({ name, flag, children, children1 }, index) => (
                 <div key={index} className="flex flex-col gap-4">
                   <div className="flex items-center gap-4">
                     <Flag country={flag} size={40} />
                     <h2 className="text-xl font-semibold uppercase">{name}</h2>
                   </div>
-                  <div className="flex flex-col gap-3">
-                    {children.map((child, index) => (
-                      <div key={index} className="flex gap-2">
-                        <i className="text-xl ri-map-pin-line"></i>
-                        <p className="text-[#586772] text-sm">{child}</p>
-                      </div>
-                    ))}
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center flex-1 gap-2">
+                      {children1.map(({ icon, text }, index) => (
+                        <div key={index} className="flex items-center gap-1">
+                          <i className={icon}></i>
+                          <div>{text}</div>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="flex-1">
+                      {children.map((child, index) => (
+                        <div key={index} className="flex items-center gap-2">
+                          <i className="text-xl ri-map-pin-line"></i>
+                          <p className="text-[#586772] text-sm">{child}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
+
+                  {/* <div className="grid grid-cols-2">
+                    <div className="flex gap-2">
+                      {children1.map(({ icon, text }, index) => (
+                        <div className="flex gap-2" key={index}>
+                          <div className="">
+                            {" "}
+                            <i class={icon}></i>
+                          </div>
+                          {text}
+                        </div>
+                      ))}
+                    </div>
+                    <div className="flex flex-col gap-3">
+                      {children.map((child, index) => (
+                        <div key={index} className="flex gap-2">
+                          <i className="text-xl ri-map-pin-line"></i>
+                          <p className="text-[#586772] text-sm">{child}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div> */}
                 </div>
               ))}
             </div>

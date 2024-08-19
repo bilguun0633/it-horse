@@ -72,7 +72,7 @@ export default function Header() {
           url: "/software",
         },
         {
-          name: "3D",
+          name: t("header.3D"),
           url: "/threeD",
         },
         {

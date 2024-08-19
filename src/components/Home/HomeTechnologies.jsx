@@ -80,7 +80,7 @@ export default function HomeTechnologies() {
                 </ul>
               </div>
               <div className="flex items-center gap-2 mt-4 cursor-pointer select-none group lg:mt-8 text-blue">
-                <p className="group-hover:underline">Read more</p>
+                <p className="group-hover:underline">{t("home_page.read_more")}</p>
                 <i className="text-xl transition ri-arrow-right-line group-hover:translate-x-2"></i>
               </div>
             </div>
