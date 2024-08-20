@@ -14,7 +14,7 @@ export default function HomeAbout() {
         <br />
       </div>
       <div className="relative lg:flex-1 aspect-square">
-        <ImageContainer src="/background/shape.png" />
+        <ImageContainer src="/background/shape1.png" />
       </div>
     </div>
   );
